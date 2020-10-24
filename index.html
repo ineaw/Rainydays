@@ -3,28 +3,84 @@
   <head>
     <title>Rainydays</title>
     <meta name="description" content="Raincoats for all occasions"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="css/index.css" rel="stylesheet">
-  </head>
+    <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  </head>
   <body>
-      <header>
-          <nav>
-            <div class="logo">
-                <img src="images/rainydays_logo.png" alt="Logo, home button">
-             </div>
-              <a href="products/women.html">Women</a>
-              <a href="products/men.html">Men</a>
-              <a href="about.html">About</a>
-          </nav>
-      </header>
-      <main>
-    <h1>Pushing the comfort zone</h1>
-    <h2>Latest stories</h2>
+     <header>
+      <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu">
+      <!--logo-->
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/rainydays_logo.png" alt="Logo, home button">
+          </a>
+          </div>
+            <!--Navigation-->
+            <nav id="nav" role="navigation">
+               <section>
+                   <ul>
+                    <div class="navbar">
+                       <li><a href="products/women.html">Women</a></li>
+                      <li><a href="products/men.html">Men</a></li>
+                      <li><a href="about.html">About</a></li> 
+                    </div>
+                  </ul>
+                </nav>
+            </section>
+             <!--search-->
+               <div class="searchbar">
+             <form action="">
+               <input type="search">
+               <i class="fa fa-search"></i>
+             </form>
+             <!--cart-->
+                  </div>
+        </header>
+        <!--Main-->
+      <main> 
+        <!--hero-->
+        <section class="hero">
+          <div class="call-to-action">
+            <h1>Pushing the comfort zone</h1>
+            <div class="action">
+              <a class="btn" href="products/women.html" class="btn">Shop new arrivals</a>
+           </div>
+          </div>
+         </section>
+         <!--Stories-->
+    <section class="stories">
+      <div class="Stories-header">
+      <h2>Latest stories</h2>
+    </div>
+      <div class="story-image">
+    <img src="images/Snow_background.jpg" alt="Hiking on a snowy mountain">
+    <h3>Snowy mountain</h3>
+  </div>
+  <div class="story-climate">
+    <img src="images/Climate_Background.jpg" alt="Couple walking in foggy hills">
+    <h3>Climate Compensation</h3>
+    </div>
+  </section>
     <h2>AW 20</h2>
-    <img src="images/Purple_Wmns.jpg" alt="Woman`s jacket purple">
+    <section class="products">
+    <img src="images/Purple_Jacket.jpg" alt="Woman`s jacket Purple">
+    <img src="images/Yellow_Jacket.jpg" alt="Woman`s jacket Yellow">
+    <img src="images/Black_jacket.jpg" alt="Men`s jacket Black">
+    <img src="images/Green_Jacket.jpg" alt="Men`s jacket Green">
+  </section>
       </main>
-  <footer>
-    <a href="contact.html">Contact</a>
+      <!--Footer-->
+  <footer class="footer-all">
+    <div class="footer-left">
+   <p class="footer-links">
+     <a href="contact.html">Contact</a>
+     <a href="about.html">About us</a>
+     <a href="climatecompensate.html">Sustainability</a>
+   </p>
+<p class="company-name">Rainydays, 2020</p>
+  </div>
     Copyright &copy;
   </footer>
   </body>
