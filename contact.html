@@ -3,53 +3,58 @@
   <head>
     <title>Rainydays</title>
     <meta name="description" content="Raincoats for all occasions"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link href="css/contact.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="../css/contact.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css">
   </head>
-  <body>
-      <header>
-          <nav>
-            <div class="logo">
-                <img src="images/rainydays_logo.png" alt="Logo, home button">
-
-             </div>
-              <a href="products/women.html">Women</a>
-              <a href="products/men.html">Men</a>
-              <a href="about.html">About</a>
-          </nav>
-      </header>
-      <main>
+<body>
+  <header>
+    <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu">
+    <!--logo-->
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/rainydays_logo.png" alt="Logo, home button">
+        </a>
+        </div>
+        </header>
+  <main>
     <h1>Contact</h1>
-<form action="form-success.php" method="POST">
-  <fieldset>
-    <legend>Your details</legend>
-    <label> for="name">Your name</label>
-    <input type="text" name="name" id="name" class="form__input" required>
-    <label> for="phone">Your name</label>
-    <input type="tel" name="phone" id="phone">
-    <label> for="email">Your email address</label>
-    <input type="email" name="email" id="email" class="form__input" required>
-    <p> Select your gender </p>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label>
-    <input type="radio" id="female" name="gender" value="female">
-<label for="female">Female</label>
-<input type="radio" id="female" name="gender" value="female">
-<label for="female">Female</label>
-  </fieldset>
-  <fieldset>
-    <legend>Your purchase</legend>
-    <select name="product">
-      <option value="=product one">Product-One</option>
-      <option value="=product two">Product-two</option>
-      <option value="=product three">Product-three</option>
-    </select>
-  </fieldset>
-  <input type="submit" value="Buy product">
-</form>
-       </main>
-  <footer>
-    Copyright &copy;
-  </footer>
-  </body>
+    <div class="form-container">
+    <section class="contact-form">
+      <h2>Contact form</h2>
+      <form action="Submit.php" method="GET"></form>
+      <fieldset class="email">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="example@gmail.com">
+      </fieldset>
+      <fieldset class="subject">
+        <label for="email">subject</label>
+        <input type="subject" name="subject" placeholder="Subject">
+      </fieldset>
+      <fieldset class="message">
+        <label for="email">Message</label>
+        <input type="message" name="message">
+      </fieldset>
+<fieldset class="submit">
+  <button type="submit">Send</button>
+</fieldset>
+    </form>
+    </section>
+  </main>
+            <!--Footer-->
+            <footer class="footer">
+              <div>
+               <ul>
+                 <li><a class="footernav" href="about.html">About us</a></li>
+                 <li><a class="footernav" href="contact.html">Contact</a></li>
+                 <li><a class="footernav" href="climatecompensate.html">Sustainability</a></li>
+                 <li><a class="footernav" href="https://facebook.com">Facebook</a></li>
+           </ul>
+           </div>
+                 <p class="company-name">Rainydays, 2020 &copy;</p>
+          </footer>  
+</body>
 </html>

@@ -1,0 +1,117 @@
+main {
+    padding: 2rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.background {
+    background-image: url(/images/anandu-vinod-pbxwxwfI0B4-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 50% bottom 18%;
+height: 100%;
+width: 100%;
+}
+
+.checkout-container {
+    grid-column: 2;
+    grid-column-start: 2;
+    grid-column-end: auto;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    height: 515px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+h1 {
+    color: white;
+    margin: 0.5rem;
+    text-transform: uppercase;
+}
+
+.grid {
+    justify-content: start;
+    grid-gap: 20px;
+    grid-template-areas: 
+   "products checout-overview"
+    "button button" ;
+}
+
+.checkout-container {
+    border-left: white solid thin;
+    padding: 10px;
+    padding-left: 1.4rem;
+    max-width: 650px;
+    max-height: 550px;
+}
+
+.checkout-overview {
+    border: none;
+    text-align: start;
+    height: 100%;
+    width: 100%;
+    background: #f2f2ff;
+    display: block;
+    margin: auto;
+}
+
+
+a.button-green {
+color: white;
+}
+
+a.button {
+    text-decoration: none;
+    text-align: center;
+}
+
+.button-green {
+    width: 16rem;
+    margin: auto;
+}
+
+.button-green {
+    background-color: teal;
+    border: 1px blue;
+}
+
+.button-green {
+    display: block;
+    font: inherit;
+    padding: 14px 18px;
+    cursor: pointer;
+    height: 3rem;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .headline-check {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+    .grid {
+        padding-top: 1rem;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto;
+        grid-auto-rows: auto;
+    }
+
+    .headline-check {
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+}

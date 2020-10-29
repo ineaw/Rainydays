@@ -6,82 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="css/index.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css">
+  </head>
   <body>
-     <header>
+    <header>
       <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
       <input type="checkbox" id="hamburger-menu">
       <!--logo-->
-      <div class="logo">
         <a href="index.html">
-          <img src="images/rainydays_logo.png" alt="Logo, home button">
+          <img class="Logo" src="images/RainyDays_Logofull.png" alt="Logo, home button">
           </a>
-          </div>
             <!--Navigation-->
             <nav id="nav" role="navigation">
-               <section>
-                   <ul>
                     <div class="navbar">
-                       <li><a href="products/women.html">Women</a></li>
-                      <li><a href="products/men.html">Men</a></li>
+                      <ul>
+                      <li><a href="products/jacket.html">Women</a></li>
+                      <li><a href="products/jacket.html">Men</a></li>
                       <li><a href="about.html">About</a></li> 
+                      </ul>
                     </div>
-                  </ul>
                 </nav>
-            </section>
-             <!--search-->
+             <!--search-->       
                <div class="searchbar">
-             <form action="">
-               <input type="search">
+                 <form action="#">
+                <input type="search">
                <i class="fa fa-search"></i>
              </form>
-             <!--cart-->
-                  </div>
-        </header>
-        <!--Main-->
-      <main> 
-        <!--hero-->
-        <section class="hero">
-          <div class="call-to-action">
-            <h1>Pushing the comfort zone</h1>
-            <div class="action">
-              <a class="btn" href="products/women.html" class="btn">Shop new arrivals</a>
-           </div>
-          </div>
-         </section>
-         <!--Stories-->
-    <section class="stories">
-      <div class="Stories-header">
-      <h2>Latest stories</h2>
-    </div>
-      <div class="story-image">
-    <img src="images/Snow_background.jpg" alt="Hiking on a snowy mountain">
-    <h3>Snowy mountain</h3>
-  </div>
-  <div class="story-climate">
-    <img src="images/Climate_Background.jpg" alt="Couple walking in foggy hills">
-    <h3>Climate Compensation</h3>
-    </div>
-  </section>
-    <h2>AW 20</h2>
-    <section class="products">
-    <img src="images/Purple_Jacket.jpg" alt="Woman`s jacket Purple">
-    <img src="images/Yellow_Jacket.jpg" alt="Woman`s jacket Yellow">
-    <img src="images/Black_jacket.jpg" alt="Men`s jacket Black">
-    <img src="images/Green_Jacket.jpg" alt="Men`s jacket Green">
-  </section>
-      </main>
-      <!--Footer-->
-  <footer class="footer-all">
-    <div class="footer-left">
-   <p class="footer-links">
-     <a href="contact.html">Contact</a>
-     <a href="about.html">About us</a>
-     <a href="climatecompensate.html">Sustainability</a>
-   </p>
-<p class="company-name">Rainydays, 2020</p>
-  </div>
-    Copyright &copy;
-  </footer>
-  </body>
-</html>
+              </div>   
+              <div class="Cart">
+                <a href="checkout.html">
+                <i class="fas fa-shopping-bag"></i>
+              </a>
+            </div>     
+          </header>
+          <main> 
+            <!--hero-->
+            <section class="hero">
+              <div class="call-to-action">
+                <h1>Pushing the comfort zone</h1>
+                <div class="action">
+                  <a class="btn" href="products/jacket.html" class="btn">Shop Now</a>
+               </div>
+              </div>
+             </section>
+             <!--New Products-->
+             <h3>AW 20</h3>
+             <div class="wrapper">
+             <div class="new-products">
+               <div id="new1">
+               <a href="women.html">
+                 <img src="/images/Purple_Jack.jpg" href="../products/women.html" alt="Purple Jacket">
+                 <h2>The Dark Knight</h2>
+                 <p>1799 NOK</p>
+              </a>
+              </div>
+              <div id="new2">
+                <a href="women.html">
+                  <img src="/images/Yellow_Jack.jpg" alt="Yellow Jacket">
+                  <h2>The Dark Knight</h2>
+                  <p>1799 NOK</p>
+                </a>
+               </div>
+               <div id="new3">
+                <a href="men.html">
+                  <img src="/images/Black_jack.jpg" alt="Black Jacket">
+                  <h2>The Dark Knight</h2>
+                  <p>1799 NOK</p>
+                </a>
+               </div>
+               <div id="new4">
+                <a href="men.html">
+                  <img src="/images/Green_Jack.jpg" alt="Green Jacket">
+                  <h2>The Dark Knight</h2>
+                  <p>1799 NOK</p>
+                </a>
+               </div>   
+             </div>
+             </div>
+             <h3>Trends</h3>
+        <div class="carousel">
+        <img src="images/Purple_Jacket.jpg" alt="Woman`s jacket Purple">
+        <img src="images/Yellow_Jacket.jpg" alt="Woman`s jacket Yellow">
+        <img src="images/Black_jacket.jpg" alt="Men`s jacket Black">
+        <img src="images/Green_Jacket.jpg" alt="Men`s jacket Green">
+        </div>
+          </main>
+          <!--Footer-->
+          <footer class="footer">
+            <p class="company-name">Rainydays, 2020 &copy;</p>
+            <div>
+             <ul>
+               <li><a class="footernav" href="about.html">About us</a></li>
+               <li><a class="footernav" href="contact.html">Contact</a></li>
+               <li><a class="footernav" href="#">Sustainability</a></li>
+               <li><a class="footernav" href="https://facebook.com">Facebook</a></li>
+         </ul>
+         </div>
+        </footer>
+      </body>
+    </html>
+    

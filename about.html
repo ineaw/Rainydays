@@ -4,20 +4,49 @@
     <title>Rainydays</title>
     <meta name="description" content="Raincoats for all occasions"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="css/contact.css" rel="stylesheet">
   </head>
   <body>
       <header>
           <nav>
-              <a href="women.html">Women</a>
-              <a href="men.html">Men</a>
+            <div class="logo">
+                <img src="images/rainydays_logo.png" alt="Logo, home button">
+             </div>
+              <a href="products/women.html">Women</a>
+              <a href="products/men.html">Men</a>
               <a href="about.html">About</a>
           </nav>
       </header>
       <main>
-    <h1>Pushing the comfort zone</h1>
-    <h2>Latest stories</h2>
-    <h2>AW 20</h2>
-      </main>
+    <h1>Contact</h1>
+       </main>
+       <form action="form-success.php" method="POST">
+        <fieldset>
+          <legend>Your details</legend>
+          <label> <form="name">Your name</label>
+          <input type="text" name="name" id="name" class="form__input" required>
+          <label> <for="phone">Your name</label>
+          <input type="tel" name="phone" id="phone">
+          <label> <form="email">Your email address</label>
+          <input type="email" name="email" id="email" class="form__input" required>
+          <p> Select your gender </p>
+          <input type="radio" id="female" name="gender" value="female">
+          <label form="female">Female</label>
+          <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+        </fieldset>
+        <fieldset>
+          <legend>Your purchase</legend>
+          <select name="product">
+            <option value="=product one">Product-One</option>
+            <option value="=product two">Product-two</option>
+            <option value="=product three">Product-three</option>
+          </select>
+        </fieldset>
+        <input type="submit" value="Buy product">
+      </form>
   <footer>
     Copyright &copy;
   </footer>
