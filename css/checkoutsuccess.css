@@ -15,7 +15,7 @@ h1 {
   font-size: 2.5em;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: "industry light";
+  font-family: "industry demi";
   text-align: center;
   color: #06476d;
 }
@@ -26,7 +26,7 @@ h1 {
 
 .about {
   display: flex;
-  padding: 10%;
+  padding: 5%;
   background-color: #f2f2f2;
   border-radius: 4px 4px 4px 4px;
   margin: 10%;
@@ -34,17 +34,8 @@ h1 {
   max-height: 100%;
 }
 
-.about-text p {
-  color: #666874;
-  font-family: "montserrat", sans-serif;
-  font-size: 0.8em;
-  letter-spacing: 0.1em;
-  font-weight: 100;
-  text-align: center;
-}
-
 .about h2 {
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: "industry light", sans-serif;
   font-weight: 400;
   text-align: center;
@@ -59,7 +50,17 @@ h1 {
   margin-bottom: 20px;
   font-family: "industry light", sans-serif;
   text-align: center;
-  color: #06476d;
+  color: #c2702d;
+}
+
+.new-products {
+  display: flex;
+  padding: 5%;
+  background-color: #f2f2f2;
+  border-radius: 4px 4px 4px 4px;
+  margin: 5%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .new-products {
@@ -73,9 +74,12 @@ h1 {
 p {
   display: flex;
   align-items: center;
-  margin: 2px;
+  margin: 6px;
 }
 
+.new-products p {
+  font-size: 1em;
+}
 .new-products img {
   border-radius: 4px;
 }
@@ -84,11 +88,10 @@ img {
   height: 300px;
 }
 
-
 .btn {
   display: block;
   width: 170px;
-  padding: 0.5em;
+  padding: 1em;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;

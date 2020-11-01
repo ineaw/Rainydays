@@ -74,7 +74,6 @@ header nav ul ul ul {
   top: 0;
 }
 
-
 /*hamburger menu*/
 
 .hamburger-label {
@@ -164,12 +163,19 @@ header nav ul ul ul {
 
 /*fonts*/
 
-p {
+.footer p {
   text-decoration: none;
   font-family: "industry-medium", Arial, Helvetica, sans-serif;
   color: #000000;
-  font-size: 0.7em;
+  font-size: 0.8em;
+}
+
+.new-products p {
   text-align: start;
+  font-family: "industry demi", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 0.7em;
+  color: black;
 }
 
 h2:hover {
@@ -216,54 +222,46 @@ p {
 /*Trend photos*/
 
 .grid-inspo {
-  grid-template-areas:
-    "gi01 gi02"
-    "gi03";
+  grid-template-areas: "gi01 gi02 gi03";
 }
 
 .grid-inspo div {
-  min-height: 20vh;
-  max-height: 20vh;
+  min-height: 100%;
+  max-height: 100%;
 }
 
 .grid-inspo {
   box-sizing: border-box;
   display: grid;
-  grid-gap: 1em;
-  padding: 1em 5em;
+  padding: 1em 0em 1em 5em;
   margin: auto;
 }
 
-.grid-item01 {
-  grid-area: grid-item01;
-  grid-row-start: gi01;
-  grid-row-end: gi01;
-  grid-column-start: gi01;
-  grid-column-end: gi01;
-}
-
 .grid-image01 {
-  height: 400px;
-  width: 20vh;
-  background-position: center bottom;
+  max-height: 300px;
+  max-width: 75%;
+  border-radius: 4px;
+  background-position: center center;
   background-size: cover;
-  background-image: url(../images/rsz_2anh-nguyen-lshksk9xcay-unsplash.jpg);
-}
-
-.grid-item02 {
-  grid-area: grid-item02;
-  grid-row-start: gi02;
-  grid-row-end: gi02;
-  grid-column-start: gi02;
-  grid-column-end: gi02;
+  background-image: url(/images/canoe.jpg);
 }
 
 .grid-image02 {
-  height: 100%;
-  width: 100%;
-  background-position: center bottom;
+  max-height: 300px;
+  max-width: 75%;
+  border-radius: 4px;
+  background-position: center center;
   background-size: cover;
-  background-image: url(../images/Climate_Background.jpg);
+  background-image: url(/images/skiing.jpg);
+}
+
+.grid-image03 {
+  height: 300px;
+  max-width: 75%;
+  border-radius: 4px;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(/images/skiing.jpg);
 }
 
 .new-products img {
@@ -283,7 +281,7 @@ p {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font-family: "montserrat", Helvetica, sans-serif;
+  font-family: "industry light", Helvetica, sans-serif;
   padding: 55px 50px;
   margin-top: 80px;
 }
@@ -310,6 +308,11 @@ p {
   margin-top: 10%;
 }
 
+.footer p {
+  color: #fff;
+  font-size: 1.3em;
+}
+
 /* Media Query*/
 
 /*mobile screen*/
@@ -321,6 +324,13 @@ p {
 
   nav {
     display: none;
+  }
+
+  .grid-inspo {
+    box-sizing: border-box;
+    display: grid;
+    padding: 1em 0em 1em 1em;
+    margin: auto;
   }
 
   .footer ul {

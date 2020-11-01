@@ -74,7 +74,6 @@ header nav ul ul ul {
   top: 0;
 }
 
-
 /*hamburger menu*/
 
 .hamburger-label {
@@ -114,6 +113,7 @@ header nav ul ul ul {
 
 .breadcrumbs {
   font-family: "industry light", sans-serif;
+  font-weight: 400;
   font-size: 12px;
   margin: 0;
   padding: 1em;
@@ -166,10 +166,14 @@ p {
   font-size: 0.7em;
 }
 
+.footer p {
+  color: #fff;
+  font-size: 1.3em;
+}
+
 h2 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-family: "industry light", sans-serif;
-  font-weight: 400;
   text-align: center;
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -212,7 +216,7 @@ h5:hover {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font-family: "montserrat", Helvetica, sans-serif;
+  font-family: "industry light", Helvetica, sans-serif;
   padding: 55px 50px;
   margin-top: 80px;
 }
@@ -238,7 +242,6 @@ h5:hover {
 .company-name {
   margin-top: 10%;
 }
-
 
 /* Media Query*/
 
