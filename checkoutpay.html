@@ -4,7 +4,7 @@
     <title>Rainydays : Checkout</title>
     <meta name="description" content="Checkout page for you purchase"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="../css/checkout.css" rel="stylesheet">
+    <link href="../css/checkoutpay.css" rel="stylesheet">
     <link href="../css/global.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
@@ -47,8 +47,7 @@
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/products/jackets.html">Jackets</a> </li>
                 <li><a href="/products/product.html">Product</a></li>
-                <li><a href="/checkout.html
-                  ">Checkout</a> </li>
+                <li><a href="/checkout.html">Checkout</a> </li>
               </ul>          
               <div class="wrapper">
               <div class="items-cart">
@@ -67,34 +66,26 @@
         <div class="cart-tab">
           <div class="details">
             <ul>
-              <li class="shipping">Shipping</li>
-              <li class="enter-details">Enter your details</li>
+              <li class="shipping">Payment details</li>
+              <li class="payement-methods">Accepted Payment</li>
+          <div class="icon-container">
+            <i class="fa fa-cc-visa" style="color:navy"></i>
+            <i class="fa fa-cc-paypal" style="color:blue"></i>
+          </div>
               <li>
-                <label for="email">Email:</label>
-                <input id="email" type="text">
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname">
               </li>
-            <li>
-              <label for="fname">Last Name:</label>
-              <input type="text" id="fname" name="lastname">
-            </li>
-            <li>
-              <label for="lname">Last Name:</label>
-              <input type="text" id="lname" name="firstname">
-            </li>
-          <li>
-            <label for="Address">Address:</label>
-            <input type="text" id="address01" name="address01">
-          </li>
-            <li>
-              <label for="city">City:</label>
-              <input type="text" id="city" name="lastname"">
-            </li>
-            <li>
-              <label for="country">Country:</label>
-              <input type="text" id="country" name="firstname">
-            </li>
+              <li>
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              </li>
+              <li>
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="November">
+              </li> 
   <div class="cta-btn">
-  <a href="/checkoutpay.html">Payment details</a>
+  <a href="/checkoutsuccess.html">Check out</a>
   </div>
   </ul>  
   </div>

@@ -21,8 +21,13 @@ body {
   border-radius: 4px;
 }
 
-.shipping {
+.icon-container {
   font-size: 2em;
+  margin-left: 50px;
+}
+
+.shipping {
+  font-size: 1.3em;
   font-family: "industry demi", Arial, Helvetica, sans-serif;
 }
 
@@ -108,7 +113,7 @@ span.price {
 }
 
 .cta-btn a {
-  width: 150px;
+  width: 130px;
   background-color: #06476d;
   color: #ffff;
   padding: 14px 20px;
@@ -123,7 +128,7 @@ span.price {
 
 .cta-btn a:hover {
   background-color: #c2702d;
-  width: 150px;
+  width: 130px;
   border: none;
   color: #f2f2f2;
 }
@@ -133,24 +138,8 @@ span.price {
 /*mobile screen*/
 
 @media only screen and (max-width: 800px) {
-  .container {
-    float: left;
-    width: 100%;
-  }
   .wrapper {
     flex-flow: column;
-  }
-
-  .wrapper-main {
-    margin-left: 10%;
-  }
-
-  .wrapper-items-cart {
-    margin-left: 0%;
-  }
-
-  .product {
-    margin-left: 10%;
   }
 }
 
