@@ -110,56 +110,51 @@ header nav ul ul ul {
   color: #c2702d;
 }
 
-/*hero*/
+/*breadcrumbs*/
 
-.hero {
-  max-width: 100%;
-  width: 100%;
-  height: 600px;
-  display: flex;
+.breadcrumbs {
+  font-family: "industry light", sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 1em;
+}
+
+.breadcrumbs ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 2em;
+  color: #06476d;
+}
+
+.breadcrumbs li {
+  display: inline-block;
   position: relative;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding-right: 1em;
+  margin: 0;
+}
+
+.breadcrumbs li:after {
+  content: "/";
+  position: absolute;
+  display: inline-block;
+  right: 0;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../images/Background_hiker_horizon.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-.hero h1 {
-  font-size: 3em;
-  margin-top: 200px;
-  color: #f2f2f2;
-  text-transform: uppercase;
-  font-family: "industry", Arial, Helvetica, sans-serif;
+.breadcrumbs li:last-child:after {
+  content: "";
 }
 
-.hero .btn {
-  display: block;
-  width: 150px;
-  padding: 0.5em;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #06476d;
-  color: #f2f2f2;
+.breadcrumbs a {
   text-decoration: none;
-  font-size: 1.2em;
-  font-family: "industry light", Arial, Helvetica, sans-serif;
-  border-radius: 0.7em;
-  transition-property: all;
-  transition-duration: 0.5s;
+  display: inline-block;
+  color: #06476d;
+  white-space: nowrap;
 }
 
-.btn:hover {
-  background-color: #c2702d;
-  width: 170px;
-  border: none;
-  color: #f2f2f2;
+.breadcrumbs a:hover {
+  text-decoration: underline;
+  color: #c2702d;
 }
 
 /*fonts*/
@@ -169,105 +164,39 @@ p {
   font-family: "industry-medium", Arial, Helvetica, sans-serif;
   color: #000000;
   font-size: 0.7em;
-  text-align: start;
-}
-
-h2:hover {
-  color: #c2702d;
-  text-decoration: underline;
 }
 
 h2 {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  color: #000000;
-  font-size: 0.8em;
-  text-align: end;
+  font-size: 1.1em;
+  font-family: "industry light", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #666874;
+  letter-spacing: 0.1em;
 }
 
 h3 {
+  font-size: 2.1em;
+  margin-bottom: 20px;
+  font-family: "industry light", sans-serif;
+  text-align: center;
+  color: #06476d;
+}
+
+h4 {
   text-decoration: none;
-  color: #c2702d;
+  color: #06476d;
   font-size: 3em;
   font-family: "industry demi", Arial, Helvetica, sans-serif;
   position: relative;
   text-align: center;
 }
 
-/*Catgories*/
-
-.new-products {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.new-products h2,
-p {
-  display: flex;
-  align-items: center;
-  margin: 2px;
-}
-
-.new-products img {
-  border-radius: 4px;
-}
-
-/*Trend photos*/
-
-.grid-inspo {
-  grid-template-areas:
-    "gi01 gi02"
-    "gi03";
-}
-
-.grid-inspo div {
-  min-height: 20vh;
-  max-height: 20vh;
-}
-
-.grid-inspo {
-  box-sizing: border-box;
-  display: grid;
-  grid-gap: 1em;
-  padding: 1em 5em;
-  margin: auto;
-}
-
-.grid-item01 {
-  grid-area: grid-item01;
-  grid-row-start: gi01;
-  grid-row-end: gi01;
-  grid-column-start: gi01;
-  grid-column-end: gi01;
-}
-
-.grid-image01 {
-  height: 400px;
-  width: 20vh;
-  background-position: center bottom;
-  background-size: cover;
-  background-image: url(../images/rsz_2anh-nguyen-lshksk9xcay-unsplash.jpg);
-}
-
-.grid-item02 {
-  grid-area: grid-item02;
-  grid-row-start: gi02;
-  grid-row-end: gi02;
-  grid-column-start: gi02;
-  grid-column-end: gi02;
-}
-
-.grid-image02 {
-  height: 100%;
-  width: 100%;
-  background-position: center bottom;
-  background-size: cover;
-  background-image: url(../images/Climate_Background.jpg);
-}
-
-.new-products img {
-  height: 300px;
+h5:hover {
+  color: #c2702d;
+  text-decoration: underline;
 }
 
 /*footer*/
@@ -309,6 +238,7 @@ p {
 .company-name {
   margin-top: 10%;
 }
+
 
 /* Media Query*/
 

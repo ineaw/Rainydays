@@ -3,52 +3,79 @@
   <head>
     <title>Rainydays</title>
     <meta name="description" content="Raincoats for all occasions"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link href="css/contact.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="../css/about.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css">
   </head>
   <body>
       <header>
-          <nav>
-            <div class="logo">
-                <img src="images/rainydays_logo.png" alt="Logo, home button">
-             </div>
-              <a href="products/women.html">Women</a>
-              <a href="products/men.html">Men</a>
-              <a href="about.html">About</a>
-          </nav>
+        <label class="hamburger-label" for="hamburger-menu"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <input type="checkbox" id="hamburger-menu" />
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#"> <i class="fa fa-search"></i></a>
+              <ul>
+                      <li class="searchbar">
+              <form action="#">
+                <input type="search" />
+              </form>
+            </a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>  
+            </nav>
+            <a href="/index.html">
+              <img class="Logo" src="/images/rainydays_logo.png" alt="Logo, home button">
+              </a>
+        <div class="Cart">
+          <a href="/checkout.html">
+            <i class="fas fa-shopping-bag"></i>
+          </a>
+        </div>
       </header>
-      <main>
-    <h1>Contact</h1>
-       </main>
-       <form action="form-success.php" method="POST">
-        <fieldset>
-          <legend>Your details</legend>
-          <label> <form="name">Your name</label>
-          <input type="text" name="name" id="name" class="form__input" required>
-          <label> <for="phone">Your name</label>
-          <input type="tel" name="phone" id="phone">
-          <label> <form="email">Your email address</label>
-          <input type="email" name="email" id="email" class="form__input" required>
-          <p> Select your gender </p>
-          <input type="radio" id="female" name="gender" value="female">
-          <label form="female">Female</label>
-          <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label>
-        </fieldset>
-        <fieldset>
-          <legend>Your purchase</legend>
-          <select name="product">
-            <option value="=product one">Product-One</option>
-            <option value="=product two">Product-two</option>
-            <option value="=product three">Product-three</option>
-          </select>
-        </fieldset>
-        <input type="submit" value="Buy product">
-      </form>
-  <footer>
-    Copyright &copy;
-  </footer>
-  </body>
-</html>
+            <main>
+              <ul class="breadcrumbs">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Jackets</a> </li>
+                <li><a href="#">Product</a></li>
+              </ul>
+              <h1>Meet Rainydays</h1>
+                  <div class="about">
+                        <div class="wrap">
+                          <h3>Our vision</h3>
+                          <h2>Sunny days</h2>
+                          <div class="about-text">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                           <p> Modi officia in dicta et itaque eligendi laboriosam illo quis voluptatem ullam voluptate consequatur, dolor voluptas ad nihil optio numquam commodi quidem?
+                          </p>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eveniet similique, hic recusandae illo ducimus repellendus ipsa facilis architecto cupiditate culpa! Voluptatem, illo? Earum provident adipisci libero beatae et placeat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam commodi porro exercitationem repellat error omnis illo sit, consequuntur nam excepturi modi nemo, voluptate quidem. Nobis amet mollitia doloremque provident inventore!</p>
+                        </div>
+                        </div>
+                </div>
+            </div>  
+          </section>
+        </main>      
+          <!--Footer-->
+          <footer class="footer">
+            <div>
+             <ul>
+               <li><a class="footernav" href="../about.html">About us</a></li>
+               <li><a class="footernav" href="../contact.html">Contact</a></li>
+               <li><a class="footernav" href="climatecompensate.html">Sustainability</a></li>
+               <li><a class="footernav" href="https://facebook.com">Facebook</a></li>
+         </ul>
+         </div>
+               <p class="company-name">Rainydays, 2020 &copy;</p>
+        </footer>
+      </body>
+    </html>
+    

@@ -5,23 +5,59 @@
     <meta name="description" content="Raincoats for all occasions"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="../css/contact.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css">
   </head>
-<body>
-  <header>
-    <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
-    <input type="checkbox" id="hamburger-menu">
-    <!--logo-->
-    <div class="logo">
-      <a href="index.html">
-        <img src="images/rainydays_logo.png" alt="Logo, home button">
+  <body>
+    <header>
+      <label class="hamburger-label" for="hamburger-menu"
+        ><i class="fas fa-bars"></i
+      ></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#"> <i class="fa fa-search"></i></a>
+            <ul>
+                    <li class="searchbar">
+            <form action="#">
+              <input type="search" />
+            </form>
+          </a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>  
+          </nav>
+          <a href="/index.html">
+            <img class="Logo" src="/images/rainydays_logo.png" alt="Logo, home button">
+            </a>
+      <div class="Cart">
+        <a href="/checkout.html">
+          <i class="fas fa-shopping-bag"></i>
         </a>
-        </div>
-        </header>
-  <main>
+      </div>
+    </header>
+    <ul class="breadcrumbs">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Jackets</a> </li>
+      <li><a href="#">Product</a></li>
+    </ul>
+  <main>    
     <h1>Contact</h1>
+    <div class="form-container1">
+      <section class="contact-us">
+        <h2>Find us</h2>
+        <p>Rainydays</p>
+        <p>Jacskon street 555</p>
+        <P>90210 stormhill</P>
+        <p>+111 222 333 444</p>
+  </section>
+  </div>
     <div class="form-container">
     <section class="contact-form">
       <h2>Contact form</h2>
@@ -31,12 +67,14 @@
         <input type="email" name="email" placeholder="example@gmail.com">
       </fieldset>
       <fieldset class="subject">
-        <label for="email">subject</label>
+        <label for="email">Subject</label>
         <input type="subject" name="subject" placeholder="Subject">
       </fieldset>
       <fieldset class="message">
         <label for="email">Message</label>
-        <input type="message" name="message">
+         <textarea rows = "4" cols = "30" name = "message-area">
+           Message text here....
+         </textarea>
       </fieldset>
 <fieldset class="submit">
   <button type="submit">Send</button>
@@ -58,3 +96,8 @@
           </footer>  
 </body>
 </html>
+
+
+
+
+
