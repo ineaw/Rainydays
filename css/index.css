@@ -239,7 +239,7 @@ p {
   margin: auto;
 }
 
-.grid-image01 {
+.grid-image1 {
   max-height: 300px;
   max-width: 75%;
   border-radius: 4px;
@@ -248,7 +248,7 @@ p {
   background-image: url(/images/canoe.jpg);
 }
 
-.grid-image02 {
+.grid-image2 {
   max-height: 300px;
   max-width: 75%;
   border-radius: 4px;
@@ -257,7 +257,7 @@ p {
   background-image: url(/images/snowboardadventure.jpg);
 }
 
-.grid-image03 {
+.grid-image3 {
   height: 300px;
   max-width: 75%;
   border-radius: 4px;
