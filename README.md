@@ -1,2 +1,1 @@
-rainydays
-organizing files
+Webpage for Rainydays raincoats
