@@ -138,8 +138,17 @@ span.price {
 /*mobile screen*/
 
 @media only screen and (max-width: 800px) {
+  .container {
+    float: left;
+    width: 100%;
+  }
+
   .wrapper {
     flex-flow: column;
+  }
+
+  nav {
+    display: none;
   }
 }
 
