@@ -5,20 +5,31 @@
     <meta name="description" content="Raincoats for all occasions" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/index.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/40834ce6db.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
-      rel="stylesheet"
-    />
+
+    <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
+    <!-- Hotjar Tracking Code for My site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2259571, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
-                <!--navigation-->
+    <!--navigation-->
 
-    <header>
+    <!-- <header>
       <label class="hamburger-label" for="hamburger-menu"
         ><i class="fas fa-bars"></i
       ></label>
@@ -34,7 +45,7 @@
             <form action="#">
               <input type="search" />
             </form>
-          </a></li>
+          </li>
             </ul>
           </li>
         </ul>
@@ -48,77 +59,92 @@
           <i class="fas fa-shopping-bag"></i>
         </a>
       </div>
+    </header> -->
+    <header class="menu">
+      <div class="menu-wrap">
+        <label class="hamburger-icon" for="hamburger">☰</label>
+        <input type="checkbox" id="hamburger" />
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a href="index.html">
+          <img class="logo" src="images/rainydays_logo.png" alt="Logo, home button" />
+        </a>
+      </div>
     </header>
     <main>
-            <!--hero-->
-            <section class="hero">
-              <div class="call-to-action">
-                <h1>Pushing the comfort zone</h1>
-                <div class="action">
-                  <a class="btn" href="products/jackets.html" class="btn">Shop Now</a>
-                </div>
-              </div>
-            </section>
-            <!--New Products-->
-            <h3>New styles</h3>
-            <div class="wrapper">
-              <div class="new-products">
-                <div id="new1">
-                  <a href="products/product.html">
-                    <img src="/images/Purple_Jack.jpg" alt="Purple Jacket" />
-                    <h2>Purple Rain</h2>
-                    <p>1799 NOK</p>
-                  </a>
-                </div>
-                <div id="new2">
-                  <a href="products/product.html">
-                    <img src="/images/Yellow_Jack.jpg" alt="Yellow Jacket" />
-                    <h2>Yellow Snow</h2>
-                    <p>1799 NOK</p>
-                  </a>
-                </div>
-                <div id="new3">
-                  <a href="products/product.html">
-                    <img src="/images/Black_jack.jpg" alt="Black Jacket" />
-                    <h2>Midnight Rain</h2>
-                    <p>1799 NOK</p>
-                  </a>
-                </div>
-                <div id="new4">
-                  <a href="products/product.html">
-                    <img src="/images/Green_Jack.jpg" alt="Green Jacket" />
-                    <h2>Grass is greener</h2>
-                    <p>1799 NOK</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!--gallery-->
-            <h3>Your next adventure awaits</h3>
-            <div class="grid-inspo">
-              <div class="grid-item1">
-              <div class="grid-image1" aria-label="man in yellow raincoat paddeling on a lake in a canoe"></div>
-            </div>
-            <div class="grid-item2">
-              <div class="grid-image2" aria-label="man wearing googles holding a snowboard in a blister"></div>
-            </div>
-            <div class="grid-item3">
-              <div class="grid-image3" aria-label="man and woman hugging on the top of a mountain"></div>
-            </div>
-            </div>
-          </main>
-          <!--footer-->
-          <footer class="footer">
-            <div>
-             <ul>
-               <li><a class="footernav" href="about.html">About us</a></li>
-               <li><a class="footernav" href="contact.html">Contact</a></li>
-               <li><a class="footernav" href="#">Sustainability</a></li>
-               <li><a class="footernav" href="#">Privacy Policy</a></li>
-               <li><a class="footernav" href="https://facebook.com">Facebook</a></li>
-         </ul>
-         </div>
-         <p class="company-name">Rainydays, 2020 &copy;</p>
-        </footer>
-        </body>
+      <!--hero-->
+      <section class="hero">
+        <div class="shop__now__btn">
+          <h1>Pushing the comfort zone</h1>
+          <div class="action">
+            <a class="btn" href="products/jackets.html" class="btn">Shop Now</a>
+          </div>
+        </div>
+      </section>
+      <!--New Products-->
+      <h3>New styles</h3>
+      <div class="wrapper">
+        <div class="new-products">
+          <div id="new1">
+            <a href="products/product.html">
+              <img src="/images/Purple_Jack.jpg" alt="Purple Jacket" />
+              <h2>Purple Rain</h2>
+              <p>1799 NOK</p>
+            </a>
+          </div>
+          <div id="new2">
+            <a href="products/product.html">
+              <img src="/images/Yellow_Jack.jpg" alt="Yellow Jacket" />
+              <h2>Yellow Snow</h2>
+              <p>1799 NOK</p>
+            </a>
+          </div>
+          <div id="new3">
+            <a href="products/product.html">
+              <img src="/images/Black_jack.jpg" alt="Black Jacket" />
+              <h2>Midnight Rain</h2>
+              <p>1799 NOK</p>
+            </a>
+          </div>
+          <div id="new4">
+            <a href="products/product.html">
+              <img src="/images/Green_Jack.jpg" alt="Green Jacket" />
+              <h2>Grass is greener</h2>
+              <p>1799 NOK</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--gallery-->
+      <h3>Your next adventure awaits</h3>
+      <div class="grid-inspo">
+        <div class="grid-item1">
+          <div class="grid-image1" aria-label="man in yellow raincoat paddeling on a lake in a canoe"></div>
+        </div>
+        <div class="grid-item2">
+          <div class="grid-image2" aria-label="man wearing googles holding a snowboard in a blister"></div>
+        </div>
+        <div class="grid-item3">
+          <div class="grid-image3" aria-label="man and woman hugging on the top of a mountain"></div>
+        </div>
+      </div>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <div>
+        <ul>
+          <li><a class="footernav" href="about.html">About us</a></li>
+          <li><a class="footernav" href="contact.html">Contact</a></li>
+          <li><a class="footernav" href="#">Sustainability</a></li>
+          <li><a class="footernav" href="#">Privacy Policy</a></li>
+          <li><a class="footernav" href="https://facebook.com">Facebook</a></li>
+        </ul>
+      </div>
+      <p class="company-name">Rainydays, 2020 &copy;</p>
+    </footer>
+  </body>
 </html>
