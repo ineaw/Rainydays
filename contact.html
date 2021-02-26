@@ -12,42 +12,44 @@
   </head>
   <body>
     <header>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i
-      ></label>
-      <input type="checkbox" id="hamburger-menu" />
-      <nav>
-        <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/products/jackets.html">Men</a></li>
-          <li><a href="/products/jackets.html">Women</a></li>
-          <li><a href="#"> <i class="fa fa-search"></i></a>
-            <ul>
-                    <li class="searchbar">
-            <form action="#">
-              <input type="search" />
-            </form>
-          </a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>  
-          </nav>
-          <a href="/index.html">
-            <img class="Logo" src="/images/rainydays_logo.png" alt="Logo, home button">
-            </a>
-      <div class="Cart">
-        <a href="/checkout.html">
-          <i class="fas fa-shopping-bag"></i>
-        </a>
+      <div class="nav-container">
+        <label class="hamburger-icon" for="hamburger">☰</label>
+        <input type="checkbox" id="hamburger" />
+        <a href="index.html"><img class="logo" src="images/rainydays_logo.png" alt="Logo, home button" /> </a>
+
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products/jackets.html">Men</a></li>
+            <li><a href="products/jackets.html">Women</a></li>
+            <li>
+              <a href="checkout.html">
+                <i class="fas fa-shopping-bag"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
+    <div class="sub-nav">
+      <li>
+        <a href="#"
+          ><form action="#"><input type="search" placeholder="Search" /></form
+        ></a>
+      </li>
+      <!-- <li>
+        <a href="checkout.html">
+          <i class="fas fa-shopping-bag"></i>
+        </a>
+      </li> -->
+    </div>
     <ul class="breadcrumbs">
       <li><a href="#">Home</a></li>
       <li><a href="/contact.html">Contact</a> </li>
     </ul>
   <main>    
     <h1>Contact</h1>
+    <div class="wrapper">
     <div class="form-container1">
       <section class="contact-us">
         <h2>Find us</h2>
@@ -72,7 +74,7 @@
       <fieldset class="message">
         <label for="email">Message</label>
          <textarea rows = "4" cols = "30" name = "message-area">
-           Message text here....
+           Message text here...
          </textarea>
       </fieldset>
 <fieldset class="submit">
@@ -80,15 +82,16 @@
 </fieldset>
     </form>
     </section>
+  </div>
   </main>
             <!--Footer-->
             <footer class="footer">
               <div>
                <ul>
-                 <li><a class="footernav" href="about.html">About us</a></li>
-                 <li><a class="footernav" href="contact.html">Contact</a></li>
-                 <li><a class="footernav" href="climatecompensate.html">Sustainability</a></li>
-                 <li><a class="footernav" href="https://facebook.com">Facebook</a></li>
+                 <li><a class="footernav" href="/about.html">About us</a></li>
+                 <li><a class="footernav" href="/contact.html">Contact</a></li>
+                 <li><a class="footernav" href="#">Sustainability</a></li>
+                 <li><a class="footernav" href="/https://facebook.com">Facebook</a></li>
            </ul>
            </div>
                  <p class="company-name">Rainydays, 2020 &copy;</p>

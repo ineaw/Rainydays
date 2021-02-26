@@ -1,109 +1,31 @@
+* {
+  font-family: "industry", Helvetica, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #2f2f31;
+}
+
 body {
   min-height: 100vh;
-  margin: 0;
-  padding: 0px;
-  background-color: #fff;
+  margin: 0 auto;
 }
-
-/*logo*/
-
-/* header img {
-  height: 100px;
-  padding: 0.5rem;
-  /* margin-left: -30%;
-  margin-top: 30px; */
-/* } */
-
-/*navigation bar*/
-
-/* header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  background-color: #f2f2f2;
-  min-height: 60px;
-}
-
-header nav a {
-  text-decoration: none;
-  color: #06476d;
-  margin-top: 30px;
-  margin-left: 10px;
-  font-size: 2em;
-  font-family: "industry light", sans-serif;
-  display: block;
-}
-
-header nav ul li:hover > ul {
-  display: block;
-}
-
-header nav ul {
-  list-style: none;
-  position: relative;
-  float: left;
-  display: block;
-  padding: 0;
-}
-
-header nav ul li {
-  float: left;
-  transition: all 0.2s ease-in-out;
-}
-
-header nav ul li a {
-  display: block;
-  font-size: 0.9em;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-header nav ul ul {
-  display: none;
-  background: #fff;
-  position: absolute;
-}
-header nav ul ul li {
-  float: none;
-  position: relative;
-}
-header nav ul ul ul {
-  position: absolute;
-  left: 100%;
-  top: 0;
-} */
-
-/*hamburger menu*/
-
-/* .hamburger-label {
-  float: left;
-  margin-top: 30px;
-  color: #06476d;
-  padding: 10px;
-  font-size: 1.5em;
-  display: block;
-}
-
-#hamburger-menu:checked ~ nav {
-  display: block;
-}
-
-#hamburger-menu {
-  display: none;
-} */
 
 header {
-  background: rgb(144, 144, 147);
-  color: #fff;
-  padding: 5px;
-  min-height: 80px;
+  background: #fff;
+}
+
+.nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0.5rem;
 }
 
 .logo {
-  height: 80px;
+  height: 90px;
+  margin: 0 auto;
 }
 
 nav,
@@ -114,40 +36,75 @@ nav,
 #hamburger:checked ~ nav {
   display: block;
   z-index: 1;
+  margin-top: 30px;
 }
 
-header {
-  position: relative;
-  height: 20px;
+#hamburger:checked ~ nav ul a {
+  margin: 1rem;
 }
 
 nav {
   position: absolute;
-  top: 40px;
   right: 0px;
-  background: #df7a00;
+  background: #fff;
+  border-radius: 4px;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  font-family: "montserrat";
+  font-weight: lighter;
+  color: #06476d;
+  display: block;
+  margin: 1rem;
+  text-align: left;
+}
+nav a:hover {
+  color: #c2702d;
 }
 
 .hamburger-icon {
   position: absolute;
-  right: 10px;
-}
-
-nav a {
-  color: #fff;
-  display: block;
-  margin: 20px;
+  color: #06476d;
+  right: 20px;
+  font-size: 2rem;
 }
 
 /*cart*/
 
-.Cart {
-  font-size: 1.5em;
-  margin-top: 30px;
-  margin-right: 0.5rem;
+.sub-nav {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  margin: 0 auto;
+  list-style: none;
+  background-color: #06476d;
+}
+
+input {
+  border-radius: 4px;
+  font-family: "montserrat";
+  width: 180px;
+  height: 1.8rem;
+  border: none;
+  padding: 10px;
+}
+
+.sub-nav li {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .fas {
+  font-size: 1.5rem;
   color: #06476d;
 }
 
@@ -160,7 +117,7 @@ nav a {
 .hero {
   max-width: 100%;
   width: 100%;
-  height: 600px;
+  height: 400px;
   display: flex;
   position: relative;
   justify-content: center;
@@ -176,10 +133,9 @@ nav a {
 
 .hero h1 {
   font-size: 3em;
-  margin-top: 200px;
+  margin-top: 150px;
   color: #f2f2f2;
   text-transform: uppercase;
-  font-family: "industry", Arial, Helvetica, sans-serif;
 }
 
 .hero .btn {
@@ -189,19 +145,18 @@ nav a {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   background-color: #06476d;
   color: #f2f2f2;
   text-decoration: none;
-  font-size: 1.2em;
-  font-family: "industry light", Arial, Helvetica, sans-serif;
-  border-radius: 0.7em;
+  font-size: 1.2rem;
+  border-radius: 8px;
   transition-property: all;
   transition-duration: 0.5s;
 }
 
 .btn:hover {
   background-color: #c2702d;
-  width: 170px;
   border: none;
   color: #f2f2f2;
 }
@@ -210,17 +165,15 @@ nav a {
 
 .footer p {
   text-decoration: none;
-  font-family: "industry-medium", Arial, Helvetica, sans-serif;
-  color: #000000;
+  color: #2f2f31;
   font-size: 0.8em;
 }
 
 .new-products p {
   text-align: start;
-  font-family: "industry demi", Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-size: 0.7em;
-  color: black;
+  font-size: 0.7rem;
+  color: #2f2f31;
 }
 
 h2:hover {
@@ -230,19 +183,18 @@ h2:hover {
 
 h2 {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  color: #000000;
-  font-size: 0.8em;
-  text-align: end;
+  color: #2f2f31;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 h3 {
   text-decoration: none;
   color: #c2702d;
-  font-size: 2em;
-  font-family: "industry demi", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
   position: relative;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 /*Catgories*/
@@ -258,26 +210,22 @@ h3 {
 p {
   display: flex;
   align-items: center;
-  margin: 2px;
-}
-
-.new-products img {
-  border-radius: 4px;
+  margin: 5px;
 }
 
 /*Trend photos*/
 
-.grid-inspo {
+/* .grid-inspo {
   grid-template-areas: "gi01 gi02 gi03";
 }
 
-.grid-inspo div {
-  min-height: 100%;
+/* .grid-inspo div { */
+/* min-height: 100%;
   max-height: 100%;
   margin-bottom: 20%;
-}
+} */
 
-.grid-inspo {
+/* .grid-inspo {
   box-sizing: border-box;
   display: grid;
   padding: 1em 0em 1em 5em;
@@ -309,10 +257,15 @@ p {
   background-position: center center;
   background-size: cover;
   background-image: url(/images/couplemountains.jpg);
-}
+} */
 
 .new-products img {
   height: 300px;
+  border-radius: 8px;
+}
+
+.new-products img:hover {
+  box-shadow: 1px 2px 1px 0.5px rgb(221, 221, 221);
 }
 
 /*footer*/
@@ -328,7 +281,6 @@ p {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font-family: "industry light", Helvetica, sans-serif;
   padding: 55px 50px;
   margin-top: 80px;
 }
@@ -353,6 +305,7 @@ p {
 
 .company-name {
   margin-top: 10%;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .footer p {
@@ -372,6 +325,10 @@ p {
     margin: auto;
   }
 
+  .sub-nav {
+    background-color: #c2702d;
+  }
+
   .footer ul {
     grid-auto-flow: row;
     margin-right: 30px;
@@ -380,38 +337,35 @@ p {
   .company-name {
     margin-left: 15px;
   }
-
-  .fa {
-    display: none;
-  }
 }
 
 /*tablet*/
 
 @media only screen and (max-width: 768px) {
-  header img {
-    margin-left: 5%;
+  .logo {
+    height: 100px;
   }
 
-  nav {
+  /* nav {
     display: none;
-  }
+  } */
 }
 
 /*desktop screen size*/
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
   .hamburger-icon {
     display: none;
   }
 
   nav {
-    display: block;
-    position: static;
+    display: flex;
+    flex-direction: row;
     background: none;
   }
 
-  nav a {
-    display: inline;
+  nav ul {
+    display: flex;
+    flex-direction: row;
   }
 }

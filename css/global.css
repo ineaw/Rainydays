@@ -1,107 +1,112 @@
+* {
+  font-family: "industry", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #2f2f31;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
   padding: 0px;
-  background-color: #fff;
-}
-
-/*logo*/
-
-/* header img {
-  height: 100px;
-  padding: 0;
-  margin-left: -30%;
-  margin-top: 30px;
-}
-
-/*navigation bar*/
-
-/* header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
   background-color: #f2f2f2;
-  min-height: 80px;
-} */
-
-/* header nav a {
-  text-decoration: none;
-  color: #06476d;
-  margin-top: 30px;
-  margin-left: 10px;
-  font-size: 2em;
-  font-family: "industry light", sans-serif;
-  display: block;
-} */
-
-header nav ul li:hover > ul {
-  display: block;
 }
 
-header nav ul {
-  list-style: none;
-  position: relative;
-  float: left;
-  display: block;
-  padding: 0;
-}
-
-header nav ul li {
-  float: left;
-  transition: all 0.2s ease-in-out;
-}
-
-header nav ul li a {
-  display: block;
-  font-size: 0.9em;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-header nav ul ul {
-  display: none;
+header {
   background: #fff;
-  position: absolute;
-}
-header nav ul ul li {
-  float: none;
-  position: relative;
-}
-header nav ul ul ul {
-  position: absolute;
-  left: 100%;
-  top: 0;
 }
 
-/*hamburger menu*/
-
-.hamburger-label {
-  float: left;
-  margin-top: 30px;
-  color: #06476d;
-  padding: 10px;
-  font-size: 1.5em;
-  display: block;
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0.5rem;
 }
 
-#hamburger-menu:checked ~ nav {
-  display: block;
+.logo {
+  height: 90px;
+  margin: 0 auto;
 }
 
-#hamburger-menu {
+nav,
+#hamburger {
   display: none;
+}
+
+#hamburger:checked ~ nav {
+  display: block;
+  z-index: 1;
+  margin-top: 30px;
+}
+
+#hamburger:checked ~ nav ul a {
+  margin: 1rem;
+}
+
+nav {
+  position: absolute;
+  right: 0px;
+  background: #fff;
+  border-radius: 4px;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  font-family: "montserrat";
+  font-weight: lighter;
+  color: #06476d;
+  display: block;
+  margin: 1rem;
+  text-align: left;
+}
+nav a:hover {
+  color: #c2702d;
+}
+
+.hamburger-icon {
+  position: absolute;
+  color: #06476d;
+  right: 20px;
+  font-size: 2rem;
 }
 
 /*cart*/
 
-.Cart {
-  font-size: 1.5em;
-  margin-top: 30px;
-  margin-right: 5%;
+.sub-nav {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  margin: 0 auto;
+  list-style: none;
+  background-color: #06476d;
+}
+
+input {
+  border-radius: 4px;
+  font-family: "montserrat";
+  width: 180px;
+  height: 1.8rem;
+  border: none;
+  padding: 10px;
+}
+
+.sub-nav li {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .fas {
+  font-size: 1.5rem;
   color: #06476d;
 }
 
@@ -162,8 +167,7 @@ header nav ul ul ul {
 p {
   text-decoration: none;
   font-family: "industry-medium", Arial, Helvetica, sans-serif;
-  color: #000000;
-  font-size: 0.7em;
+  font-size: 1rem;
 }
 
 .footer p {
@@ -175,16 +179,15 @@ h2 {
   font-size: 1.2em;
   font-family: "industry light", sans-serif;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: auto;
   text-transform: uppercase;
-  color: #666874;
+  color: #2f2f31;
   letter-spacing: 0.1em;
 }
 
 h3 {
   font-size: 2.1em;
   margin-bottom: 20px;
-  font-family: "industry light", sans-serif;
   text-align: center;
   color: #06476d;
 }
@@ -193,7 +196,6 @@ h4 {
   text-decoration: none;
   color: #06476d;
   font-size: 3em;
-  font-family: "industry demi", Arial, Helvetica, sans-serif;
   position: relative;
   text-align: center;
 }
@@ -213,7 +215,6 @@ h5:hover {
   align-items: center;
   background-color: #06476d;
   color: #f2f2f2;
-  box-sizing: border-box;
   width: 100%;
   text-align: left;
   font-family: "industry light", Helvetica, sans-serif;
@@ -273,19 +274,8 @@ h5:hover {
 /*tablet*/
 
 @media only screen and (max-width: 768px) {
-  header img {
-    margin-left: 5%;
-  }
-
-  nav {
-    display: none;
-  }
 }
-
 /*desktop screen size*/
 
 @media only screen and (min-width: 800px) {
-  .hamburger-label {
-    display: none;
-  }
 }

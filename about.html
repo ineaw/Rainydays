@@ -4,44 +4,45 @@
     <title>Rainydays : About</title>
     <meta name="description" content="page with info about the company"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="../css/about.css" rel="stylesheet">
-    <link href="../css/global.css" rel="stylesheet">
+    <link href="/css/about.css" rel="stylesheet">
+    <link href="/css/global.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css">
   </head>
   <body>
-      <header>
-        <label class="hamburger-label" for="hamburger-menu"
-          ><i class="fas fa-bars"></i
-        ></label>
-        <input type="checkbox" id="hamburger-menu" />
+    <header>
+      <div class="nav-container">
+        <label class="hamburger-icon" for="hamburger">☰</label>
+        <input type="checkbox" id="hamburger" />
+        <a href="index.html"><img class="logo" src="images/rainydays_logo.png" alt="Logo, home button" /> </a>
+
         <nav>
           <ul>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/products/jackets.html">Men</a></li>
-            <li><a href="/products/jackets.html">Women</a></li>
-            <li><a href="#"> <i class="fa fa-search"></i></a>
-              <ul>
-                      <li class="searchbar">
-              <form action="#">
-                <input type="search" />
-              </form>
-            </a></li>
-              </ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products/jackets.html">Men</a></li>
+            <li><a href="products/jackets.html">Women</a></li>
+            <li>
+              <a href="checkout.html">
+                <i class="fas fa-shopping-bag"></i>
+              </a>
             </li>
           </ul>
-        </nav>  
-            </nav>
-            <a href="/index.html">
-              <img class="Logo" src="/images/rainydays_logo.png" alt="Logo, home button">
-              </a>
-        <div class="Cart">
-          <a href="/checkout.html">
-            <i class="fas fa-shopping-bag"></i>
-          </a>
-        </div>
-      </header>
+        </nav>
+      </div>
+    </header>
+    <div class="sub-nav">
+      <li>
+        <a href="#"
+          ><form action="#"><input type="search" placeholder="Search" /></form
+        ></a>
+      </li>
+      <!-- <li>
+        <a href="checkout.html">
+          <i class="fas fa-shopping-bag"></i>
+        </a>
+      </li> -->
+    </div>
             <main>
               <ul class="breadcrumbs">
                 <li><a href="/index.html">Home</a></li>

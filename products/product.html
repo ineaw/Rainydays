@@ -2,102 +2,113 @@
 <html>
   <head>
     <title>Rainydays : Purple Rain jacket</title>
-    <meta name="description" content="Product specific page for Purple Rain raincoat"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="../css/product.css" rel="stylesheet">
-    <link href="../css/global.css" rel="stylesheet">
+    <meta name="description" content="Product specific page for Purple Rain raincoat" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/product.css" rel="stylesheet" />
+    <link href="/css/global.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
     <!-- Hotjar Tracking Code for My site -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:2259571,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2259571, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
-      <header>
-        <label class="hamburger-label" for="hamburger-menu"
-          ><i class="fas fa-bars"></i
-        ></label>
-        <input type="checkbox" id="hamburger-menu" />
+    <header>
+      <div class="nav-container">
+        <label class="hamburger-icon" for="hamburger">☰</label>
+        <input type="checkbox" id="hamburger" />
+        <a href="/index.html"><img class="logo" src="/images/rainydays_logo.png" alt="Logo, home button" /> </a>
+
         <nav>
           <ul>
             <li><a href="/about.html">About</a></li>
             <li><a href="/products/jackets.html">Men</a></li>
             <li><a href="/products/jackets.html">Women</a></li>
-            <li><a href="#"> <i class="fa fa-search"></i></a>
-              <ul>
-                      <li class="searchbar">
-              <form action="#">
-                <input type="search" />
-              </form>
-            </a></li>
-              </ul>
+            <li>
+              <a href="/checkout.html">
+                <i class="fas fa-shopping-bag"></i>
+              </a>
             </li>
           </ul>
-        </nav>  
-            </nav>
-            <a href="/index.html">
-              <img class="Logo" src="/images/rainydays_logo.png" alt="Logo, home button">
-              </a>
-        <div class="Cart">
-          <a href="/checkout.html">
-            <i class="fas fa-shopping-bag"></i>
-          </a>
+        </nav>
+      </div>
+    </header>
+    <div class="sub-nav">
+      <li>
+        <a href="#"
+          ><form action="#"><input type="search" placeholder="Search" /></form
+        ></a>
+      </li>
+      <!-- <li>
+        <a href="checkout.html">
+          <i class="fas fa-shopping-bag"></i>
+        </a>
+      </li> -->
+    </div>
+  <main>
+      <ul class="breadcrumbs">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/products/jackets.html">Jackets</a></li>
+        <li><a href="#">Product</a></li>
+      </ul>
+      <h1>Raincoat</h1>
+      <section class="products">
+        <div class="product-card-image">
+          <div class="product-image">
+            <img src="/images/Purple_Jack.jpg" alt="picture of purple raincoat" />
+          </div>
         </div>
-      </header>
-            <main>
-              <ul class="breadcrumbs">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/products/jackets.html">Jackets</a> </li>
-                <li><a href="#">Product</a></li>
-              </ul>
-              <h1>Raincoat</h1>
-                  <section class="products">
-                    <div class="product-card-image">
-                      <div class="product-image">
-                        <img src="/images/Purple_Jack.jpg" alt="picture of purple raincoat">
-                      </div>
-                  </div>
-                  <div class="product-card-info">
-                      <div class="product-info">
-                        <div class="product-text">
-                          <h1>Purple Rain</h1>
-                          <h2>purple</h2>
-                          <select>
-                            <option>select size</option>
-                          </select>
-                          <input type="number" value="1">
+        <div class="product-card-info">
+          <div class="product-info">
+            <div class="product-text">
+              <h1>Purple Rain</h1>
+              <h2>purple</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa nam quas commodi eum eligendi corrupti odio perspic!</p>
+            </div>
+            <div class="prices">
+<span>
+            <select class="select">
+              <option>select size</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+              <option>X-Large</option>
+            </select>
+            
+            <input class="antall" type="number" value="1" />
+          </span>
 
-                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa nam quas commodi eum eligendi corrupti odio perspic!</p>
-                        </div>
-                        <div class="product-price-btn">
-                          <p><span>1799</span>NOK</p>
-                          <a class="btn" href="/checkout.html" class="btn">Buy now</a>
-                        </div>
-                        </div>
-            </div>  
-          </section>
-        </main>      
-          <!--Footer-->
-          <footer class="footer">
-            <div>
-             <ul>
-               <li><a class="footernav" href="/about.html">About us</a></li>
-               <li><a class="footernav" href="/contact.html">Contact</a></li>
-               <li><a class="footernav" href="climatecompensate.html">Sustainability</a></li>
-               <li><a class="footernav" href="https://facebook.com">Facebook</a></li>
-         </ul>
-         </div>
-               <p class="company-name">Rainydays, 2020 &copy;</p>
-        </footer>
-      </body>
-    </html>
-    
+            <p>1799 NOK</p>
+            <a href="/checkout.html"><button class="product-price-btn">Proceed to checkout</button></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div>
+        <ul>
+          <li><a class="footernav" href="/about.html">About us</a></li>
+          <li><a class="footernav" href="/contact.html">Contact</a></li>
+          <li><a class="footernav" href="climatecompensate.html">Sustainability</a></li>
+          <li><a class="footernav" href="https://facebook.com">Facebook</a></li>
+        </ul>
+      </div>
+      <p class="company-name">Rainydays, 2020 &copy;</p>
+    </footer>
+  </body>
+</html>

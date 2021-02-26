@@ -2,108 +2,115 @@
 <html>
   <head>
     <title>Rainydays : Checkout</title>
-    <meta name="description" content="Checkout page for you purchase"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="../css/checkoutpay.css" rel="stylesheet">
-    <link href="../css/global.css" rel="stylesheet">
+    <meta name="description" content="Checkout page for you purchase" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/checkout.css" rel="stylesheet" />
+    <link href="../css/global.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
   </head>
   <body>
     <header>
-      <label class="hamburger-label" for="hamburger-menu"
-        ><i class="fas fa-bars"></i
-      ></label>
-      <input type="checkbox" id="hamburger-menu" />
-      <nav>
-        <ul>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/products/jackets.html">Men</a></li>
-          <li><a href="/products/jackets.html">Women</a></li>
-          <li><a href="#"> <i class="fa fa-search"></i></a>
-            <ul>
-                    <li class="searchbar">
-            <form action="#">
-              <input type="search" />
-            </form>
-          </a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>  
-          </nav>
-          <a href="/index.html">
-            <img class="Logo" src="/images/rainydays_logo.png" alt="Logo, home button">
-            </a>
-      <div class="Cart">
-        <a href="/checkout.html">
-          <i class="fas fa-shopping-bag"></i>
-        </a>
+      <div class="nav-container">
+        <label class="hamburger-icon" for="hamburger">☰</label>
+        <input type="checkbox" id="hamburger" />
+        <a href="index.html"><img class="logo" src="images/rainydays_logo.png" alt="Logo, home button" /> </a>
+
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products/jackets.html">Men</a></li>
+            <li><a href="products/jackets.html">Women</a></li>
+            <li>
+              <a href="checkout.html">
+                <i class="fas fa-shopping-bag"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
-            <main>
-              <ul class="breadcrumbs">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/products/jackets.html">Jackets</a> </li>
-                <li><a href="/products/product.html">Product</a></li>
-                <li><a href="/checkout.html">Checkout</a> </li>
-              </ul>          
-              <div class="wrapper">
-              <div class="items-cart">
-                <h3>Cart</h3>
-                <ul class="description">
-                  <li class="purple1">2 x Purple Rain</li>
-                </ul>
-                <div class="items-in-cart">
-                  <img src="/images/Purple_Jack.jpg" alt="Purple Jacket">
-                </div>
-                <p><a href="/products/men.html">1 x Purple Rain</a> <span class="price">1799 NOK</span></p>
-                <p><a href="/products/men.html">1 x Purple Rain</a> <span class="price">1799 NOK</span></p>
-                <hr>
-                <p>Total <span class="price"><b>3598 NOK</b></span></p>
-            </div>        
+    <div class="sub-nav">
+      <li>
+        <a href="#"
+          ><form action="#"><input type="search" placeholder="Search" /></form
+        ></a>
+      </li>
+      <!-- <li>
+        <a href="checkout.html">
+          <i class="fas fa-shopping-bag"></i>
+        </a>
+      </li> -->
+    </div>
+    <main>
+      <ul class="breadcrumbs">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/products/jackets.html">Jackets</a></li>
+        <li><a href="/products/product.html">Product</a></li>
+        <li>
+          <a
+            href="/checkout.html
+                  "
+            >Checkout</a
+          >
+        </li>
+      </ul>
+      <div class="wrapper">
+        <div class="items-cart">
+          <ul class="description">
+            <li class="purple1">2 x Purple Rain</li>
+          </ul>
+          <div class="items-in-cart">
+            <img src="/images/Purple_Jack.jpg" alt="Purple Jacket" />
+          </div>
+          <p><a href="/products/men.html">1 x Purple Rain</a> <span class="price">1799 NOK</span></p>
+          <p><a href="/products/men.html">1 x Purple Rain</a> <span class="price">1799 NOK</span></p>
+          <hr />
+          <p>
+            Total <span class="price"><b>3598 NOK</b></span>
+          </p>
+        </div>
         <div class="cart-tab">
           <div class="details">
             <ul>
               <li class="shipping">Payment details</li>
               <li class="payement-methods">Accepted Payment</li>
-          <div class="icon-container">
-            <i class="fa fa-cc-visa" style="color:navy"></i>
-            <i class="fa fa-cc-paypal" style="color:blue"></i>
-          </div>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color: navy"></i>
+                <i class="fa fa-cc-paypal" style="color: blue"></i>
+              </div>
               <li>
                 <label for="cname">Name on Card</label>
-                <input type="text" id="cname" name="cardname">
+                <input type="text" id="cname" name="cardname" />
               </li>
               <li>
                 <label for="ccnum">Credit card number</label>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" />
               </li>
               <li>
                 <label for="expmonth">Exp Month</label>
-                <input type="text" id="expmonth" name="expmonth" placeholder="November">
-              </li> 
-  <div class="cta-btn">
-  <a href="/checkoutsuccess.html">Check out</a>
-  </div>
-  </ul>  
-  </div>
-  </div>
-  </div>
-             </main>     
-          <!--Footer-->
-          <footer class="footer">
-            <div>
-             <ul>
-               <li><a class="footernav" href="../about.html">About us</a></li>
-               <li><a class="footernav" href="../contact.html">Contact</a></li>
-               <li><a class="footernav" href="climatecompensate.html">Sustainability</a></li>
-               <li><a class="footernav" href="https://facebook.com">Facebook</a></li>
-         </ul>
-         </div>
-               <p class="company-name">Rainydays, 2020 &copy;</p>
-        </footer>
-      </body>
-    </html>
-    
+                <input type="text" id="expmonth" name="expmonth" placeholder="November" />
+              </li>
+              <div class="cta-btn">
+                <a href="/checkoutsuccess.html">Check out</a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div>
+        <ul>
+          <li><a class="footernav" href="../about.html">About us</a></li>
+          <li><a class="footernav" href="../contact.html">Contact</a></li>
+          <li><a class="footernav" href="climatecompensate.html">Sustainability</a></li>
+          <li><a class="footernav" href="https://facebook.com">Facebook</a></li>
+        </ul>
+      </div>
+      <p class="company-name">Rainydays, 2020 &copy;</p>
+    </footer>
+  </body>
+</html>

@@ -8,8 +8,12 @@ body {
 /*checkout*/
 
 * {
+  box-sizing: border-box;
+
+  font-size: 1rem;
+  font-family: "industry", sans-serif;
+  font-size: 14px;
   color: #06476d;
-  font-family: "industry light", sans-serif;
 }
 
 .wrapper {
@@ -17,28 +21,24 @@ body {
   max-width: 100%;
   box-sizing: border-box;
   display: flex;
-  margin: auto;
+  justify-content: space-around;
+  padding: 2rem;
   border-radius: 4px;
 }
 
 .shipping {
-  font-size: 2em;
-  font-family: "industry demi", Arial, Helvetica, sans-serif;
-}
-
-.items-cart {
-  margin-right: 600px;
-  width: 600px;
+  font-size: 2rem;
+  font-family: "industry", Helvetica, sans-serif;
+  color: #06476d;
 }
 
 img {
-  max-height: 200px;
+  max-height: 300px;
 }
 
 .purple1 {
   text-decoration: none;
   list-style-type: none;
-  margin-left: -20px;
 }
 
 .items-cart {
@@ -46,13 +46,9 @@ img {
   font-size: 1.5em;
 }
 
-hr {
-  border: 1px solid lightgray;
-}
-
 span.price {
   float: right;
-  color: #000000;
+  margin-left: 40px;
 }
 
 .cta-btn {
@@ -66,59 +62,57 @@ span.price {
   align-items: center;
 }
 
+.details {
+  justify-content: center;
+}
 .cart-tab {
-  max-width: 100%;
+  width: 300px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
-  height: 600px;
-  margin-left: 30px;
+  background-color: #06476d1c;
+  border-radius: 4px;
+  min-height: 500px;
 }
 
-.cart-tab > div {
+/* .cart-tab > div {
   display: flex;
-  flex-flow: row;
   flex-direction: row;
-  flex-wrap: nowrap;
   margin: 0;
   padding: 0;
   font-family: "industry light";
-}
+} */
 
 .cart-tab ul > li {
-  padding: 0.5em 1em;
+  padding: 0.2rem;
 }
 
 .details li {
   display: flex;
-  flex-flow: column;
   flex-direction: column;
-  flex-wrap: nowrap;
-  margin-right: 10%;
 }
 
 .product {
   display: flex;
   margin-left: 30%;
-  padding: 1em;
+  padding: 1rem;
 }
 
-.description {
+/* .description {
   display: flex;
   width: 100%;
   justify-content: space-between;
-}
+} */
 
 .cta-btn a {
   width: 150px;
   background-color: #06476d;
-  color: #ffff;
+  color: #f2f2f2;
   padding: 14px 20px;
   border: none;
   margin-right: 30px;
   border-radius: 4px;
   cursor: pointer;
   font-family: "montserrat";
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
 }
 
@@ -126,7 +120,6 @@ span.price {
   background-color: #c2702d;
   width: 150px;
   border: none;
-  color: #f2f2f2;
 }
 
 /* Media Query*/
@@ -134,24 +127,8 @@ span.price {
 /*mobile screen*/
 
 @media only screen and (max-width: 700px) {
-  .container {
-    float: left;
-    width: 100%;
-  }
   .wrapper {
     flex-flow: column;
-  }
-
-  .wrapper-main {
-    margin-left: 10%;
-  }
-
-  .wrapper-items-cart {
-    margin-left: 0%;
-  }
-
-  .product {
-    margin-left: 10%;
   }
 
   nav {
@@ -164,9 +141,5 @@ span.price {
 @media only screen and (min-width: 800px) {
   .hamburger-label {
     display: none;
-  }
-
-  ul {
-    grid-auto-flow: column;
   }
 }

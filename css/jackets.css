@@ -1,17 +1,19 @@
 /*fonts*/
+* {
+  font-family: "industry", Helvetica, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #2f2f31;
+}
 
 .new-products p {
-  text-align: start;
-  font-family: "industry demi", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 12px;
-  color: black;
+  color: #2f2f31;
   margin-top: -15px;
 }
 
 h2 {
-  font-family: "industry light", Arial, Helvetica, sans-serif;
-  color: #333;
   font-size: 1.1em;
   text-align: center;
 }
@@ -22,42 +24,49 @@ h3 {
 }
 
 h5 {
-  text-align: start;
-  font-family: "industry demi", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: black;
+  color: #2f2f31;
   margin-top: -5px;
 }
 
 /*Catgories*/
-
+.wrapper {
+  padding: 4rem;
+}
 .new-products {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 80px;
-  margin-left: 80px;
-  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 2px;
 }
 
-.new-products h2,
+.new-products h5,
 p {
   display: flex;
-  align-items: center;
-  margin: 2px;
+  justify-content: center;
 }
 
 .new-products img {
-  border-radius: 4px 4px 4px 4px;
-  margin-bottom: 10px;
-  margin-top: 30px;
+  max-height: 340px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 1px 0.5px rgb(221, 221, 221);
 }
 
-img {
-  height: 340px;
+/* .new-products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
+
+.new-products div {
+  background: rgb(219, 231, 219);
+  position: relative;
+  min-height: 140px;
+} */
 
 /* Media Query*/
 
