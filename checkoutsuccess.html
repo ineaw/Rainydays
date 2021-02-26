@@ -2,90 +2,100 @@
 <html>
   <head>
     <title>Rainydays : Checkout success</title>
-    <meta name="description" content="Checcout success for your purchase"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="../css/checkoutsuccess.css" rel="stylesheet">
-    <link href="../css/global.css" rel="stylesheet">
+    <meta name="description" content="Checcout success for your purchase" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/checkoutsuccess.css" rel="stylesheet" />
+    <link href="../css/global.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
+    <!-- Hotjar Tracking Code for My site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2259571, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
-      <header>
-        <label class="hamburger-label" for="hamburger-menu"
-          ><i class="fas fa-bars"></i
-        ></label>
-        <input type="checkbox" id="hamburger-menu" />
+    <header>
+      <div class="nav-container">
+        <label class="hamburger-icon" for="hamburger">☰</label>
+        <input type="checkbox" id="hamburger" />
+        <a href="/index.html"><img class="logo" src="/images/rainydays_logo.png" alt="Logo, home button" /> </a>
+
         <nav>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#"> <i class="fa fa-search"></i></a>
-              <ul>
-                      <li class="searchbar">
-              <form action="#">
-                <input type="search" />
-              </form>
-            </a></li>
-              </ul>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/products/jackets.html">Men</a></li>
+            <li><a href="/products/jackets.html">Women</a></li>
+            <li>
+              <a href="/checkout.html">
+                <i class="fas fa-shopping-bag"></i>
+              </a>
             </li>
           </ul>
-        </nav>  
-            </nav>
-            <a href="/index.html">
-              <img class="Logo" src="/images/rainydays_logo.png" alt="Logo, home button">
-              </a>
-        <div class="Cart">
-          <a href="/checkout.html">
-            <i class="fas fa-shopping-bag"></i>
-          </a>
+        </nav>
+      </div>
+    </header>
+    <div class="sub-nav">
+      <li>
+        <a href="#"
+          ><form action="#"><input type="search" placeholder="Search" /></form
+        ></a>
+      </li>
+    </div>
+    <main>
+      <ul class="breadcrumbs">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/products/jackets.html">Jackets</a></li>
+        <li><a href="/products/product.html">Product</a></li>
+        <li><a href="/checkout.html">Checkout</a></li>
+        <li><a href="#">Checkout success</a></li>
+      </ul>
+      <div class="about">
+        <div class="wrap">
+          <h3>Your order has been placed</h3>
+          <h2>Order id #1112020</h2>
         </div>
-      </header>
-            <main>
-              <ul class="breadcrumbs">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/products/jackets.html">Jackets</a> </li>
-                <li><a href="/products/product.html">Product</a></li>
-                <li><a href="/checkout.html">Checkout</a></li>
-                <li><a href="#">Checkout success</a></li>
-              </ul>
-              <h1>Congratulations!</h1>
-                  <div class="about">
-                        <div class="wrap">
-                          <h3>Your order has been placed</h3>
-                          <h2>Order id #1112020</h2>
-                        </div>
-                    </div>
-                        <h3>Order summary</h3>
-                <div class="wrapper">
-                  <div class="new-products">
-                    <h2>2 x Purple Rain</h2>
-                    <p>Total 3599 NOK</p>
-                    <div id="new1">
-                      <a href="products/men.html">
-                        <img src="/images/Purple_Jack.jpg" alt="Purple Jacket" />
-                      </a>
-                    </div>
-                </div>
-            </div>
-            <div class="action">
-                <a class="btn" href="/index.html" class="btn">Continue shopping</a>
-              </div>
-
-        </main>      
-          <!--Footer-->
-          <footer class="footer">
-            <div>
-             <ul>
-               <li><a class="footernav" href="../about.html">About us</a></li>
-               <li><a class="footernav" href="../contact.html">Contact</a></li>
-               <li><a class="footernav" href="climatecompensate.html">Sustainability</a></li>
-               <li><a class="footernav" href="https://facebook.com">Facebook</a></li>
-         </ul>
-         </div>
-               <p class="company-name">Rainydays, 2020 &copy;</p>
-        </footer>
-      </body>
-    </html>
-    
+      </div>
+      <h3>Order summary</h3>
+      <div class="wrapper">
+        <div class="new-products">
+          <h2>2 x Purple Rain</h2>
+          <p>Total 3599 NOK</p>
+          <div id="new1">
+            <a href="products/men.html">
+              <img src="/images/Purple_Jack.jpg" alt="Purple Jacket" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="action">
+        <a class="btn" href="/index.html" class="btn">Continue shopping</a>
+      </div>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div>
+        <ul>
+          <li><a class="footernav" href="/about.html">About us</a></li>
+          <li><a class="footernav" href="/contact.html">Contact</a></li>
+          <li><a class="footernav" href="#">Sustainability</a></li>
+          <li><a class="footernav" href="#">Privacy Policy</a></li>
+          <li><a class="footernav" href="https://facebook.com">Facebook</a></li>
+        </ul>
+      </div>
+      <p class="company-name">Rainydays, 2020 &copy;</p>
+    </footer>
+  </body>
+</html>

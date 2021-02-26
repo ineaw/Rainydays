@@ -310,7 +310,7 @@ p {
 
 .footer p {
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 /* Media Query*/
@@ -333,10 +333,6 @@ p {
     grid-auto-flow: row;
     margin-right: 30px;
   }
-
-  .company-name {
-    margin-left: 15px;
-  }
 }
 
 /*tablet*/
@@ -345,10 +341,6 @@ p {
   .logo {
     height: 100px;
   }
-
-  /* nav {
-    display: none;
-  } */
 }
 
 /*desktop screen size*/

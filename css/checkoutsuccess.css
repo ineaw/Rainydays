@@ -1,10 +1,17 @@
 /*Body*/
+* {
+  font-family: "industry", Helvetica, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #2f2f31;
+}
 
 body {
   height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #ffff;
+  font-family: "industry", sans-serif;
 }
 
 /*navigation*/
@@ -12,12 +19,9 @@ body {
 /*fonts*/
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: "industry demi";
   text-align: center;
-  color: #06476d;
 }
 
 .wrap {
@@ -27,7 +31,6 @@ h1 {
 .about {
   display: flex;
   padding: 5%;
-  background-color: #f2f2f2;
   border-radius: 4px 4px 4px 4px;
   margin: 10%;
   max-width: 100%;
@@ -35,28 +38,25 @@ h1 {
 }
 
 .about h2 {
-  font-size: 1em;
-  font-family: "industry light", sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
   margin-bottom: 40px;
   text-transform: uppercase;
   color: #666874;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
 }
 
 .about h3 {
-  font-size: 2.1em;
+  font-size: 2rem;
   margin-bottom: 20px;
-  font-family: "industry light", sans-serif;
   text-align: center;
-  color: #c2702d;
+  color: #2f2f31;
 }
 
 .new-products {
   display: flex;
   padding: 5%;
-  background-color: #f2f2f2;
   border-radius: 4px 4px 4px 4px;
   margin: 5%;
   max-width: 100%;
@@ -86,6 +86,7 @@ p {
 
 img {
   height: 300px;
+  border-radius: 4px;
 }
 
 .btn {
@@ -98,8 +99,8 @@ img {
   background-color: #06476d;
   color: #f2f2f2;
   text-decoration: none;
-  font-size: 1.2em;
-  font-family: "industry light", Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-family: "industry", Helvetica, sans-serif;
   border-radius: 0.7em;
   transition-property: all;
   transition-duration: 0.5s;
