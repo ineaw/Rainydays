@@ -1,5 +1,5 @@
 * {
-  font-family: "industry", Arial, Helvetica, sans-serif;
+  font-family: "industry", Helvetica, sans-serif;
   box-sizing: border-box;
   text-decoration: none;
   color: #2f2f31;
@@ -117,7 +117,6 @@ input {
 /*breadcrumbs*/
 
 .breadcrumbs {
-  font-family: "industry light", sans-serif;
   font-weight: 400;
   font-size: 12px;
   margin: 0;
@@ -166,7 +165,8 @@ input {
 
 p {
   text-decoration: none;
-  font-family: "industry-medium", Arial, Helvetica, sans-serif;
+  font-family: "montserrat", sans-serif;
+
   font-size: 1rem;
 }
 
@@ -177,7 +177,7 @@ p {
 
 h2 {
   font-size: 1.2em;
-  font-family: "industry light", sans-serif;
+  font-family: "industry", sans-serif;
   text-align: center;
   margin-bottom: auto;
   text-transform: uppercase;
@@ -215,7 +215,7 @@ h5:hover {
   color: #f2f2f2;
   width: 100%;
   text-align: left;
-  font-family: "industry light", Helvetica, sans-serif;
+  font-family: "industry", Helvetica, sans-serif;
   padding: 55px 50px;
   margin-top: 80px;
 }
