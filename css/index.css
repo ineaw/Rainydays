@@ -20,7 +20,7 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -101,7 +101,6 @@ hr {
 
 .hero {
   text-align: center;
-  background-attachment: fixed;
   overflow: hidden;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/hero.jpg);
   background-size: cover;
@@ -384,9 +383,9 @@ h3 {
   }
 
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/IMG_0920.JPG);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/rain_texture.jpg);
     height: 300px;
-    width: 100%;
+    max-width: 100%;
   }
 
   .hero h1 {
