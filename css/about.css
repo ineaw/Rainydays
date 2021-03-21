@@ -1,12 +1,5 @@
 /*Body*/
 
-body {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  color: #666874;
-}
-
 /*navigation*/
 
 /*fonts*/
@@ -32,6 +25,7 @@ h1 {
   margin: 0% 10% 10% 10%;
   max-width: 100%;
   max-height: 100%;
+  border: 2px solid var(--darkteal);
 }
 
 .about-text p {
@@ -57,7 +51,7 @@ h1 {
   margin-bottom: 20px;
   font-family: "industry light", sans-serif;
   text-align: center;
-  color: #06476d;
+  color: var(--darkteal);
 }
 
 /*footer*/
