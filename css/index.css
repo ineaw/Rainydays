@@ -389,7 +389,8 @@ h3 {
   }
 
   .hero {
-    background: var(--lightteal);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/mobil.jpg);
+
     height: 200px;
   }
 
