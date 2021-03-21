@@ -5,63 +5,69 @@
     <meta name="description" content="Product specific page for Purple Rain raincoat" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../css/product.css" rel="stylesheet" />
-    <link href="/css/global.css" rel="stylesheet" />
+    <link href="../css/global.css" rel="stylesheet" />
+    <link rel="icon" href="data:," />
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
-    <!-- Hotjar Tracking Code for My site -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2259571, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
   </head>
-  <body>
-    <header>
-      <div class="nav-container">
-        <label class="hamburger-icon" for="hamburger">☰</label>
-        <input type="checkbox" id="hamburger" />
-        <a href="/index.html"><img class="logo" src="/images/rainydays_logo.png" alt="Logo, home button" /> </a>
-
-        <nav>
-          <ul>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/products/jackets.html">Men</a></li>
-            <li><a href="/products/jackets.html">Women</a></li>
-            <li>
-              <a href="/checkout.html">
-                <i class="fas fa-shopping-bag"></i>
-              </a>
+    <body>
+      <header class="top-header">
+        <div class="top-nav">
+      <p>Sign up and get 10% off first order</p> 
+      <p>Free standard shipping on orders over 299NOK</p>
+        </div>
+        <div class="nav-container">
+          <label class="hamburger-icon" for="hamburger" arialabel="Open and close hamburgermenu" tabindex=0>☰</label>
+          <input type="checkbox" id="hamburger" />
+          <a href="../index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
+          <nav>
+            <ul>
+              <li><a href="../products/jackets.html">Men <i class="fas fa-chevron-right"></i></a></li>
+              <li><a href="../products/jackets.html">Women <i class="fas fa-chevron-right"></i></a></a></li>
+              <li><a href="../contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
+              <li><a href="../about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
+              <label>
+              <li>            
+                 <label>          
+                   <form class="search1" action="#"><input type="search" placeholder="Search"><i class="fas fa-search"></i></a>
+                 </label>  
+             </form>
+             </li>
+            </ul>
+          </nav>
+      </header>
+      <header class="sub-header">
+        <ul class="sub-nav">
+          <li>
+            <a href="favourites.html">
+              <i class="fa fa-user-o"></i>
+            </a>
+          </li>
+        <li>
+          <label>
+            <form class="search" action="#"><input type="search" placeholder="Search">          <a href="/index.html"><i class="fas fa-search"></i></a>
+              </form>
+        </label>
+        </li>
+  <section class="fav-shop">
+          <li>
+            <a href="#">
+              <i class="fa fa-heart-o"></i>
+            </a>
+          </li>
+          <li class="modal-button" id="open-modal" data-open="cart-modal">          <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
             </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="sub-nav">
-      <li>
-        <a href="#"
-          ><form action="#"><input type="search" placeholder="Search" /></form
-        ></a>
-      </li>
-    </div>
-  <main>
+          </section>
+      </ul>
+      </header>
+      <main>
       <ul class="breadcrumbs">
         <li><a href="/index.html">Home</a></li>
         <li><a href="/products/jackets.html">Jackets</a></li>
         <li><a href="#">Product</a></li>
       </ul>
       <h1>Raincoat</h1>
-      <section class="products">
+    <div class="product-wrapper">
         <div class="product-card-image">
           <div class="product-image">
             <img src="/images/Purple_Jack.jpg" alt="picture of purple raincoat" />
@@ -72,10 +78,16 @@
             <div class="product-text">
               <h1>Purple Rain</h1>
               <h2>purple</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa nam quas commodi eum eligendi corrupti odio perspic!</p>
+              <h2>100% recycled polyester</h2>
+              <h2>Biodegradeable</h2>
+
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p> 
+              <p>Culpa nam quas commodi eum eligendi corrupti odio perspic!</p>
             </div>
+               <hr />
+            <div class="shop-item">
             <div class="prices">
-<span>
+        <span>
             <select class="select">
               <option>select size</option>
               <option>Small</option>
@@ -83,15 +95,45 @@
               <option>Large</option>
               <option>X-Large</option>
             </select>
-            
             <input class="antall" type="number" value="1" />
-          </span>
-
             <p>1799 NOK</p>
-            <a href="/checkout.html"><button class="product-price-btn">Proceed to checkout</button></a>
+          </span>
+            <div class="modal-button" id="open-modal" data-open="cart-modal">           <button class="add-me buy-now">Add Item</button>
+            </div>
+            <!-- <a href="/checkout.html">                      <button class="add-me buy-now">See more</button>  -->
+            </a>
+          </div>
           </div>
         </div>
-      </section>
+          </div>
+    </div>
+ <!-- Cart Modal -->
+      <div tabindex=0 class="cart-modal" id="cart-modal">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            
+            <div role="dialog" aria-label="product added to cart">
+             </div>
+          <h3>Your cart</h3>
+            <button class="close-modal" aria-label="close modal" data-close>✕</button>
+          </header>
+          <section class="modal-content">
+            <p>
+              Product was successfully added to your cart
+            </p>
+            <div class="product-added">
+              <img src="../images/Purple_Jack.jpg" alt="picture of purple raincoat" />
+            </div>  
+            <p><a href="../products/product.html">1 x Purple Rain</a> <span class="price">1799 NOK</span></p>
+            <hr />
+            <p>
+              Total <span class="price">1799 NOK</span>
+            </p>
+            <button class="close-modal" aria-label="close modal" data-close>Continue Shopping</button>
+            <a href="../checkout.html"><button class="checkout-modal">Proceed to checkout</button></a>
+          </section>
+          </div>
+      </div>
     </main>
     <!--Footer-->
     <footer class="footer">
@@ -106,5 +148,8 @@
    </div>
    <p class="company-name">Rainydays, 2020 &copy;</p>
   </footer>
+  <!-- <script src="../js/product.js"></script> -->
+  <script src="../js/components/components.js"></script>
+  <script src="../js/product.js"></script>
 </body>
 </html>

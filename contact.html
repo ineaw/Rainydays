@@ -1,123 +1,152 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainydays : Contact</title>
-    <meta name="description" content="Contact information and form for Rainydays"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="../css/contact.css" rel="stylesheet">
-    <link href="../css/global.css" rel="stylesheet">
+    <title>Rainydays : Purple Rain jacket</title>
+    <meta name="description" content="Product specific page for Purple Rain raincoat" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/contact.css" rel="stylesheet" />
+    <link href="../css/global.css" rel="stylesheet" />
+    <link rel="icon" href="data:," />
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css">
-        <!-- Hotjar Tracking Code for My site -->
-        <script>
-          (function (h, o, t, j, a, r) {
-            h.hj =
-              h.hj ||
-              function () {
-                (h.hj.q = h.hj.q || []).push(arguments);
-              };
-            h._hjSettings = { hjid: 2259571, hjsv: 6 };
-            a = o.getElementsByTagName("head")[0];
-            r = o.createElement("script");
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-          })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-        </script>
-    
+    <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
   </head>
-  <body>
-    <header>
-      <div class="nav-container">
-        <label class="hamburger-icon" for="hamburger">☰</label>
-        <input type="checkbox" id="hamburger" />
-        <a href="index.html"><img class="logo" src="images/rainydays_logo.png" alt="Logo, home button" /> </a>
-
-        <nav>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products/jackets.html">Men</a></li>
-            <li><a href="products/jackets.html">Women</a></li>
-            <li>
-              <a href="checkout.html">
-                <i class="fas fa-shopping-bag"></i>
-              </a>
+    <body>
+      <header class="top-header">
+        <div class="top-nav">
+      <p>Sign up and get 10% off first order</p> 
+      <p>Free standard shipping on orders over 299NOK</p>
+        </div>
+        <div class="nav-container">
+          <label class="hamburger-icon" for="hamburger">☰</label>
+          <input type="checkbox" id="hamburger" />
+          <a href="../index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
+          <nav>
+            <ul>
+              <li><a href="../products/jackets.html">Men <i class="fas fa-chevron-right"></i></a></li>
+              <li><a href="../products/jackets.html">Women <i class="fas fa-chevron-right"></i></a></a></li>
+              <li><a href="../contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
+              <li><a href="../about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
+              <label>
+              <li>            
+                 <label>          
+                   <form class="search1" action="#"><input type="search" placeholder="Search"><i class="fas fa-search"></i></a>
+                 </label>  
+             </form>
+             </li>
+            </ul>
+          </nav>
+      </header>
+      <header class="sub-header">
+        <ul class="sub-nav">
+          <li>
+            <a href="favourites.html">
+              <i class="fa fa-user-o"></i>
+            </a>
+          </li>
+        <li>
+          <label>
+            <form class="search" action="#"><input type="search" placeholder="Search">          <a href="/index.html"><i class="fas fa-search"></i></a>
+              </form>
+        </label>
+        </li>
+  <section class="fav-shop">
+          <li>
+            <a href="favourites.html">
+              <i class="fa fa-heart-o"></i>
+            </a>
+          </li>
+          <li class="modal-button" id="open-modal" data-open="cart-modal">          <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
             </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="sub-nav">
-      <li>
-        <a href="#"
-          ><form action="#"><input type="search" placeholder="Search" /></form
-        ></a>
-      </li>
-      <!-- <li>
-        <a href="checkout.html">
-          <i class="fas fa-shopping-bag"></i>
-        </a>
-      </li> -->
-    </div>
-    <ul class="breadcrumbs">
-      <li><a href="#">Home</a></li>
-      <li><a href="/contact.html">Contact</a> </li>
-    </ul>
-  <main>    
-    <h1>Contact</h1>
-    <div class="wrapper">
-    <div class="form-container1">
-      <section class="contact-us">
-        <h2>Find us</h2>
-        <p>Rainydays</p>
-        <p>Jacskon street 555</p>
-        <P>90210 stormhill</P>
-        <p>+111 222 333 444</p>
-  </section>
-  </div>
-    <div class="form-container">
-    <section class="contact-form">
-      <h2>Contact form</h2>
-      <form action="Submit.php" method="GET"></form>
-      <fieldset class="email">
-        <label for="email">Email</label>
-        <input type="email" name="email" placeholder="example@gmail.com">
-      </fieldset>
-      <fieldset class="subject">
-        <label for="email">Subject</label>
-        <input type="subject" name="subject" placeholder="Subject">
-      </fieldset>
-      <fieldset class="message">
-        <label for="email">Message</label>
-         <textarea rows = "4" cols = "30" name = "message-area">
-           Message text here...
-         </textarea>
-      </fieldset>
-<fieldset class="submit">
-  <button type="submit">Send</button>
-</fieldset>
-    </form>
-    </section>
-  </div>
-  </main>
-            <!--Footer-->
-            <footer class="footer">
-              <div>
-               <ul>
-                 <li><a class="footernav" href="/about.html">About us</a></li>
-                 <li><a class="footernav" href="/contact.html">Contact</a></li>
-                 <li><a class="footernav" href="#">Sustainability</a></li>
-                 <li><a class="footernav" href="#">Privacy Policy</a></li>
-                 <li><a class="footernav" href="#">Facebook</a></li>
-           </ul>
-           </div>
-           <p class="company-name">Rainydays, 2020 &copy;</p>
-          </footer>
-          </body>
-  </html>
-
-
-
-
-
+          </section>
+      </ul>
+      </header>
+      <main>
+      <ul class="breadcrumbs">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <h1>Contact</h1>
+      <section class="shop-and-info">
+        <div class="shop-card-info">
+          <div class="shop-info">
+            <div class="shop-text">
+                <div class="wrapper">
+                <div class="form-container1">
+                  <section class="contact-us">
+                    <h3>Find us</h3>
+                    <p>Rainydays head office</p>
+                    <p>Jacskon street 555</p>
+                    <P>90210 stormhill</P>
+                    <p>+111 222 333 444 (24h service)</p>
+              </section>
+              </div>
+                <h2>How can we help you?</h2>
+                               <form id="contactForm">
+               <div>
+                               <label for="full name">
+                                   Name
+                                   <input name="fullName" placeholder="Enter name"  id="fullName"/>
+                               </label>
+                               <div class="form-error" id="fullNameError">Please enter a valid name</div>
+                           </div>
+                           <div>
+                           <label for="email">
+                               Email
+                               <input name="email" placeholder="Enter email address" id="email"/>
+                           </label>
+                           <div class="form-error" id="emailError">Please enter avalid email address</div>
+                       </div>
+                           <div>
+                               <label for="subject">
+                                   Subject
+                                   <textarea name="subject" placeholder="Minimum 25 characters" id="subject"></textarea>
+                               </label>
+                               <div class="form-error" id="subjectError">Please enter minimum 25 characters</div>
+                           </div>
+                           <button>Send</button>
+                       </form>
+                       <div id="message"></div>
+                   </div>
+          </div>
+        </div>
+          </div>
+          <div class="shop-card-image">
+            <div class="shop-image">
+                <img src="images/veronika-jorjobert-_vT4Ra6T9QY-unsplash.jpg" alt="Store front of Rainydays flagship store">
+            </div>
+          </div>
+      </section>
+         <!--Cart Modal-->
+         <div class="cart-modal" id="cart-modal">
+            <div class="modal-dialog">
+              <header class="modal-header">
+              <h3>Your cart</h3>
+                <button class="close-modal" aria-label="close modal" data-close>✕</button>
+              </header>
+              <section class="modal-content">
+                <p>
+              Your cart is empty
+                </p>
+               <button class="close-modal" aria-label="close modal" data-close>Continue Shopping</button>
+              </section>
+              </div>
+          </div>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div>
+       <ul>
+         <li><a class="footernav" href="/about.html">About us</a></li>
+         <li><a class="footernav" href="/contact.html">Contact</a></li>
+         <li><a class="footernav" href="#">Sustainability</a></li>
+         <li><a class="footernav" href="#">Privacy Policy</a></li>
+         <li><a class="footernav" href="#">Facebook</a></li>
+        </ul>
+   </div>
+   <p class="company-name">Rainydays, 2020 &copy;</p>
+  </footer>
+  <!-- <script src="../js/product.js"></script> -->
+  <script src="../js/components/components.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+</html>

@@ -2,98 +2,134 @@
 <html>
   <head>
     <title>Rainydays : About</title>
-    <meta name="description" content="page with info about the company"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="/css/about.css" rel="stylesheet">
-    <link href="/css/global.css" rel="stylesheet">
+    <meta name="description" content="Page with info about Rainydays" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/about.css" rel="stylesheet" />
+    <link href="/css/global.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css">
-        <!-- Hotjar Tracking Code for My site -->
-        <script>
-          (function (h, o, t, j, a, r) {
-            h.hj =
-              h.hj ||
-              function () {
-                (h.hj.q = h.hj.q || []).push(arguments);
-              };
-            h._hjSettings = { hjid: 2259571, hjsv: 6 };
-            a = o.getElementsByTagName("head")[0];
-            r = o.createElement("script");
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-          })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-        </script>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
+    <link rel="icon" href="data:," />
+
+    <!-- Hotjar Tracking Code for My site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2259571, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
-    <header>
+    <header class="top-header">
+      <div class="top-nav">
+    <p>Sign up and get 10% off first order</p> 
+    <p>Free standard shipping on orders over 299NOK</p>
+      </div>
       <div class="nav-container">
         <label class="hamburger-icon" for="hamburger">☰</label>
         <input type="checkbox" id="hamburger" />
-        <a href="index.html"><img class="logo" src="images/rainydays_logo.png" alt="Logo, home button" /> </a>
-
+        <a href="../index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
         <nav>
           <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products/jackets.html">Men</a></li>
-            <li><a href="products/jackets.html">Women</a></li>
-            <li>
-              <a href="checkout.html">
-                <i class="fas fa-shopping-bag"></i>
-              </a>
-            </li>
+            <li><a href="../products/jackets.html">Men <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="../products/jackets.html">Women <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="../contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="../about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
+            <label>
+            <li>            
+               <label>          
+                 <form class="search1" action="#"><input type="search" placeholder="Search"><i class="fas fa-search"></i></a>
+               </label>  
+           </form>
+           </li>
           </ul>
         </nav>
-      </div>
     </header>
-    <div class="sub-nav">
+    <header class="sub-header">
+      <ul class="sub-nav">
+        <li>
+          <a href="favourites.html">
+            <i class="fa fa-user-o"></i>
+          </a>
+        </li>
       <li>
-        <a href="#"
-          ><form action="#"><input type="search" placeholder="Search" /></form
-        ></a>
+        <label>
+          <form class="search" action="#"><input type="search" placeholder="Search">          <a href="/index.html"><i class="fas fa-search"></i></a>
+            </form>
+      </label>
       </li>
-      <!-- <li>
-        <a href="checkout.html">
-          <i class="fas fa-shopping-bag"></i>
-        </a>
-      </li> -->
-    </div>
-            <main>
-              <ul class="breadcrumbs">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="#">About</a> </li>
-              </ul>
-              <h1>Meet Rainydays</h1>
-                  <div class="about">
-                        <div class="wrap">
-                          <h3>Our vision</h3>
-                          <h2>Sunny days</h2>
-                          <div class="about-text">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                           <p> Modi officia in dicta et itaque eligendi laboriosam illo quis voluptatem ullam voluptate consequatur, dolor voluptas ad nihil optio numquam commodi quidem?
-                          </p>
-                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eveniet similique, hic recusandae illo ducimus repellendus ipsa facilis architecto cupiditate culpa! Voluptatem, illo? Earum provident adipisci libero beatae et placeat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam commodi porro exercitationem repellat error omnis illo sit, consequuntur nam excepturi modi nemo, voluptate quidem. Nobis amet mollitia doloremque provident inventore!</p>
-                        </div>
-                        </div>
-                </div>
-            </div>  
-          </section>
-        </main>      
-          <!--Footer-->
-          <footer class="footer">
-            <div>
-             <ul>
-               <li><a class="footernav" href="/about.html">About us</a></li>
-               <li><a class="footernav" href="/contact.html">Contact</a></li>
-               <li><a class="footernav" href="#">Sustainability</a></li>
-               <li><a class="footernav" href="#">Privacy Policy</a></li>
-               <li><a class="footernav" href="#">Facebook</a></li>
-         </ul>
-         </div>
-         <p class="company-name">Rainydays, 2020 &copy;</p>
-        </footer>
-        </body>
-    </html>
-    
+<section class="fav-shop">
+        <li>
+          <a href="favourites.html">
+            <i class="fa fa-heart-o"></i>
+          </a>
+        </li>
+        <li class="modal-button" id="open-modal" data-open="cart-modal">          <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
+          </li>
+        </section>
+    </ul>
+    </header>
+  <main>
+      <ul class="breadcrumbs">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <h1>Meet Rainydays</h1>
+      <section class="about">
+        <div class="wrap">
+          <h3>Our vision</h3>
+          <h2>Sunny days</h2>
+          <div class="about-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Modi officia in dicta et itaque eligendi laboriosam illo quis voluptatem ullam voluptate consequatur, dolor voluptas ad nihil optio numquam commodi quidem?</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eveniet similique, hic recusandae illo ducimus repellendus ipsa facilis architecto cupiditate culpa! Voluptatem, illo?
+              Earum provident adipisci libero beatae et placeat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam commodi porro exercitationem repellat error omnis illo sit,
+              consequuntur nam excepturi modi nemo, voluptate quidem. Nobis amet mollitia doloremque provident inventore!
+            </p>
+          </div>
+        </div>
+        <div class="wrap">
+          <h3>Meet the team</h3>
+          <h2>Sunny days</h2>
+          <div class="about-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Modi officia in dicta et itaque eligendi laboriosam illo quis voluptatem ullam voluptate consequatur, dolor voluptas ad nihil optio numquam commodi quidem?</p>
+          </div>
+        </div>
+        <div class="wrap">
+          <h3>Team</h3>
+          <h2>Sunny days</h2>
+          <div class="about-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Modi officia in dicta et itaque eligendi laboriosam illo quis voluptatem ullam voluptate consequatur, dolor voluptas ad nihil optio numquam commodi quidem?</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="team"></section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <div>
+        <ul>
+          <li><a class="footernav" href="/about.html">About us</a></li>
+          <li><a class="footernav" href="/contact.html">Contact</a></li>
+          <li><a class="footernav" href="#">Sustainability</a></li>
+          <li><a class="footernav" href="#">Privacy Policy</a></li>
+          <li><a class="footernav" href="#">Facebook</a></li>
+        </ul>
+      </div>
+      <p class="company-name">Rainydays, 2020 &copy;</p>
+    </footer>
+  </body>
+</html>

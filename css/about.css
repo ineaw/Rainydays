@@ -4,7 +4,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  color: #2f2f31;
+  color: #666874;
 }
 
 /*navigation*/
@@ -24,8 +24,8 @@ h1 {
 
 .about {
   background-color: #f2f2f2;
-
   display: flex;
+  flex-direction: column;
   padding: 10%;
   background-color: #fff;
   border-radius: 4px 4px 4px 4px;
@@ -35,11 +35,11 @@ h1 {
 }
 
 .about-text p {
-  color: #666874;
   font-family: "montserrat", sans-serif;
   font-size: 0.8em;
   letter-spacing: 0.1em;
   font-weight: 100;
+  margin: 20px;
 }
 
 .about h2 {
@@ -49,7 +49,6 @@ h1 {
   text-align: center;
   margin-bottom: 40px;
   text-transform: uppercase;
-  color: #666874;
   letter-spacing: 0.1em;
 }
 

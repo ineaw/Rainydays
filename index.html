@@ -1,104 +1,157 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainydays</title>
+    <title>Rainydays: Raincoats for all occasions </title>
     <meta name="description" content="Raincoats for all occasions" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/index.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
 
+    <link rel="icon" href="data:," />
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
-    <!-- Hotjar Tracking Code for My site -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2259571, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
   </head>
   <body>
-    <header>
+    <header class="top-header">
+      <div class="top-nav">
+    <p>Sign up and get 10% off first order</p> 
+    <p>Free standard shipping on orders over 299NOK</p>
+      </div>
       <div class="nav-container">
-        <label class="hamburger-icon" for="hamburger">☰</label>
+        <label for="hamburger" class="hamburger-icon">☰</label>
         <input type="checkbox" id="hamburger" />
-        <a href="index.html"><img class="logo" src="images/rainydays_logo.png" alt="Logo, home button" /> </a>
-
+        <a href="../index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
         <nav>
           <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products/jackets.html">Men</a></li>
-            <li><a href="products/jackets.html">Women</a></li>
-            <li>
-              <a href="checkout.html">
-                <i class="fas fa-shopping-bag"></i>
-              </a>
-            </li>
-          </ul>
+            <li><a href="products/jackets.html">Men <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="products/jackets.html">Women <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
+            <li>            
+               <form class="search1" action="#"><input type="search" placeholder="Search" aria-label="Search"><i class="fas fa-search"></i></a>
+          </form>
+           </li> 
+         </ul>
         </nav>
-      </div>
     </header>
-    <div class="sub-nav">
+    <header class="sub-header">
+      <ul class="sub-nav">
+        <li>
+          <a href="#">
+            <i class="fa fa-user-o"></i>
+          </a>
+        </li>
       <li>
-        <a href="#"
-          ><form action="#"><input type="search" placeholder="Search" /></form
-        ></a>
+          <form class="search" action="#"><input type="search" placeholder="Search" aria-label="Search">          <a href="/index.html"><i class="fas fa-search"></i></a>
+            </form>
       </li>
-    </div>
-    <main>
+      <section class="fav-shop">
+        <li>
+          <a href="#">
+            <i class="fa fa-heart-o"></i>
+          </a>
+        </li>
+        <li class="modal-button" id="open-modal" data-open="cart-modal" aria-label="open dialog modal for cart">          <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
+      </section>
+    </ul>
+    </header>
+  <main>
       <!--hero-->
       <section class="hero">
         <div class="shop-now">
           <h1>Pushing the comfort zone</h1>
           <div class="action">
-            <a class="btn" href="products/jackets.html" class="btn">Shop Now</a>
+            <!-- <a class="btn" href="products/jackets.html" class="btn">Men</a> -->
           </div>
+          <a href="products/jackets.html"><button class="hero-cta hero-btn" href="products/jackets.html">Browse bestsellers</button> </a> 
+        </div>
+      </section>
+             <!--Newsletter sign up-->
+
+      <section class="discount-container">
+        <h2>Join Rainydays</h2>
+        <p>Good things happen to those who sign up for our newsletter, starting with 10% discount off first order.</p>   
+        <div class="sign-up">
+        <input type="text" placeholder="Enter your e-mail address" id="signup-email" name="newsletter" aria-label="newsletter sign-up form">
+        <button class="sign" role="button">Sign up</button>
+        <div class="email-error"></div>
+        </div>
         </div>
       </section>
       <!--New Products-->
-      <h3>New styles</h3>
+      <section>
+<span>
+      <h3>Our new favourite</h3>
+      <p>Innovative technology</p>
+      <hr />
+      <p>Made from 100% recycled polyester</p>
+      <hr />
+      <p>100% waterproof</p>
+      <hr />
+</span>
+  </section>
       <div class="wrapper">
         <div class="new-products">
-          <div id="new1">
+          <div id="purple-jack">
             <a href="products/product.html">
-              <img src="/images/Purple_Jack.jpg" alt="Purple Jacket" />
+              <img src="/images/Purple_Jack.jpg" alt=" Purple Rain coat in color purple" />
               <h2>Purple Rain</h2>
-              <p>1799 NOK</p>
             </a>
-          </div>
-          <div id="new2">
-            <a href="products/product.html">
-              <img src="/images/Yellow_Jack.jpg" alt="Yellow Jacket" />
-              <h2>Yellow Snow</h2>
               <p>1799 NOK</p>
-            </a>
+              <div class="heart">
+                <i class="fa fa-heart-o"></i>
+              </div>
           </div>
-          <div id="new3">
+          <div id="yellow-jack">
             <a href="products/product.html">
-              <img src="/images/Black_jack.jpg" alt="Black Jacket" />
+              <img src="/images/Yellow_Jack.jpg" alt="The original rain coat in color yellow" />
+              <h2>The original</h2>
+            </a>
+              <p>1799 NOK</p>
+              <div class="heart">
+                <i class="fa fa-heart-o"></i>
+              </div>
+          </div>
+          <div id="black-jack">
+            <a href="products/product.html">
+              <img src="/images/Black_jack.jpg" alt="Midnight Rain coat in color black" />
               <h2>Midnight Rain</h2>
               <p>1799 NOK</p>
             </a>
+
+            <div class="heart">
+              <i class="fa fa-heart-o"></i>
+            </div>
           </div>
-          <div id="new4">
+          <div id="green-jack">
             <a href="products/product.html">
-              <img src="/images/Green_Jack.jpg" alt="Green Jacket" />
-              <h2>Grass is greener</h2>
+              <img src="/images/Green_Jack.jpg" alt="Dewy grass rain coat in color green" />
+              <h2>Dewy grass</h2>
               <p>1799 NOK</p>
             </a>
+            <a class="heart">
+              <i class="fa fa-heart-o"></i>
+              </a>
           </div>
         </div>
+        <!--Cart Modal-->
+        <div class="cart-modal" id="cart-modal"> 
+        <div class="modal-dialog" aria-label="cart modal dialog box">
+          <header class="modal-header">
+          <h3>Your cart</h3>
+            <button class="close-modal" aria-label="close modal" data-close>✕</button>
+          </header>
+          <section class="modal-content">
+            <p>
+          Your cart is empty
+            </p>
+           <button class="close-modal" aria-label="close modal" data-close>Continue Shopping</button>
+           <button class="close-modal" aria-label="close modal" data-close disabled>Continue to cart</button>
+
+          </section>
+          </div>
       </div>
-      <h3>Your next adventure awaits</h3>
+     <h3>Your next adventure awaits</h3> 
     </main>
     <!--footer-->
     <footer class="footer">
@@ -114,4 +167,6 @@
       <p class="company-name">Rainydays, 2020 &copy;</p>
     </footer>
   </body>
+  <script src="/js/signup.js"></script>
+  <script src="/js/components/components.js"></script>
 </html>

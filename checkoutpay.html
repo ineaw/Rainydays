@@ -7,59 +7,71 @@
     <link href="../css/checkout.css" rel="stylesheet" />
     <link href="../css/global.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
-    <!-- Hotjar Tracking Code for My site -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2259571, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
+    <link rel="icon" href="data:," />
+
   </head>
   <body>
-    <header>
-      <div class="nav-container">
-        <label class="hamburger-icon" for="hamburger">☰</label>
-        <input type="checkbox" id="hamburger" />
-        <a href="index.html"><img class="logo" src="images/rainydays_logo.png" alt="Logo, home button" /> </a>
-
-        <nav>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products/jackets.html">Men</a></li>
-            <li><a href="products/jackets.html">Women</a></li>
-            <li>
-              <a href="checkout.html">
-                <i class="fas fa-shopping-bag"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="sub-nav">
-      <li>
-        <a href="#"
-          ><form action="#"><input type="search" placeholder="Search" /></form
-        ></a>
+      <header class="top-header">
+        <div class="top-nav">
+      <p>Sign up and get 10% off first order</p> 
+      <p>Free standard shipping on orders over 299NOK</p>
+  
+  
+        </div>
+        <div class="nav-container">
+          
+          <label class="hamburger-icon" for="hamburger">☰</label>
+          <input type="checkbox" id="hamburger" />
+          <a href="../index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
+  
+          <nav>
+            <ul>
+              <li><a href="../products/jackets.html">Men <i class="fas fa-chevron-right"></i></a></li>
+              <li><a href="../products/jackets.html">Women <i class="fas fa-chevron-right"></i></a></a></li>
+              <li><a href="../contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
+              <li><a href="../about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
+      
+              <li>                        <form class="search1" action="#"><input type="search" placeholder="Search"><i class="fas fa-search"></i></a>
+                </form>
+  
       </li>
-      <!-- <li>
-        <a href="checkout.html">
-          <i class="fas fa-shopping-bag"></i>
-        </a>
-      </li> -->
-    </div>
-    <main>
+            </ul>
+  
+          </nav>
+      </header>
+      <header class="sub-header">
+        <ul class="sub-nav">
+          <li>
+            <a href="#">
+              <i class="fa fa-user-o"></i>
+            </a>
+          </li>
+  
+  
+        <li>
+            <form class="search" action="#"><input type="search" placeholder="Search">          <a href="/index.html"><i class="fas fa-search"></i></a>
+              </form
+          >
+  
+        </li>
+  <section class="fav-shop">
+          <li>
+            <a href="#">
+              <i class="fa fa-heart-o"></i>
+            </a>
+          </li>
+          <li class="modal-button" id="open-modal" data-open="cart-modal">          <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
+            </li>
+          </section>
+  
+  
+  
+  
+      </ul>
+      </header>
+      <main>
       <ul class="breadcrumbs">
         <li><a href="/index.html">Home</a></li>
         <li><a href="/products/jackets.html">Jackets</a></li>
@@ -91,43 +103,93 @@
           <div class="details">
             <ul>
               <li class="shipping">Payment details</li>
-              <li class="payement-methods">Accepted Payment</li>
+              <li>
+                <p>
+                  Step 2 of 2:<br />
+                  Enter your payement details
+                </p>
+              </li>
+              <li><p>Accepted Payment</p></li>
               <div class="icon-container">
                 <i class="fa fa-cc-visa" style="color: navy"></i>
                 <i class="fa fa-cc-paypal" style="color: blue"></i>
               </div>
-              <li>
-                <label for="cname">Name on Card</label>
-                <input type="text" id="cname" name="cardname" />
-              </li>
-              <li>
-                <label for="ccnum">Credit card number</label>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" />
-              </li>
-              <li>
-                <label for="expmonth">Exp Month</label>
-                <input type="text" id="expmonth" name="expmonth" placeholder="November" />
-              </li>
-              <div class="cta-btn">
-                <a href="/checkoutsuccess.html">Check out</a>
-              </div>
+              <form id="contactForm">
+                <li>
+                  <div>
+                    <label>
+                      Name on card
+                      <input name="card name" placeholder="Enter name" id="cardName" />
+                    </label>
+                    <div class="form-error" id="cardNameError">Minimum 4 characters</div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label>
+                      Credit card number
+                      <input name="card number" placeholder="1111-2222-3333-4444" id="cardNumber" />
+                    </label>
+                    <div class="form-error" id="cardNumberError">Enter correct format</div>
+                  </div>
+                </li>
+                <li>
+                  <label>
+                   Expiery date
+                    <input name="exp date" placeholder="May 21" id="exp" />
+                  </label>
+                  <div class="form-error" id="expError">Enter correct format</div>
+                </li>
+                <button>Submit</button>
+                </div>
+              </form>
             </ul>
           </div>
         </div>
       </div>
-    </main>
-    <!--Footer-->
-    <footer class="footer">
-      <div>
-        <ul>
-          <li><a class="footernav" href="/about.html">About us</a></li>
-          <li><a class="footernav" href="/contact.html">Contact</a></li>
-          <li><a class="footernav" href="#">Sustainability</a></li>
-          <li><a class="footernav" href="#">Privacy Policy</a></li>
-          <li><a class="footernav" href="#">Facebook</a></li>
-        </ul>
+      <div class="cart-modal" id="cart-modal">
+        <div class="modal-dialog">
+          <header class="modal-header">
+          <h3>Your cart</h3>
+            <button class="close-modal" aria-label="close modal" data-close>✕</button>
+          </header>
+          <section class="modal-content">
+            <h5>
+          Product added to your cart
+            </h5>
+            <div class="product-added">
+              <img src="../images/Purple_Jack.jpg" alt="picture of purple raincoat" />
+            </div>  
+            <p><a href="../products/product.html">1 x Purple Rain</a> <span class="price">1799 NOK</span></p>
+            <hr />
+            <p>
+              Total <span class="price">1799 NOK</span>
+            </p>
+      
+  
+            <button class="close-modal" aria-label="close modal" data-close>Continue Shopping</button>
+
+            <a href="../checkout.html"><button class="checkout-modal">Proceed to checkout</button></a>
+          </section>
+
+          </div>
       </div>
-      <p class="company-name">Rainydays, 2020 &copy;</p>
-    </footer>
-  </body>
+
+   </main>
+  <!--Footer-->
+  <footer class="footer">
+    <div>
+     <ul>
+       <li><a class="footernav" href="../about.html">About us</a></li>
+       <li><a class="footernav" href="../contact.html">Contact</a></li>
+       <li><a class="footernav" href="#">Sustainability</a></li>
+       <li><a class="footernav" href="#">Privacy Policy</a></li>
+       <li><a class="footernav" href="#">Facebook</a></li>
+ </ul>
+ </div>
+ <p class="company-name">Rainydays, 2020 &copy;</p>
+</footer>
+</body>
+  <script src="../js/checkoutpay.js"></script>
+  <script src="../js/components/components.js"></script>
 </html>

@@ -4,13 +4,14 @@
     <title>Rainydays : Raincoats</title>
     <meta name="description" content="List of Raincoats in the Rainydays collection"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="/css/jackets.css" rel="stylesheet">
-    <link href="/css/global.css" rel="stylesheet">
+    <link href="../css/jackets.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
+    <link rel="icon" href="data:," />
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css">
         <!-- Hotjar Tracking Code for My site -->
-        <script>
+        <!-- <script>
           (function (h, o, t, j, a, r) {
             h.hj =
               h.hj ||
@@ -24,128 +25,204 @@
             r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
             a.appendChild(r);
           })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-        </script>
+        </script> -->
     
   </head>
   <body>
-    <body>
-      <header>
-        <div class="nav-container">
-          <label class="hamburger-icon" for="hamburger">☰</label>
-          <input type="checkbox" id="hamburger" />
-          <a href="/index.html"><img class="logo" src="/images/rainydays_logo.png" alt="Logo, home button" /> </a>
-  
-          <nav>
-            <ul>
-              <li><a href="/about.html">About</a></li>
-              <li><a href="/products/jackets.html">Men</a></li>
-              <li><a href="/products/jackets.html">Women</a></li>
-              <li>
-                <a href="/checkout.html">
-                  <i class="fas fa-shopping-bag"></i>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <div class="sub-nav">
-        <li>
-          <a href="#"
-            ><form action="#"><input type="search" placeholder="Search" /></form
-          ></a>
-        </li>
+    <header class="top-header">
+      <div class="top-nav">
+    <p>Sign up and get 10% off first order</p> 
+    <p>Free standard shipping on orders over 299NOK</p>
       </div>
-        <main>
+      <div class="nav-container">
+        <label class="hamburger-icon" for="hamburger">☰</label>
+        <input type="checkbox" id="hamburger" />
+        <a href="../index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
+        <nav>
+          <ul>
+            <li><a href="../products/jackets.html">Men <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="../products/jackets.html">Women <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="../contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="../about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
+    
+            <li>                        <form class="search1" action="#"><input type="search" placeholder="Search"><i class="fas fa-search"></i></a>
+              </form>
+    </li>
+          </ul>
+        </nav>
+    </header>
+    <header class="sub-header">
+      <ul class="sub-nav">
+        <li>
+          <a href="#">
+            <i class="fa fa-user-o"></i>
+          </a>
+        </li>
+      <li>
+          <form class="search" action="#"><input type="search" placeholder="Search">          <a href="../index.html"><i class="fas fa-search"></i></a>
+            </form >
+      </li>
+<section class="fav-shop">
+        <li>
+          <a href="#">
+            <i class="fa fa-heart-o"></i>
+          </a>
+        </li>
+        <li class="modal-button" id="open-modal" data-open="cart-modal">          <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
+          </li>
+        </section>
+    </ul>
+    </header>
+    <main>
       <ul class="breadcrumbs">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="#">Jackets</a> </li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Jackets</a></li>
       </ul>
-          </header>
              <!--New Products-->
-             <h4>Raincoats</h4>
+
+             <h1>Raincoats</h1>
+        
              <h2>Get ready for your next adventure</h2>
-             <div class="wrapper">
+             <div class="jacket-wrapper">
+              <div class="loader"></div>
+
+              <label for="sort-select">Sort by:</label>
+              <select id="select">
+               <option>Newest</option>
+                <option>Popular</option>
+                <option>Lowest price</option>
+                <option>Highest price</option>
+            </select>
               <section class="new-products">
-                <div id="new">
-                <a href="/products/product.html">
-                  <img src="/images/Purple_Jack.jpg" alt="Purple Jacket">
+                <div id="newPurple">
+                  <a href="../products/jackets.html"> <i class="fa fa-heart-o"></i></a> 
+                <a href="../products/product.html">
+                  <img src="../images/Purple_Jack.jpg" alt="Purple Jacket">
+                  <span>
                   <h5>Purple Rain</h5>
-                  <p>1799 NOK</p>
-               </a>
+                    <p>1799 NOK</p>
+                    <button class="item buy-now">See more</button> 
+                   </span>
+                </a>
                </div>
-               <div id="new">
-                 <a href="/products/product.html">
-                   <img src="/images/Yellow_Jack.jpg" alt="Yellow Jacket">
+               <div id="newYellow">
+               <a href="../products/jackets.html"> <i class="fa fa-heart-o"></i></a> 
+                <a href="../products/product.html">
+                  <img src="../images/Yellow_Jack.jpg" alt="Yellow Jacket">
                    <h5>The Original</h5>
-                   <p>1799 NOK</p>
-                 </a>
+                   <span class="priceBuy">
+                    <p>1799 NOK</p>
+                    <button class="item buy-now">See more</button> 
+                   </span>
+                  </a>
                 </div>
-                <div id="new">
-                 <a href="/products/product.html">
-                   <img src="/images/Black_jack.jpg" alt="Black Jacket">
+                <div id="newBlack">
+                  <a href="../products/jackets.html"> <i class="fa fa-heart-o"></i></a> 
+                  <a href="../products/product.html">
+                    <img src="/images/Black_jack.jpg" alt="Black Jacket">
                    <h5>Midnight Rain</h5>
-                   <p>1799 NOK</p>
-                 </a>
+                   <span class="priceBuy">
+
+                    <p>1799 NOK</p>
+                    <button class="item buy-now">See more</button> 
+ 
+                   </span>
+                  </a>
                 </div>
-                <div id="new">
-                 <a href="/products/product.html.html">
-                   <img src="/images/Green_Jack.jpg" alt="Green Jacket">
+                <div id="newGreen">
+                  <a href="../products/jackets.html"> <i class="fa fa-heart-o"></i></a> 
+                  <a href="../products/product.html">
+                    <img src="/images/Green_Jack.jpg" alt="Green Jacket">
                    <h5>Grass is Greener</h5>
+                   <span class="priceBuy">
                    <p>1799 NOK</p>
+                   <button class="item buy-now">See more</button> 
+                  </span>
                  </a>
                 </div> 
-                <div>
-                  <a href="/products/product.html">
-                    <img src="/images/Purple_Jack.jpg" alt="Purple Jacket">
-                    <h5>Purple Rain</h5>
+                <div id="newPurple">
+                  <a href="../products/jackets.html"> <i class="fa fa-heart-o"></i></a> 
+
+                <a href="../products/product.html">
+                  <img src="../images/Purple_Jack.jpg" alt="Purple Jacket">
+                  <span>
+
+                  <h5>Purple Rain</h5>
+
                     <p>1799 NOK</p>
-                 </a>
-                 </div>
-                 <div>
-                  <a href="/products/product.html">
-                    <img src="/images/Yellow_Jack.jpg" alt="Yellow Jacket">
-                    <h5>The Original</h5>
+                    <button class="item buy-now">See more</button> 
+  
+                   </span>
+                </a>
+               </div>
+               <div id="newYellow">
+               <a href="../products/jackets.html"> <i class="fa fa-heart-o"></i></a> 
+                <a href="../products/product.html">
+                  <img src="/images/Yellow_Jack.jpg" alt="Yellow Jacket">
+                   <h5>The Original</h5>
+                   <span class="priceBuy">
                     <p>1799 NOK</p>
-                 </a>
-                 </div>
-                 <div>
-                  <a href="/products/product.html">
-                    <img src="/images/black_Jack.jpg" alt="Black Jacket">
-                    <h5>Midnight Rain</h5>
-                    <p>1799 NOK</p>
-                 </a>
-                 </div>
-                 <div>
-                  <a href="/products/product.html">
-                    <img src="/images/Green_Jack.jpg" alt="Green Jacket">
-                    <h5>Grass is Greener</h5>
-                    <p>1799 NOK</p>
-                 </a>
-                 </div>
-                 <div>
-                  <a href="/products/product.html">
-                    <img src="/images/Purple_Jack.jpg" alt="Purple Jacket">
-                    <h5>Purple Rain</h5>
-                    <p>1799 NOK</p>
-                  </a>
-                 </div> 
-                 <div>
-                   <a href="/products/product.html">
-                     <img src="/images/Yellow_Jack.jpg" alt="Yellow Jacket">
-                     <h5>The Original</h5>
-                     <p>1799 NOK</p>
-                  </a>
+                    <button class="item buy-now">See more</button> 
  
+                   </span>
+                  </a>
+                </div>
+                <div id="newBlack">
+                  <a href="../products/jackets.html"> <i class="fa fa-heart-o"></i></a> 
+
+                  <a href="../products/product.html">
+                    <img src="/images/Black_jack.jpg" alt="Black Jacket">
+                   <h5>Midnight Rain</h5>
+                   <span class="priceBuy">
+
+                    <p>1799 NOK</p>
+                    <button class="item buy-now">See more</button> 
+ 
+                   </span>
+                  </a>
+                </div>
+                <div id="newGreen">
+                  <a href="../products/jackets.html"> <i class="fa fa-heart-o"></i></a> 
+
+                  <a href="../products/product.html">
+                    <img src="/images/Green_Jack.jpg" alt="Green Jacket">
+                   <h5>Grass is Greener</h5>
+                   <span class="priceBuy">
+
+                   <p>1799 NOK</p>
+                   <button class="item buy-now">See more</button> 
+
+                  </span>
+
+                 </a>
+                </div> 
+
               </div>
+            </section>
+              <div class="cart-modal" id="cart-modal">
+                <div class="modal-dialog">
+                  <header class="modal-header">
+                  <h3>Your cart</h3>
+                    <button class="close-modal" aria-label="close modal" data-close>✕</button>
+                  </header>
+                  <section class="modal-content">
+                    <p>
+                  Your cart is empty
+                    </p>
+                    <button class="close-modal" aria-label="close modal" data-close>Continue Shopping</button>
+        
+                    <a href="../cart.html"><button class="checkout">Proceed to checkout</button></a>
+                  </section>
+                  </div>
               </div>
+        
            </main>
           <!--Footer-->
           <footer class="footer">
             <div>
              <ul>
-               <li><a class="footernav" href="/about.html">About us</a></li>
-               <li><a class="footernav" href="/contact.html">Contact</a></li>
+               <li><a class="footernav" href="../about.html">About us</a></li>
+               <li><a class="footernav" href="../contact.html">Contact</a></li>
                <li><a class="footernav" href="#">Sustainability</a></li>
                <li><a class="footernav" href="#">Privacy Policy</a></li>
                <li><a class="footernav" href="#">Facebook</a></li>
@@ -154,5 +231,7 @@
          <p class="company-name">Rainydays, 2020 &copy;</p>
         </footer>
         </body>
+        <script src="../js/components/components.js"></script>
+
     </html>
     
