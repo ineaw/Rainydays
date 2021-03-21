@@ -59,6 +59,7 @@ h1 {
 
 .about img {
   padding: 1rem;
+  max-width: 400px;
 }
 /*footer*/
 
@@ -72,4 +73,7 @@ h1 {
 /*desktop screen size*/
 
 @media only screen and (min-width: 800px) {
+  .about img {
+    padding: 1rem;
+  }
 }
