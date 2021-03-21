@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <html lang="en"></html>
     <title>Rainydays: Raincoats for all occasions </title>
     <meta name="description" content="Raincoats for all occasions" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +14,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
   </head>
   <body>
+    <!--Top navigation-->
     <header class="top-header">
       <div class="top-nav">
     <p>Sign up and get 10% off first order</p> 
@@ -28,40 +31,43 @@
             <li><a href="contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
             <li><a href="about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
             <li>            
-               <form class="search1" action="#"><input type="search" placeholder="Search" aria-label="Search"><i class="fas fa-search"></i></a>
+               <form class="search1" action="#"><input type="search" placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
           </form>
            </li> 
          </ul>
         </nav>
     </header>
+        <!--Sub navigation-->
+
     <header class="sub-header">
-      <ul class="sub-nav">
-        <li>
+      <div class="sub-nav">
+       
           <a href="#">
             <i class="fa fa-user-o"></i>
           </a>
-        </li>
-      <li>
-          <form class="search" action="#"><input type="search" placeholder="Search" aria-label="Search">          <a href="/index.html"><i class="fas fa-search"></i></a>
-            </form>
-      </li>
-      <section class="fav-shop">
-        <li>
-          <a href="#">
+        <div class="search">
+          <form>
+              <input type="text" name="search" id="search" placeholder="What are you looking for?" aria-label="Search">
+              <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+      </div>       
+<section class="fav-shop">
+       
+          <a href="products/jackets.html">
             <i class="fa fa-heart-o"></i>
           </a>
-        </li>
-        <li class="modal-button" id="open-modal" data-open="cart-modal" aria-label="open dialog modal for cart">          <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
-      </section>
-    </ul>
+     
+        <div class="modal-button" id="open-modal" data-open="cart-modal">          <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
+        </div>
+        </section>
+   
     </header>
-  <main>
+<main>
       <!--hero-->
       <section class="hero">
         <div class="shop-now">
           <h1>Pushing the comfort zone</h1>
           <div class="action">
-            <!-- <a class="btn" href="products/jackets.html" class="btn">Men</a> -->
           </div>
           <a href="products/jackets.html"><button class="hero-cta hero-btn" href="products/jackets.html">Browse bestsellers</button> </a> 
         </div>

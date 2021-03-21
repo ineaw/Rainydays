@@ -27,6 +27,7 @@ nav input,
   flex-direction: row;
   align-items: top;
   justify-content: center;
+  margin-bottom: 80px;
 }
 
 .shop-card-image {
@@ -42,7 +43,7 @@ nav input,
 
 .shop-card-info {
   padding: 2rem;
-  max-height: 500px;
+  max-height: 600px;
   max-width: 400px;
   /* background-color: var(--lightteal); */
   border-radius: 4px 4px 4px 4px;
@@ -98,10 +99,9 @@ span {
   font-size: 16px;
   border: none;
   outline: none;
-
   width: 100%;
   margin-top: 2px;
-  padding: 10px;
+  padding: 5px;
   font-size: 12px;
   resize: none;
   height: 80px;
@@ -115,9 +115,9 @@ span {
 }
 
 .success-message {
-  border: 2px solid var(--primary-colour);
+  border: none;
   padding: 1rem;
-  color: var(--primary-colour);
+  color: var(--darkteal);
   margin-top: 1rem;
   border-radius: 0.3rem;
   font-family: "montserrat", Arial, Helvetica, sans-serif;

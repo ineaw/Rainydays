@@ -1,4 +1,4 @@
-const emailInput = document.querySelector(".signup-email");
+const emailInput = document.querySelector("#signup-email");
 const signupButton = document.querySelector(".sign");
 const emailError = document.querySelector(".email-error");
 

@@ -163,6 +163,7 @@ nav input,
   font-size: 1.2rem;
   color: var(--white);
   transition: 0.5s all ease-in-out;
+  cursor: pointer;
 }
 
 .fa-shopping-bag:hover,
@@ -188,10 +189,8 @@ nav input,
 .search button {
   text-decoration: none;
   color: var(--white);
-  background-color: var(--primary);
-  padding: 0.7rem 1rem;
-  border: 2px solid var(--primary);
-  height: 50px;
+  background-color: transparent;
+  border: none;
 }
 
 .item,
@@ -367,6 +366,7 @@ nav input,
   font-size: 12px;
   margin: 0;
   padding: 1em;
+  font-family: "montserrat", Arial, Helvetica, sans-serif;
 }
 
 .breadcrumbs ul {
@@ -619,10 +619,6 @@ h4 {
     justify-content: space-evenly;
   }
 
-  .top-nav {
-    background: var(--peach);
-  }
-
   .footer ul {
     grid-auto-flow: row;
   }
@@ -659,15 +655,18 @@ h4 {
     display: flex;
     justify-content: left;
     flex-direction: row;
-    z-index: 1;
-    margin-top: 60px;
+    z-index: 3;
+    margin-top: 50px;
     width: 100%;
   }
 
   #hamburger:checked ~ nav ul a {
     margin: 1rem;
   }
-
+  .fa-search {
+    color: var(--darkteal);
+    margin-left: 10px;
+  }
   .search1 {
     width: 100%;
   }

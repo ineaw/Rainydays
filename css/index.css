@@ -31,248 +31,6 @@ hr {
   border: 0.5px solid lightgrey;
 }
 
-/* .top-nav {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-size: 0.8rem;
-}
-
-.top-header header {
-  background: #fff;
-}
-
-.nav-container {
-  height: 60px;
-  display: flex;
-  position: relative;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  background-color: #ffffff;
-}
-
-.logo {
-  height: 80px;
-  margin: 0 auto;
-  transition-duration: 0.5s;
-}
-
-.logo:hover {
-  transform: scale(1.05);
-}
-
-nav,
-#hamburger {
-  display: none;
-}
-
-nav {
-  position: absolute;
-  left: 0px;
-  background: #f2f2f2;
-  border-radius: 4px;
-
-  /* padding-right: 2rem;
-  padding-bottom: 2rem;
-  padding-top: 2rem; */
-
-/* nav ul {
-  list-style: none;
-}
-
-nav a {
-  font-family: "montserrat", Arial, Helvetica, sans-serif;
-  display: block;
-  margin: 0.3rem;
-  transition-duration: 0.2s;
-}
-
-.fa-chevron-right {
-  color: transparent;
-}
-nav a:hover > .fa-chevron-right {
-  color: #2f2f31;
-}
-.hamburger-icon {
-  position: absolute;
-  right: 20px;
-  font-size: 2rem;
-  left: 10px;
-  cursor: pointer;
-} */
-
-/*cart*/
-/* .sub-header {
-  height: 60px;
-}
-
-.sub-nav {
-  background: var(--darkteal);
-  padding: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  overflow: hidden;
-  height: 60px;
-}
-
-nav input,
-.sub-nav input {
-  border-radius: 10px;
-  font-family: "montserrat", Arial, Helvetica, sans-serif;
-  border: 0.5px solid var(--lightgray);
-  width: 250px;
-  padding: 6px 8px 4px 8px;
-  transition-duration: 0.2s;
-}
-nav input,
-.sub-nav input:focus {
-  border: 3px solid var(--darkteal);
-  outline: none;
-}
-
-.sub-nav li {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.modal-button {
-  margin-top: 10px;
-}
-
-.sub-nav li {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.fav-shop {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.shop {
-  background-color: red;
-  border: none;
-  margin-left: -8px;
-  color: white;
-  border-radius: 10px;
-  font-family: "montserrat";
-} */
-
-/* Icons */
-/* .fa-heart-o,
-.fa-shopping-bag,
-.fa-user-o {
-  font-size: 1.5rem;
-  color: #f2f2f2;
-  cursor: pointer;
-}
-
-.fa-heart-o,
-.fa-user-o {
-  margin-top: 14px;
-}
-.fa-user-o {
-  margin-left: 10px;
-  margin-right: 30px;
-}
-.fa-heart {
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.fa-search {
-  font-size: 1rem;
-  color: var(--darkteal);
-  transition: 0.5s all ease-in-out;
-  margin-left: -30px;
-}
-
-.fa-shopping-bag:hover,
-.fa-user-o:hover,
-.fa-search:hover,
-.sub-nav .fa-heart-o:hover {
-  transform: scale(1.05);
-} */
-
-/* Modal for adding to cart */
-
-/* .open-modal {
-  font-weight: bold;
-  color: var(--white);
-  padding: 0.7rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  border-style: none;
-} */
-
-/* .add-cart-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: right;
-  padding: 1rem;
-  background: var(--black);
-  cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.35s ease-in;
-  z-index: 2;
-}
-
-.add-modal-dialog {
-  position: relative;
-  max-width: 800px;
-  max-height: 600px;
-  border-radius: 6px;
-  background: #f2f2f2;
-  overflow: auto;
-  cursor: default;
-  align-items: center;
-}
-
-.add-modal-dialog > * {
-  padding: 1rem;
-}
-
-.add-modal-header,
-.add-modal-footer {
-  background: #f2f2f2;
-}
-
-.add-modal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.add-modal-header .add-close-modal {
-  font-size: 2rem;
-  border: none;
-  cursor: pointer;
-}
-
-.add-cart-modal p + p {
-  margin-top: 1rem;
-}
-
-.add-cart-modal {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in;
-}
-
-.add-cart-modal.cart-is-visible {
-  visibility: visible;
-  opacity: 1;
-}
- */
 /* cart modal */
 
 .cart-modal {
@@ -342,7 +100,6 @@ nav input,
 /*hero*/
 
 .hero {
-  margin-top: -16px;
   max-width: 100%;
   height: 500px;
   display: flex;
@@ -360,32 +117,19 @@ nav input,
 }
 
 .hero h1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  margin-top: 150px;
+  margin-top: 200px;
   font-size: 3em;
   font-family: "industry", Arial, Helvetica, sans-serif;
   color: #f2f2f2;
   text-transform: uppercase;
 }
 
-/* .action {
-  display: flex;
-  flex-direction: row;
-} */
-
 .hero .btn {
   display: block;
   width: 250px;
   padding: 0.8em;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  background-color: #f2f2f2;
   color: var(--darkteal);
-  /* border: 2px solid #06476d; */
   font-size: 1rem;
-  position: relative;
   transition: all 0.3s ease-in;
 }
 
@@ -449,24 +193,6 @@ nav input,
   transform: scale(1.05);
   /* box-shadow: inset 0 -0.3rem hsl(206, 91%, 17%); */
 }
-
-/* form {
-  max-width: 300px;
-  background: #FFF;
-  margin: 0 auto;
-  padding: 50px;
-  animation: 1s ease-in fly-in forwards;
-  position: relative;
-} */
-
-/* @keyframes fly-in {
-  0% {
-    top: 2px;
-  }
-  100% {
-    top: 0px;
-  }
-} */
 
 /*fonts*/
 
@@ -635,15 +361,15 @@ h3 {
   padding: 2px 20px;
   font-size: 14px;
   height: 35px;
-  color: var(--black);
+  color: var(--dirtygreen);
   cursor: pointer;
   background-color: white;
-  border: 2px solid black;
+  border: 1px solid var(--dirtygreen);
 }
 
-.email-error {
-  color: rgb(180, 9, 9);
-  font-size: 0.9rem;
+.email-error p {
+  color: rgba(180, 9, 9, 0.616);
+  font-size: 0.8rem;
   margin-top: 4px;
 }
 
@@ -663,12 +389,14 @@ h3 {
   }
 
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/rain_texture.jpg);
-    height: 300px;
+    background: var(--lightteal);
+    height: 200px;
   }
+
   .hero h1 {
-    margin-top: 30px;
-    font-size: 40px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: var(--darkteal);
   }
 
   .footer ul {
@@ -689,9 +417,6 @@ h3 {
 /*tablet*/
 
 @media only screen and (max-width: 900px) {
-  .top-nav {
-    background: var(--peach);
-  }
   .logo {
     height: 80px;
   }
