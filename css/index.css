@@ -382,8 +382,7 @@ h3 {
   }
 
   .hero {
-    background-image: url(/images/rain_texture.jpg);
-    width: 100%;
+    background-image: url(../images/mob.jpg);
     height: 200px;
     background-size: cover;
   }
