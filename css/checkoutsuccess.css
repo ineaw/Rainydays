@@ -29,8 +29,9 @@ h1 {
 .new-products {
   border: 2px solid var(--dirtygreen);
   display: flex;
-  padding: 5%;
-  margin: 5%;
+  flex-direction: column;
+  padding: 4rem;
+  margin: 10px 100px 80px 100px;
   max-width: 100%;
   max-height: 100%;
 }
@@ -72,6 +73,15 @@ img {
 /*mobile screen*/
 
 @media only screen and (max-width: 800px) {
+  .new-products {
+    border: 2px solid var(--dirtygreen);
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+    margin: 20px;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 /*desktop screen size*/

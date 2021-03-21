@@ -17,15 +17,13 @@ h1 {
 }
 nav input,
 .sub-nav input {
-  border-radius: 10px;
+  border-radius: 2px;
   font-family: "montserrat", Arial, Helvetica, sans-serif;
   border: 0.5px solid var(--lightgray);
   width: 250px;
   padding: 4px 8px 3px 8px;
   transition-duration: 0.2s;
 }
-
-/*Body*/
 
 .shop-and-info {
   margin: 0 auto;
@@ -51,7 +49,6 @@ nav input,
   padding: 2rem;
   max-height: 800px;
   max-width: 400px;
-  /* background-color: var(--lightteal); */
   border-radius: 4px 4px 4px 4px;
   margin-bottom: 30px;
   margin-right: 15px;
@@ -59,7 +56,7 @@ nav input,
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-bottom: 5px;
-  border: 6px solid var(--darkteal);
+  border: 2px solid var(--darkteal);
 }
 
 .shop-text h2 {

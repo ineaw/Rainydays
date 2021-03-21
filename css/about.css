@@ -68,6 +68,10 @@ h1 {
 /*mobile screen*/
 
 @media only screen and (max-width: 800px) {
+  .about img {
+    padding: 0.2rem;
+    max-width: 200px;
+  }
 }
 
 /*desktop screen size*/
