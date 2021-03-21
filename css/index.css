@@ -385,7 +385,7 @@ h3 {
   }
 
   .hero {
-    background: var(--lightteal);
+    /* background: var(--lightteal); */
     height: 200px;
   }
 
