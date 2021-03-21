@@ -279,7 +279,7 @@ nav input:focus,
   bottom: 0;
   display: flex;
   justify-content: right;
-  padding: 0.5rem;
+  padding: 0;
   background: #00000070;
   cursor: pointer;
   visibility: hidden;
