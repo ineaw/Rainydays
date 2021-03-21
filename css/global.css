@@ -51,8 +51,9 @@ nav hr {
 }
 
 .logo {
-  margin-top: 20px;
-  height: 60px;
+  margin-bottom: 15px;
+
+  height: 70px;
   transition-duration: 0.5s;
 }
 
@@ -106,7 +107,7 @@ nav a:hover > .fa-chevron-right {
   flex-direction: row;
   align-items: center;
   overflow: hidden;
-  height: 45px;
+  height: 60px;
   z-index: 1;
 }
 
@@ -147,6 +148,7 @@ nav input,
 
 .fa-shopping-bag {
   margin-bottom: 15px;
+  margin-left: 10px;
 }
 .fa-user-o {
   margin-left: 10px;
@@ -158,10 +160,9 @@ nav input,
 }
 
 .fa-search {
-  font-size: 1rem;
-  color: var(--dirtygreen);
+  font-size: 1.2rem;
+  color: var(--white);
   transition: 0.5s all ease-in-out;
-  margin-left: -30px;
 }
 
 .fa-shopping-bag:hover,
@@ -172,6 +173,26 @@ nav input,
 }
 
 /* buttons */
+
+.search form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.search input[type="text"] {
+  padding: 1rem 1rem;
+  border: 2px solid var(--primary);
+  height: 30px;
+}
+
+.search button {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 0.7rem 1rem;
+  border: 2px solid var(--primary);
+  height: 50px;
+}
 
 .item,
 .add-me {
@@ -616,8 +637,8 @@ h4 {
 
 @media only screen and (max-width: 900px) {
   .logo {
-    height: 80px;
-    margin-top: -5px;
+    height: 60px;
+    margin-bottom: 20px;
   }
 
   .nav-container {

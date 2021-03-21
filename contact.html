@@ -37,28 +37,27 @@
           </nav>
       </header>
       <header class="sub-header">
-        <ul class="sub-nav">
-          <li>
+        <div class="sub-nav">
+         
             <a href="favourites.html">
               <i class="fa fa-user-o"></i>
             </a>
-          </li>
-        <li>
-          <label>
-            <form class="search" action="#"><input type="search" placeholder="Search">          <a href="/index.html"><i class="fas fa-search"></i></a>
-              </form>
-        </label>
-        </li>
+          <div class="search">
+            <form>
+                <input type="text" name="search" id="search" aria-label="Search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>       
   <section class="fav-shop">
-          <li>
+         
             <a href="favourites.html">
               <i class="fa fa-heart-o"></i>
             </a>
-          </li>
-          <li class="modal-button" id="open-modal" data-open="cart-modal">          <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
-            </li>
+       
+          <div class="modal-button" id="open-modal" data-open="cart-modal">          <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
+          </div>
           </section>
-      </ul>
+     
       </header>
       <main>
       <ul class="breadcrumbs">
@@ -83,7 +82,7 @@
                 <h2>How can we help you?</h2>
                                <form id="contactForm">
                <div>
-                               <label for="full name">
+                               <label for="fullName">
                                    Name
                                    <input name="fullName" placeholder="Enter name"  id="fullName"/>
                                </label>

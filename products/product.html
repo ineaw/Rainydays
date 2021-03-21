@@ -88,14 +88,17 @@
             <div class="shop-item">
             <div class="prices">
         <span>
-            <select class="select">
+          <label for="select">
+            <select class="select" aria-label="size dropdown menu">
+            </label>
               <option>select size</option>
               <option>Small</option>
               <option>Medium</option>
               <option>Large</option>
               <option>X-Large</option>
             </select>
-            <input class="antall" type="number" value="1" />
+            <!-- <label for="quantity"> -->
+            <input class="quantity" type="number" value="1" aria-label="choose quantity"/>
             <p>1799 NOK</p>
           </span>
             <div class="modal-button" id="open-modal" data-open="cart-modal">           <button class="add-me buy-now">Add Item</button>
