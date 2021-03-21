@@ -38,7 +38,7 @@ h1 {
   padding: 2rem;
   max-height: 600px;
   max-width: 400px;
-  border: 6px solid var(--darkteal);
+  border: 2px solid var(--darkteal);
   margin-bottom: 30px;
   margin-left: 20px;
 }

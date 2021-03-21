@@ -59,7 +59,7 @@ input {
 .products {
   transition: 0.5s all ease-in-out;
   border-radius: 8px;
-  border: 6px solid var(--darkteal);
+  border: 2px solid var(--darkteal);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-left: 20px;
   padding: 2rem;
@@ -76,7 +76,7 @@ input {
   padding: 2rem;
   max-height: 800px;
   max-width: 400px;
-  border: 6px solid var(--darkteal);
+  border: 2px solid var(--darkteal);
   margin-bottom: 30px;
   margin-left: 30px;
 }
