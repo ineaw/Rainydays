@@ -98,31 +98,23 @@
             <button class="btn" href="../index.html" class="btn">Continue shopping</button>
         </div>
       </div>
-      <div class="cart-modal" id="cart-modal">
-        <div class="modal-dialog">
-          <header class="modal-header">
-          <h3>Your cart</h3>
-            <button class="close-modal" aria-label="close modal" data-close>✕</button>
-          </header>
-          <section class="modal-content">
-            <h5>
-          Product added to your cart
-            </h5>
-            <div class="product-added">
-              <img src="../images/Purple_Jack.jpg" alt="picture of purple raincoat" />
-            </div>  
-            <p><a href="../products/product.html">1 x Purple Rain</a> <span class="price">1799 NOK</span></p>
-            <hr />
-            <p>
-              Total <span class="price">1799 NOK</span>
-            </p>
-            <button class="close-modal" aria-label="close modal" data-close>Continue Shopping</button>
-            <a href="../checkout.html"><button class="checkout-modal">Proceed to checkout</button></a>
-          </section>
-
+         <!--Cart Modal-->
+         <div class="cart-modal" id="cart-modal">
+          <div class="modal-dialog">
+            <header class="modal-header">
+            <h3>Your cart</h3>
+              <button class="close-modal" aria-label="close modal" data-close>✕</button>
+            </header>
+            <section class="modal-content">
+              <p>
+            Your cart is empty
+              </p>
+             <button class="close-modal" aria-label="close modal" data-close>Continue Shopping</button>
+            </section>
+            </div>
+        </div>
           </div>
       </div>
-
     </main>
     <!--Footer-->
     <footer class="footer">
@@ -136,5 +128,7 @@
       </div>
       <p class="company-name">Rainydays, 2020 &copy;</p>
     </footer>
+    <script src="../js/components/components.js"></script>
+
   </body>
 </html>
