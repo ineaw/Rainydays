@@ -111,7 +111,7 @@ hr {
 }
 
 .hero h1 {
-  margin-top: 200px;
+  margin-top: 350px;
   font-size: 3em;
   font-family: "industry", Arial, Helvetica, sans-serif;
   color: #f2f2f2;
@@ -122,7 +122,7 @@ hr {
   display: block;
   width: 250px;
   padding: 0.8em;
-  color: var(--darkteal);
+  color: var(--dirtygreen);
   font-size: 1rem;
   transition: all 0.3s ease-in;
   border: 2px solid var(--darkteal);
@@ -138,7 +138,7 @@ hr {
   transition: all 0.4s ease;
   position: relative;
   display: inline-block;
-  border: 2px solid var(--darkteal);
+  border: 2px solid var(--dirtygreen);
 }
 
 .sign-up-btn {
@@ -156,7 +156,7 @@ hr {
 .hero-btn,
 .sign-btn {
   z-index: 1;
-  color: var(--darkteal);
+  color: var(--dirtygreen);
 }
 
 .hero-btn:after,

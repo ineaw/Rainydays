@@ -1,4 +1,4 @@
-const form = document.querySelector("#contactForm");
+const form = document.querySelector("#contact-form");
 const fullName = document.querySelector("#fullName");
 const subject = document.querySelector("#subject");
 const email = document.querySelector("#email");
