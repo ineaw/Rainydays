@@ -108,7 +108,6 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 400px;
 }
 
 .hero h1 {
@@ -384,8 +383,8 @@ h3 {
   }
 
   .hero {
-    background: none;
-    height: 200px;
+    background-image: url(/images/hero.jpg);
+    width: 100%;
   }
 
   .hero h1 {
