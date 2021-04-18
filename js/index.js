@@ -27,7 +27,7 @@ async function getProducts() {
     <i class="fa fa-heart-o"></i>
   </div>
 
-    <a href="product.html?id=${product}">
+    <a href="product.html?id=${product.id}">
     <img src="${img}" alt="Image of Jacket${name}">
     </a>
     <h2>${name}</h2>

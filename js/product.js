@@ -8,34 +8,31 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const api = "https://ineaw.no/rainydays/wp-json/wc/v3/products/";
+const url = "https://ineaw.no/rainydays/wp-json/wc/store/products/" + id;
 
-const key = "consumer_key=ck_805849d86188f7b6115b02b0f46312c46a13276f";
-const secret = "consumer_secret=cs_9d27e84f1790c49225ddd52f201a93dc7b59cc63";
+// const key = "consumer_key=ck_805849d86188f7b6115b02b0f46312c46a13276f";
+// const secret = "consumer_secret=cs_9d27e84f1790c49225ddd52f201a93dc7b59cc63";
 
-const url = `${api}?${key}&${secret}`;
+// const url = `${api}?${key}&${secret}&${id} `;
 
 async function fetchProducts() {
   try {
     const response = await fetch(url);
     const product = await response.json();
     console.log(product);
-    for (let i = 0; i < product.length; i++) {
-      let img = product[i].images[0].src;
-      let name = product[i].name;
+    // for (let i = 0; i < product.length; i++) {
+    //   let img = product[i].images[0].src;
+    //   let name = product[i].name;
 
-      productImage.innerHTML = `<div class="product-image">
-    <img src="${img}" alt="${name}">
-    </div>`;
+    productImage.innerHTML = `<div class="product-image">
+      <img src="${product.images[0].src}" alt="Image of product${product.name}">
+      </div>`;
 
-      detailContainer.innerHTML = `
-    <h3>${name}</h3>
+    detailContainer.innerHTML = `
+    <h3>${product.name}</h3>
     <h2>100% recycled polyester</h2>
     <h2>Biodegradeable</h2>
- 
- 
-    `;
-    }
+`;
   } catch (error) {
     console.log(error);
     productImage.innerHTML = message("", error);

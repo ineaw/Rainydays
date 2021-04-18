@@ -73,15 +73,12 @@ h4 {
 }
 .new-products {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.newPurple,
-#newYellow,
-#newBlack,
-#newGreen {
+.newPurple {
   margin: 10px;
   background: #ffffff;
   display: flex;

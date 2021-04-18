@@ -409,14 +409,14 @@ nav input:focus,
 }
 
 .error {
-  border: 1px solid var(--primary-colour);
-  color: red;
-  background: var(--light-grey);
+  border: 1px solid var(--peach);
+  color: rgb(125, 26, 26);
+  background: var(--peach);
   padding: 1em;
 }
 
 .error:after {
-  content: "An error occurred.";
+  content: "There was a problem loading the content";
 }
 
 .loader {
@@ -500,6 +500,7 @@ h4 {
   width: 100%;
   text-align: left;
   padding: 1rem;
+  margin-bottom: 0px;
 }
 
 .footer ul {

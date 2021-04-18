@@ -211,7 +211,7 @@ h2 {
 h3 {
   text-decoration: none;
   color: #2f2f31;
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: relative;
   text-align: center;
 }
@@ -284,6 +284,11 @@ h3 {
 
 .new-products img:hover {
   transform: scale(1.03);
+}
+
+.new-products h2 {
+  font-size: 1rem;
+  padding: 5px;
 }
 
 /*footer*/
