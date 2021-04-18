@@ -35,6 +35,8 @@ function createHTML(products) {
     </a>
 
     <h3>${product.name}</h3>
+    <h3>NOK ${product.prices.price}</h3>
+
       <a href="product.html?id=${product.id}" class="item buy-now">See more</a> 
    </div> `;
   });

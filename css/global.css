@@ -51,8 +51,9 @@ nav hr {
 }
 
 .logo {
-  height: 70px;
+  height: 80px;
   transition-duration: 0.5s;
+  margin-right: 30px;
 }
 
 .logo:hover {
@@ -536,6 +537,7 @@ h4 {
     display: flex;
     justify-content: space-evenly;
   }
+
   .cart-modal {
     padding: 0;
   }
@@ -555,6 +557,7 @@ h4 {
   .logo {
     height: 60px;
     margin-bottom: 20px;
+    margin-right: 0px;
   }
 
   .nav-container {

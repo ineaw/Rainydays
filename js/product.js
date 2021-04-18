@@ -40,7 +40,7 @@ async function fetchProducts() {
 fetchProducts();
 
 function createHtml(product) {
-  let img = product.images[0].src;
+  const img = product.images[0].src;
 
   productImage.innerHTML = `<div class="product-image">
    <img src="${img}" alt="${product.name}">
@@ -58,12 +58,46 @@ function createHtml(product) {
 
 let cartArray = [];
 
-const buttons = document.querySelectorAll("button");
-buttons.forEach(function (button) {
-  button.onclick = function (event) {
-    cartArray(event.target.dataset.product);
-  };
-});
+if (JSON.parse(localStorage.getItem("cartList"))) {
+  cartArray = JSON.parse(localStorage.getItem("cartList"));
+}
+
+let listOfItems = [];
+
+async function fetchJackets() {
+  try {
+    const response = await fetch(`${api}?${key}&${secret}&${id}`);
+    const json = await response.json();
+    listOfItems = json;
+    return;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+fetchJackets();
+
+const cartCounter = document.querySelector(".cart-count");
+
+function addToCart(event) {
+  const itemToAdd = listOfItems.find((item) => item.id === parseInt(id));
+  cartArray.push(itemToAdd);
+  localStorage.setItem("cartList", JSON.stringify(cartArray));
+  console.log(cartArray);
+  if (cartArray.length > 0) {
+    cartCounter.innerHTML = cartArray.length;
+    cartCounter.style.display = "block";
+  } else {
+    cartCounter.style.display = "none";
+  }
+}
+
+// const buttons = document.querySelectorAll("button");
+// buttons.forEach(function (button) {
+//   button.onclick = function (event) {
+//     cartArray(event.target.dataset.product);
+//   };
+// });
 
 /* add to cart*/
 
