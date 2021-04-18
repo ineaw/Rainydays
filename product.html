@@ -6,27 +6,11 @@
     <html lang="en"></html>
     <meta name="description" content="Product specific page for Purple Rain raincoat" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../css/product.css" rel="stylesheet" />
-    <link href="../css/global.css" rel="stylesheet" />
+    <link href="css/product.css" rel="stylesheet" />
+    <link href="css/global.css" rel="stylesheet" />
     <link rel="icon" href="data:," />
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
-        <!-- Hotjar Tracking Code for My site -->
-        <script>
-          (function (h, o, t, j, a, r) {
-            h.hj =
-              h.hj ||
-              function () {
-                (h.hj.q = h.hj.q || []).push(arguments);
-              };
-            h._hjSettings = { hjid: 2259571, hjsv: 6 };
-            a = o.getElementsByTagName("head")[0];
-            r = o.createElement("script");
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-          })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-        </script>    
   </head>
     <body>
     <!--top navigation-->
@@ -38,13 +22,13 @@
       <div class="nav-container">
         <label class="hamburger-icon" for="hamburger">☰</label>
         <input type="checkbox" id="hamburger" />
-        <a href="../index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
+        <a href="index.html"><img class="logo" src="images/rainydays_logo.png" alt="Logo, home button" /> </a>
         <nav>
           <ul>
-            <li><a href="../products/jackets.html">Men <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="../products/jackets.html">Women <i class="fas fa-chevron-right"></i></a></a></li>
-            <li><a href="../contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
-            <li><a href="../about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="jackets.html">Men <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="jackets.html">Women <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
             <li>            
               <form class="search1" action="#" aria-label="Search form"><input type="search" placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
               </form>
@@ -74,26 +58,26 @@
     </header>
       <main>
       <ul class="breadcrumbs">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/products/jackets.html">Jackets</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jackets.html">Jackets</a></li>
         <li><a href="#">Product</a></li>
       </ul>
       <h1>Raincoat</h1>
     <div class="product-wrapper">
         <div class="product-card-image">
           <div class="product-image">
-            <img src="/images/Purple_Jack.jpg" alt="picture of purple raincoat" />
+            <div class="loader"></div>
           </div>
         </div>
         <div class="product-card-info">
           <div class="product-info">
-            <div class="product-text">
-              <h1>Purple Rain</h1>
-              <h2>purple</h2>
-              <h2>100% recycled polyester</h2>
+          <div class="product-text">
+              <!--   <h3>Purple Rain</h3>
+              <h2>purple</h2> 
+             <h2>100% recycled polyester</h2>
               <h2>Biodegradeable</h2>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p> 
-              <p>Culpa nam quas commodi eum eligendi corrupti odio perspic!</p>
+              <p>Culpa nam quas commodi eum eligendi corrupti odio perspic!</p> -->
             </div>
                <hr />
             <div class="shop-item">
@@ -108,15 +92,13 @@
               <option>Large</option>
               <option>X-Large</option>
             </select>
-            <!-- <label for="quantity"> -->
+             <label for="quantity">
             <input class="quantity" type="number" value="1" aria-label="choose quantity"/>
-            <p>1799 NOK</p>
-          </span>
+          </span>  
             <div class="modal-button" id="open-modal" data-open="cart-modal">           <button class="add-me buy-now">Add Item</button>
             </div>
-            <!-- <a href="/checkout.html">                      <button class="add-me buy-now">See more</button>  -->
-            </a>
-          </div>
+
+        </div>
           </div>
         </div>
           </div>
@@ -136,14 +118,14 @@
               Product was successfully added to your cart
             </p>
             <div class="product-added">
-              <img src="../images/Purple_Jack.jpg" alt="picture of purple raincoat" />
+              <img src="images/shop.jpg" alt="picture of purple raincoat" />
             </div>  
-            <p><a href="../products/product.html">1 x Purple Rain</a> <span class="price">1799 NOK</span></p>
+            <p><a href="product.html">1 x Purple Rain</a> <span class="price">1799 NOK</span></p>
             <hr />
             <p>
               Total <span class="price">1799 NOK</span>
             </p>
-            <a href="../checkout.html"><button class="checkout-modal">Proceed to checkout</button></a>
+            <a href="checkout.html"><button class="checkout-modal">Proceed to checkout</button></a>
             <button class="close-modal" aria-label="close modal" data-close>Continue Shopping</button>
           </section>
           </div>
@@ -153,8 +135,8 @@
     <footer class="footer">
       <div>
        <ul>
-         <li><a class="footernav" href="../about.html">About us</a></li>
-         <li><a class="footernav" href="../contact.html">Contact</a></li>
+         <li><a class="footernav" href="about.html">About us</a></li>
+         <li><a class="footernav" href="contact.html">Contact</a></li>
          <li><a class="footernav" href="#">Sustainability</a></li>
          <li><a class="footernav" href="#">Privacy Policy</a></li>
          <li><a class="footernav" href="#">Facebook</a></li>
@@ -162,8 +144,8 @@
    </div>
    <p class="company-name">Rainydays, 2020 &copy;</p>
   </footer>
-  <!-- <script src="../js/product.js"></script> -->
-  <script src="../js/components/components.js"></script>
-  <script src="../js/product.js"></script>
+  <script src="js/components/components.js" type="module"></script>
+  <script src="js/components/error.js"></script>
+  <script src="js/product.js"></script>
 </body>
 </html>

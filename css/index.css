@@ -196,13 +196,6 @@ hr {
   font-size: 0.8em;
 }
 
-.new-products p {
-  text-align: start;
-  font-weight: 500;
-  font-size: 0.7rem;
-  color: #2f2f31;
-}
-
 p {
   text-align: center;
   font-size: 14px;
@@ -211,7 +204,7 @@ p {
 h2 {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: #2f2f31;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-align: center;
 }
 
@@ -225,20 +218,30 @@ h3 {
 
 /*New Products*/
 
-.new-products {
-  display: flex;
-  justify-content: center;
+.wrapper {
   align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 80px;
 }
 
-.new-products h2,
-.new-products p,
-.new-products .fa-heart-o {
+.new-products {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.purple-jack {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 5px;
+  padding: 0.5rem;
+  align-items: center;
+  max-width: 300px;
+}
+
+.new-products .fa-heart-o {
+  margin-left: 0px;
 }
 
 .heart .fa-heart-o {
@@ -272,18 +275,9 @@ h3 {
   padding: 1rem;
 }
 
-#purple-jack,
-#black-jack,
-#green-jack,
-#yellow-jack {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin: 5px;
-  padding: 0.5rem;
-}
 .new-products img {
   border-radius: 8px;
   height: 300px;
-  overflow: hidden;
   margin: 0 auto;
   transition: 0.5s all ease-in-out;
 }
@@ -342,13 +336,13 @@ h3 {
 }
 .sign-up input {
   height: 35px;
-  width: 180px;
+  width: 200px;
   margin: 5px;
   border: none;
   outline: none;
   padding: 15px;
   font-size: 12px;
-  font-family: "montserrat", Arial, Helvetica, sans-serif;
+  font-family: "montserrat", Helvetica, sans-serif;
 }
 
 .sign {
@@ -406,6 +400,7 @@ h3 {
   .new-products {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
