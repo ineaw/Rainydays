@@ -356,10 +356,7 @@ nav input:focus,
 }
 
 .product-added img {
-  width: 60px;
   height: 60px;
-
-  border-radius: 50%;
   background-size: cover;
 }
 
