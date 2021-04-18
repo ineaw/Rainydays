@@ -44,7 +44,7 @@ h1 {
 }
 
 .product-text h2 {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   font-size: 14px;
   font-family: "montserrat", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -52,15 +52,12 @@ h1 {
   letter-spacing: 0.1em;
 }
 
-.product-text h2:nth-child(2) {
-  font-weight: 700;
-}
 .product-text p {
   margin: 0 auto;
   font-family: "montserrat", Arial, Helvetica, sans-serif;
   font-size: 12px;
-  min-width: 200px;
-  max-width: 250px;
+  min-width: 180px;
+  max-width: 220px;
 }
 
 span {

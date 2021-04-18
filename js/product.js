@@ -28,6 +28,8 @@ async function fetchProducts() {
     <h2>100% recycled polyester</h2>
     <h2>Biodegradeable</h2>
     <p>${product.short_description}</p>
+    <h2>NOK ${product.price}</h2>
+
 `;
   } catch (error) {
     console.log(error);
