@@ -20,8 +20,22 @@ async function fetchProducts() {
     const response = await fetch(url);
     const product = await response.json();
     console.log(product);
+    for (let i = 0; i < product.length; i++) {
+      let img = product[i].images[0].src;
+      let name = product[i].name;
 
-    createHtml(product);
+      productImage.innerHTML = `<div class="product-image">
+    <img src="${img}" alt="${name}">
+    </div>`;
+
+      detailContainer.innerHTML = `
+    <h3>${name}</h3>
+    <h2>100% recycled polyester</h2>
+    <h2>Biodegradeable</h2>
+ 
+ 
+    `;
+    }
   } catch (error) {
     console.log(error);
     productImage.innerHTML = message("", error);
@@ -31,8 +45,10 @@ async function fetchProducts() {
 fetchProducts();
 
 function createHtml(product) {
+  let img = product.images[0].src;
+
   productImage.innerHTML = `<div class="product-image">
-   <img src="${product.images[0].src}" alt="${product.name}">
+   <img src="${img}" alt="${product.name}">
    </div>`;
   detailContainer.innerHTML = `
    <h3>${product.name}</h3>
