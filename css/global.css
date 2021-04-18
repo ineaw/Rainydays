@@ -356,8 +356,9 @@ nav input:focus,
 }
 
 .product-added img {
-  height: 60px;
+  height: 200px;
   background-size: cover;
+  border-radius: 6px;
 }
 
 /*breadcrumbs*/
