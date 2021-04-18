@@ -298,6 +298,8 @@ nav input:focus,
   background: #f2f2f2;
   overflow: auto;
   cursor: default;
+  right: 0;
+  top: 0;
 }
 
 .modal-dialog > * {
