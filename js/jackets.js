@@ -37,14 +37,14 @@ function createHTML(products) {
    </div> `;
     sortLow = document.querySelector(".sort-low");
 
-    sortLow.addEventListener("click", function () {
+    sortLow.addEventListener("keyup", function () {
       products.sort((a, b) => (a.prices.price > b.prices.price ? 1 : -1));
       productContainer.innerHTML = "";
       createHTML(products);
     });
     sortHigh = document.querySelector(".sort-high");
 
-    sortHigh.addEventListener("click", function () {
+    sortHigh.addEventListener("keyup", function () {
       products.sort((a, b) => (a.prices.price < b.prices.price ? 1 : -1));
       productContainer.innerHTML = "";
       createHTML(products);
