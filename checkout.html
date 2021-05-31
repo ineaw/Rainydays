@@ -12,45 +12,32 @@
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" /> 
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
     <link rel="icon" href="data:," />
-    <!-- Hotjar Tracking Code for My site -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2259571, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
   </head>
     <body>
-    <!--top navigation-->
+    <!--Top navigation-->
     <header class="top-header">
       <div class="top-nav">
     <p>Sign up and get 10% off first order</p> 
     <p>Free standard shipping on orders over 299NOK</p>
       </div>
       <div class="nav-container">
-        <label class="hamburger-icon" for="hamburger">☰</label>
+        <label for="hamburger" class="hamburger-icon">☰</label>
         <input type="checkbox" id="hamburger" />
-        <a href="index.html"><img class="logo" src="images/rainydays_logo.png" alt="Logo, home button" /> </a>
+        <a href="index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
         <nav>
           <ul>
-            <li><a href="jackets.html">Men <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="jackets.html">Women <i class="fas fa-chevron-right"></i></a></a></li>
-            <li><a href="contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
-            <li><a href="about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="jackets.html">New in<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="men.html">Men <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="women.html">Women <i class="fas fa-chevron-right"></i></a></a></li> 
             <li>            
-              <form class="search1" action="#" aria-label="Search form"><input type="search" placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
-              </form>
-           </li>
-          </ul>
+               <div class="search1">
+                 <input type="text"
+                 name="searchbar"
+                 id="searchbar"
+                 placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
+               </div>
+           </li> 
+         </ul>
         </nav>
     </header>
     <!--Sub navigation-->
@@ -64,12 +51,12 @@
               <input type="text" name="search" id="search" aria-label="Search">
               <button type="submit"><i class="fas fa-search"></i></button>
           </form>
-      </div>       
-<section class="fav-shop">
+      </div>        
+        <section class="fav-shop">
           <a href="#">
             <i class="fa fa-heart-o"></i>
           </a>
-        <div class="modal-button" id="open-modal" data-open="cart-modal">          <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
+        <div class="modal-button" id="open-modal" data-open="cart-modal"><i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
         </div>
         </section>
     </header>
@@ -100,7 +87,6 @@
             <ul>
               <li class="shipping">Shipping</li>
               <li><p>Step 1 of 2: Enter your details</p></li>
-            
               <form id="contactForm">
                 <li> 
                   <div>
@@ -129,7 +115,6 @@
                   <div class="form-error" id="addressError">Minimum 10 characters</div>
                 </div> 
               </li>
-
                 <li>  
                    <div>
                   <label>
@@ -140,11 +125,8 @@
                   <div class="form-error" id="emailError">Please enter valid email address</div>
                 </div>
                </li>
-                
                 <button>Submit</button>
-              
               </form>
-          
             <div id="message"></a></div>
         </ul>
         </div>
@@ -166,17 +148,12 @@
             <hr />
             <p>
               Total <span class="price">1799 NOK</span>
-            </p>
-        
-  
+            </p>        
             <button class="close-modal" aria-label="close modal" data-close>Continue Shopping</button>
-
             <a href="../checkout.html"><button class="checkout-modal">Proceed to checkout</button></a>
           </section>
-
           </div>
       </div>
-
    </main>
   <!--Footer-->
   <footer class="footer">

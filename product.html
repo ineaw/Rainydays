@@ -13,27 +13,30 @@
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
   </head>
     <body>
-    <!--top navigation-->
+    <!--Top navigation-->
     <header class="top-header">
       <div class="top-nav">
     <p>Sign up and get 10% off first order</p> 
     <p>Free standard shipping on orders over 299NOK</p>
       </div>
       <div class="nav-container">
-        <label class="hamburger-icon" for="hamburger">☰</label>
+        <label for="hamburger" class="hamburger-icon">☰</label>
         <input type="checkbox" id="hamburger" />
-        <a href="index.html"><img class="logo" src="images/rainydays_logo.png" alt="Logo, home button" /> </a>
+        <a href="index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
         <nav>
           <ul>
-            <li><a href="jackets.html">Men <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="jackets.html">Women <i class="fas fa-chevron-right"></i></a></a></li>
-            <li><a href="contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
-            <li><a href="about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="jackets.html">New in<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="men.html">Men <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="women.html">Women <i class="fas fa-chevron-right"></i></a></a></li> 
             <li>            
-              <form class="search1" action="#" aria-label="Search form"><input type="search" placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
-              </form>
-           </li>
-          </ul>
+               <div class="search1">
+                 <input type="text"
+                 name="searchbar"
+                 id="searchbar"
+                 placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
+               </div>
+           </li> 
+         </ul>
         </nav>
     </header>
     <!--Sub navigation-->
@@ -60,7 +63,7 @@
       <ul class="breadcrumbs">
         <li><a href="index.html">Home</a></li>
         <li><a href="jackets.html">Jackets</a></li>
-        <li><a href="#">Product</a></li>
+        <!-- <li><a href="#">Product</a></li> -->
       </ul>
       <h1>Raincoat</h1>
     <div class="product-wrapper">
@@ -86,12 +89,12 @@
               <option>Large</option>
               <option>X-Large</option>
             </select>
-             <label for="quantity">
-            <input class="quantity" type="number" value="1" aria-label="choose quantity"/>
+             <!-- <label for="quantity">
+            <input class="quantity" type="number" value="1" aria-label="choose quantity"/> -->
           </span>  
-            <div class="modal-button" id="open-modal" data-open="cart-modal">           <button class="add-me buy-now">Add Item</button>
+            <div class="modal-button" id="open-modal" data-open="cart-modal">        
+                 <button class="add-me buy-now">Add Item</button>
             </div>
-
         </div>
           </div>
         </div>
@@ -101,7 +104,6 @@
       <div tabindex=0 class="cart-modal" id="cart-modal">
         <div class="modal-dialog">
           <header class="modal-header">
-            
             <div role="dialog" aria-label="product added to cart">
              </div>
           <h3>Your cart</h3>
@@ -112,12 +114,7 @@
               Product was successfully added to your cart
             </p>
             <div class="product-added">
-              <img src="images/Purple_Jack.jpg" alt="picture of purple raincoat" />
             </div>  
-            <p><a href="product.html">1 x Purple Rain</a> <span class="price">1799 NOK</span></p>
-            <p>
-              Total <span class="price">1799 NOK</span>
-            </p>
             <a href="checkout.html"><button class="checkout-modal">Proceed to checkout</button></a>
             <button class="close-modal" aria-label="close modal" data-close>Continue Shopping</button>
           </section>

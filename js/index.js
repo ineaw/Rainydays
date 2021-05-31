@@ -1,4 +1,4 @@
-const api = "https://ineaw.no/rainydays/wp-json/wc/v3/products/";
+const api = "https://ineaw.no/rainydays/wp-json/wc/v3/products";
 
 const key = "consumer_key=ck_805849d86188f7b6115b02b0f46312c46a13276f";
 const secret = "consumer_secret=cs_9d27e84f1790c49225ddd52f201a93dc7b59cc63";
@@ -26,7 +26,6 @@ async function getProducts() {
     <div class="heart">
     <i class="fa fa-heart-o"></i>
   </div>
-
     <a href="product.html?id=${product}">
     <img src="${img}" alt="Image of Jacket${name}">
     </a>
@@ -41,3 +40,16 @@ async function getProducts() {
 }
 
 getProducts();
+
+// async function getCat() {
+//   try {
+//     const res = await fetch(url + "?category" + "?id");
+//     const getRes = await res.json();
+//     console.log(getRes);
+//   } catch (error) {
+//     console.log(error);
+//     productContainer.innerHTML = message("Could not display the products");
+//   }
+// }
+
+// getCat();

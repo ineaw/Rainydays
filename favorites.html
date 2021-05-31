@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainydays : Checkout success</title>
+    <title>Rainydays : Favourites</title>
     <meta charset="UTF-8">
     <html lang="en"></html>
     <meta name="description" content="Checcout success for your purchase" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/checkoutsuccess.css" rel="stylesheet" />
     <link href="css/global.css" rel="stylesheet" />
+    <link href="css/favorites.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
@@ -16,31 +17,31 @@
   <body>
     <!--Top navigation-->
     <header class="top-header">
-      <div class="top-nav">
-    <p>Sign up and get 10% off first order</p> 
-    <p>Free standard shipping on orders over 299NOK</p>
-      </div>
-      <div class="nav-container">
-        <label for="hamburger" class="hamburger-icon">☰</label>
-        <input type="checkbox" id="hamburger" />
-        <a href="index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
-        <nav>
-          <ul>
-            <li><a href="jackets.html">New in<i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="men.html">Men <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="women.html">Women <i class="fas fa-chevron-right"></i></a></a></li> 
-            <li>            
-               <div class="search1">
-                 <input type="text"
-                 name="searchbar"
-                 id="searchbar"
-                 placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
-               </div>
-           </li> 
-         </ul>
-        </nav>
-    </header>
-    <!--Sub navigation-->
+        <div class="top-nav">
+      <p>Sign up and get 10% off first order</p> 
+      <p>Free standard shipping on orders over 299NOK</p>
+        </div>
+        <div class="nav-container">
+          <label for="hamburger" class="hamburger-icon">☰</label>
+          <input type="checkbox" id="hamburger" />
+          <a href="index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
+          <nav>
+            <ul>
+              <li><a href="jackets.html">New in<i class="fas fa-chevron-right"></i></a></li>
+              <li><a href="men.html">Men <i class="fas fa-chevron-right"></i></a></li>
+              <li><a href="women.html">Women <i class="fas fa-chevron-right"></i></a></a></li> 
+              <li>            
+                 <div class="search1">
+                   <input type="text"
+                   name="searchbar"
+                   id="searchbar"
+                   placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
+                 </div>
+             </li> 
+           </ul>
+          </nav>
+      </header>
+      <!--Sub navigation-->
     <header class="sub-header">
       <div class="sub-nav">
           <a href="#">
@@ -57,34 +58,18 @@
             <i class="fa fa-heart-o"></i>
           </a>
         <div class="modal-button" id="open-modal" data-open="cart-modal">         
-           <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
+             <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
         </div>
         </section>
     </header>
   <main>
       <ul class="breadcrumbs">
         <li><a href="index.html">Home</a></li>
-        <li><a href="jackets.html">Jackets</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li><a href="checkout.html">Checkout</a></li>
-        <li><a href="#">Checkout success</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
       </ul>
-      <div class="product-wrapper">
-        <div class="product-card">
-          <h3>Your order has been placed</h3>
-          <h2>Order id #1112020</h2>
-        </div>
-      </div>
-      <h3>Order summary</h3>
-      <div class="wrapper">
-        <div class="new-products">
-          <h2>2 x Purple Rain</h2>
-          <p>Total 3599 NOK</p>
-            <a href="products/proudct.html">
-              <img src="images/Purple_Jack.jpg" alt="Purple Jacket" />
-            </a>
-         <a href="index.html" class="btn">Continue shopping</a>
-        </div>
+      <div class="favorite-wrapper">
+          <h2>You have no saved favourites</h2>
+          <h3>💔︁</h3>
       </div>
          <!--Cart Modal-->
          <div class="cart-modal" id="cart-modal">

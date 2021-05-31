@@ -1,4 +1,4 @@
-const api = "https://ineaw.no/rainydays/wp-json/wc/store/products?category=24";
+const api = "https://ineaw.no/rainydays/wp-json/wc/store/products?category=18";
 
 const key = "consumer_key=ck_805849d86188f7b6115b02b0f46312c46a13276f";
 const secret = "consumer_secret=cs_9d27e84f1790c49225ddd52f201a93dc7b59cc63";
@@ -22,6 +22,8 @@ async function getProducts() {
 getProducts();
 
 function createHTML(products) {
+  console.log(products);
+
   products.forEach(function (product) {
     productContainer.innerHTML += `
     <div class="newPurple">
@@ -36,14 +38,12 @@ function createHTML(products) {
       <a href="product.html?id=${product.id}" class="item buy-now">See more</a> 
    </div> `;
     sortLow = document.querySelector(".sort-low");
-
     sortLow.addEventListener("click", function () {
       products.sort((a, b) => (a.prices.price > b.prices.price ? 1 : -1));
       productContainer.innerHTML = "";
       createHTML(products);
     });
     sortHigh = document.querySelector(".sort-high");
-
     sortHigh.addEventListener("click", function () {
       products.sort((a, b) => (a.prices.price < b.prices.price ? 1 : -1));
       productContainer.innerHTML = "";
@@ -51,14 +51,3 @@ function createHTML(products) {
     });
   });
 }
-
-// filterProducts.onclick = function viewFilter() {
-//   filterOver.classList.toggle("hidden");
-// };
-
-// let page = 1;
-
-// const loadMore = async () => {
-//   page++;
-//   await appendFilteredPosts();
-// };

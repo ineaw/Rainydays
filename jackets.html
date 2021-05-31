@@ -14,27 +14,30 @@
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css">
   </head>
   <body>
-    <!--top navigation-->
+    <!--Top navigation-->
     <header class="top-header">
       <div class="top-nav">
     <p>Sign up and get 10% off first order</p> 
     <p>Free standard shipping on orders over 299NOK</p>
       </div>
       <div class="nav-container">
-        <label class="hamburger-icon" for="hamburger">☰</label>
+        <label for="hamburger" class="hamburger-icon">☰</label>
         <input type="checkbox" id="hamburger" />
-        <a href="index.html"><img class="logo" src="images/rainydays_logo.png" alt="Logo, home button" /> </a>
+        <a href="index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
         <nav>
           <ul>
-            <li><a href="jackets.html">Men <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="jackets.html">Women <i class="fas fa-chevron-right"></i></a></a></li>
-            <li><a href="contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
-            <li><a href="about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="jackets.html">New in<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="men.html">Men <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="women.html">Women <i class="fas fa-chevron-right"></i></a></a></li> 
             <li>            
-              <form class="search1" action="#" aria-label="Search form"><input type="search" placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
-              </form>
-           </li>
-          </ul>
+               <div class="search1">
+                 <input type="text"
+                 name="searchbar"
+                 id="searchbar"
+                 placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
+               </div>
+           </li> 
+         </ul>
         </nav>
     </header>
     <!--Sub navigation-->
@@ -68,13 +71,10 @@
              <div class="jacket-wrapper">
               <label for="select"><p>Sort by:</p></label>
               <select id="select" aria-label="sort jackets by preferance">
-               <option>Newest</option>
-                <option>Popular</option>
-                <option>Lowest price</option>
-                <option>Highest price</option>
+                <option class="btn sort-low">Lowest price</option>
+                <option class="btn sort-high">Highest price</option>
             </select>
               <section class="new-products">
-    
             </section>
          <!--Cart Modal-->
          <div class="cart-modal" id="cart-modal">
@@ -101,7 +101,7 @@
                <li><a class="footernav" href="#">Sustainability</a></li>
                <li><a class="footernav" href="#">Privacy Policy</a></li>
                <li><a class="footernav" href="#">Facebook</a></li>
-         </ul>
+             </ul>
          </div>
          <p class="company-name">Rainydays, 2020 &copy;</p>
         </footer>
@@ -109,6 +109,6 @@
         <script src="js/components/components.js"></script>
         <script src="js/components/error.js"></script>
         <script src="js/jackets.js"></script>
+        <!-- <script src="js/cart.js"></script> -->
 
     </html>
-    

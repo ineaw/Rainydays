@@ -12,22 +12,6 @@
     <link rel="icon" href="data:," />
     <script src="https://kit.fontawesome.com/40834ce6db.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css" />
-        <!-- Hotjar Tracking Code for My site -->
-        <script>
-          (function (h, o, t, j, a, r) {
-            h.hj =
-              h.hj ||
-              function () {
-                (h.hj.q = h.hj.q || []).push(arguments);
-              };
-            h._hjSettings = { hjid: 2259571, hjsv: 6 };
-            a = o.getElementsByTagName("head")[0];
-            r = o.createElement("script");
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-          })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-        </script>
   </head>
   <body>
     <!--Top navigation-->
@@ -42,45 +26,49 @@
         <a href="index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
         <nav>
           <ul>
-            <li><a href="jackets.html">Men <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="jackets.html">Women <i class="fas fa-chevron-right"></i></a></a></li>
-            <li><a href="contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
-            <li><a href="about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="jackets.html">New in<i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="men.html">Men <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="women.html">Women <i class="fas fa-chevron-right"></i></a></a></li> 
             <li>            
-               <form class="search1" action="#"><input type="search" placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
-          </form>
+               <div class="search1">
+                 <input type="text"
+                 name="searchbar"
+                 id="searchbar"
+                 placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
+               </div>
            </li> 
          </ul>
         </nav>
     </header>
         <!--Sub navigation-->
-    <header class="sub-header">
-      <div class="sub-nav">
-          <a href="#">
-            <i class="fa fa-user-o"></i>
-          </a>
-        <div class="search">
-          <form>
-              <input type="text" name="search" id="search" placeholder="What are you looking for?" aria-label="Search">
-              <button type="submit"><i class="fas fa-search"></i></button>
-          </form>
-      </div>       
-<section class="fav-shop">
-          <a href="jackets.html">
-            <i class="fa fa-heart-o"></i>
-          </a>
-        <div class="modal-button" id="open-modal" data-open="cart-modal">          <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
-        </div>
-        </section>
-    </header>
-<main>
+        <header class="sub-header">
+          <div class="sub-nav">
+              <a href="#">
+                <i class="fa fa-user-o"></i>
+              </a>
+            <div class="search">
+              <form>
+                  <input type="text" name="search" id="search" placeholder="Search" aria-label="Search">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+              </form>
+          </div>       
+    <section class="fav-shop">
+              <a href="favorites.html">
+                <i class="fa fa-heart-o"></i>
+              </a>
+            <div class="modal-button" id="open-modal" data-open="cart-modal">          
+              <i class="fas fa-shopping-bag"></i><button class="shop"></button></i>
+            </div>
+            </section>
+        </header>
+    <main>
       <!--hero-->
       <section class="hero">
         <div class="shop-now">
           <h1>Pushing the comfort zone</h1>
           <div class="action">
           </div>
-          <a href="jackets.html"><button class="hero-cta hero-btn" href="jackets.html">Browse bestsellers</button> </a> 
+          <a href="jackets.html"><div class="hero-cta hero-btn" href="jackets.html">Browse bestsellers</div> </a> 
         </div>
       </section>
              <!--Newsletter sign up-->
@@ -94,26 +82,49 @@
         </div>
         </div>
       </section>
+      <section class="explore-container">
+        <figure class="explore-img"><img src="images/Background_hiker_horizon.jpg"></figure>
+        <div class="explore-title">
+        <h3>Your next adventure awaits</h3> 
+        <a href="jackets.html"><div class="hero-cta hero-btn" href="jackets.html">Explore</div> </a> 
+      </div>
+      </section>
       <!--New Products-->
       <section>
-<span>
       <h3>Our new favourite</h3>
-      <p>Innovative technology</p>
-      <hr />
-      <p>Made from 100% recycled polyester</p>
-      <hr />
-      <p>100% waterproof</p>
-      <hr />
-
+      <p class="featured">Innovative technology</p>
+      <p class="featured"> Made from 100% recycled polyester</p>
+      <p class="featured">100% waterproof</p>
       <p>Rainydays Summer edition. Lighter Raincoats for warmer days!</p>
-      <hr />
-</span>
   </section>
-      <div class="wrapper">
+      <section class="featured-wrapper">
         <div class="new-products">
-        
           </div>
         </div>
+        </section>
+        <section class="woman-man-container">
+          <div class="women-wrap">
+          <figure class="women"><img src="images/Purple_Jack.jpg">        
+          </figure>
+          <h3>Women</h3> 
+          <a href="jackets.html"><div class="hero-cta hero-btn" href="jackets.html">Explore</div></a> 
+
+        </div>
+        <div class="men-wrap">
+          <figure class="men"><img src="images/Purple_Jack.jpg">        
+          </figure>
+          <h3>Men</h3> 
+          <a href="jackets.html"><div class="hero-cta hero-btn" href="jackets.html">Explore</div></a> 
+        </div>
+
+        </section>
+  
+        <!-- <section class="men-women">
+          <figure class="women"><img src="images/Purple_Jack.jpg">        
+            <a href="jackets.html"><div class="hero-cta hero-btn" href="jackets.html">Explore</div></a> 
+          </figure>
+          <figure class="men"><img src="images/Purple_Jack.jpg"></figure>
+        </section> -->
         <!--Cart Modal-->
         <div class="cart-modal" id="cart-modal"> 
         <div class="modal-dialog" aria-label="cart modal dialog box">
@@ -125,11 +136,10 @@
             <p>
           Your cart is empty
             </p>
-           <button class="close-modal" aria-label="close modal" data-close>Continue Shopping</button>
+           <button class="close-modal" aria-label="close modal" data-close>Return</button>
           </section>
           </div>
-      </div>
-     <h3>Your next adventure awaits</h3> 
+        </section>
     </main>
     <!--footer-->
     <footer class="footer">
@@ -142,11 +152,13 @@
           <li><a class="footernav" href="#">Facebook</a></li>
         </ul>
       </div>
-      <p class="company-name">Rainydays, 2020 &copy;</p>
+      <p class="company-name">Rainydays, 2021 &copy;</p>
     </footer>
   </body>
   <script src="js/signup.js"></script>
+  <script src="js/search.js"></script>
   <script src="js/components/components.js"></script>
   <script src="js/components/error.js"></script>
   <script src="js/index.js"></script>
+
 </html>

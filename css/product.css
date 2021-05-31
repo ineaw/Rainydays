@@ -1,11 +1,3 @@
-/*Body*/
-
-:root {
-  --lightgray: #f2f2f2;
-  --white: #fff;
-  --black: rgba(0, 0, 0, 0.4);
-}
-
 h1 {
   font-size: 40px;
   text-align: center;
@@ -65,10 +57,9 @@ span {
   flex-direction: row;
   align-items: center;
 }
-
-.antall {
-  width: 50px;
-  margin: 5px;
+.product-added {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Media Query*/

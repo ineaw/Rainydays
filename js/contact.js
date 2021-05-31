@@ -20,12 +20,7 @@ function validateForm(event) {
     fullNameError.style.display = "block";
     isValidated = false;
   }
-  // if (validateLength(subject.value, 10) === true) {
-  //   subjectError.style.display = "none";
-  // } else {
-  //   subjectError.style.display = "block";
-  //   isValidated = false;
-  // }
+
   if (validateEmail(email.value) === true) {
     emailError.style.display = "none";
   } else {
@@ -59,34 +54,3 @@ function validateLength(value, len) {
 }
 
 contactForm.addEventListener("submit", validateForm);
-
-// let openCart = document.querySelectorAll("[data-open]");
-// let closeCart = document.querySelectorAll("[data-close]");
-// let isVisible = "is-visible";
-
-// for (let el of openCart) {
-//   el.addEventListener("click", function () {
-//     let modalId = this.dataset.open;
-//     document.getElementById(modalId).classList.add(isVisible);
-//   });
-// }
-
-// for (let el of closeCart) {
-//   el.addEventListener("click", function () {
-//     this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-//   });
-// }
-
-// /* open modal*/
-
-// document.addEventListener("click", (e) => {
-//   if (e.target === document.querySelector(".cart-modal.is-visible")) {
-//     document.querySelector(".cart-modal.is-visible").classList.remove(isVisible);
-//   }
-// });
-
-// document.addEventListener("keyup", (e) => {
-//   if (e.key === "Escape" && document.querySelector(".cart-modal.is-visible")) {
-//     document.querySelector(".cart-modal.is-visible").classList.remove(isVisible);
-//   }
-// });

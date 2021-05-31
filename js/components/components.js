@@ -31,35 +31,4 @@ document.addEventListener("keyup", (e) => {
   }
 });
 
-/* Add Cart Modal*/
-
-let AddOpenCart = document.querySelectorAll("[data-open]");
-let AddCloseCart = document.querySelectorAll("[data-close");
-let AddIsVisible = "cart-is-visible";
-
-for (let el of AddOpenCart) {
-  el.addEventListener("click", function () {
-    let AddModalId = this.dataset.open;
-    document.getElementById(AddModalId).classList.add(AddIsVisible);
-  });
-}
-
-for (let el of AddCloseCart) {
-  el.addEventListener("click", function () {
-    this.parentElement.parentElement.parentElement.classList.remove(AddIsVisible);
-  });
-}
-
-document.addEventListener("click", (e) => {
-  if (e.target === document.querySelector(".add-cart-modal.cart-is-visible")) {
-    document.querySelector(".add-cart-modal.cart-is-visible").classList.remove(AddIsVisible);
-  }
-});
-
-document.addEventListener("keyup", (e) => {
-  if (e.key === "Escape" && document.querySelector(".add-cart-modal.cart-is-visible")) {
-    document.querySelector(".add-cart-modal.cart-is-visible").classList.remove(AddIsVisible);
-  }
-});
-
 /* Add to Favourites*/

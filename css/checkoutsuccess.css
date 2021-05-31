@@ -5,7 +5,10 @@
   color: #2f2f31;
 }
 
-/*navigation*/
+html,
+body {
+  min-height: 100vh;
+}
 
 /*fonts*/
 
@@ -65,8 +68,6 @@ img {
   background-color: var(--darkteal);
   border: 1px solid var(--dirtygreen);
 }
-
-/*footer*/
 
 /* Media Query*/
 
