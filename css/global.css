@@ -201,7 +201,7 @@ nav input:focus,
 .item,
 .add-me {
   font-family: "montserrat", sans-serif;
-  background: var(--darkteal);
+  background: var(--dirtygreen);
   outline: none !important;
   cursor: pointer;
   position: relative;
@@ -216,7 +216,7 @@ nav input:focus,
 }
 
 .buy-now {
-  border: 2px solid var(--darkteal);
+  border: 2px solid var(--dirtygreen);
   z-index: 1;
   color: var(--lightgray);
 }
@@ -247,7 +247,7 @@ nav input:focus,
   display: inline-block;
   min-width: 70px;
   padding: 0.5em;
-  background-color: #06476d;
+  background-color: var(--dirtygreen);
   color: #f2f2f2;
   text-align: center;
   border: none;
@@ -269,6 +269,16 @@ nav input:focus,
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.sort button {
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 0.8rem;
+  color: var(--dirtygreen);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /* cart modal */
@@ -456,7 +466,9 @@ nav input:focus,
     transform: rotate(360deg);
   }
 }
-
+.sort {
+  margin-left: 3rem;
+}
 /*fonts*/
 
 .select {

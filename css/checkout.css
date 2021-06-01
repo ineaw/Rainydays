@@ -18,9 +18,8 @@ h1 {
   font-size: 1.5em;
 }
 
-span.price {
-  float: right;
-  margin-left: 40px;
+.total {
+  border-top: 2px solid var(--dirtygreen);
 }
 
 section.contact-form form {

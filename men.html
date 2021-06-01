@@ -14,30 +14,27 @@
     <link rel="stylesheet" href="https://use.typekit.net/nnd8khh.css">
   </head>
   <body>
-    <!--Top navigation-->
+    <!--top navigation-->
     <header class="top-header">
       <div class="top-nav">
     <p>Sign up and get 10% off first order</p> 
     <p>Free standard shipping on orders over 299NOK</p>
       </div>
       <div class="nav-container">
-        <label for="hamburger" class="hamburger-icon">☰</label>
+        <label class="hamburger-icon" for="hamburger">☰</label>
         <input type="checkbox" id="hamburger" />
-        <a href="index.html"><img class="logo" src="../images/rainydays_logo.png" alt="Logo, home button" /> </a>
+        <a href="index.html"><img class="logo" src="images/rainydays_logo.png" alt="Logo, home button" /> </a>
         <nav>
           <ul>
-            <li><a href="jackets.html">New in<i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="men.html">Men <i class="fas fa-chevron-right"></i></a></li>
-            <li><a href="women.html">Women <i class="fas fa-chevron-right"></i></a></a></li> 
+            <li><a href="jackets.html">Men <i class="fas fa-chevron-right"></i></a></li>
+            <li><a href="jackets.html">Women <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="contact.html">Contact <i class="fas fa-chevron-right"></i></a></a></li>
+            <li><a href="about.html">About <i class="fas fa-chevron-right"></i></a></a></li>
             <li>            
-               <div class="search1">
-                 <input type="text"
-                 name="searchbar"
-                 id="searchbar"
-                 placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
-               </div>
-           </li> 
-         </ul>
+              <form class="search1" action="#" aria-label="Search form"><input type="search" placeholder="Search" aria-label="Search"><i class="fas fa-search"></i>
+              </form>
+           </li>
+          </ul>
         </nav>
     </header>
     <!--Sub navigation-->
@@ -69,15 +66,11 @@
              <h1>Raincoats</h1>
              <h2>Get ready for your next adventure</h2>
              <div class="jacket-wrapper">
-              <label for="select"><p>Sort by:</p></label>
-              <select id="select" aria-label="sort jackets by preferance">
-               <option>Newest</option>
-                <option>Popular</option>
-                <option class="btn sort-low">Lowest price</option>
-                <option class="btn sort-high">Highest price</option>
-            </select>
-            <!-- <button class="btn sort-low">Lowest price</button> -->
-            <!-- <button class="btn sort-high">Highest price</button> -->
+               <div class="sort">
+            <p>Sort by:</p>
+            <button class="sort-low">Lowest price</button> 
+            <button class="sort-high">Highest price</button> 
+          </div>
               <section class="new-products">
             </section>
          <!--Cart Modal-->

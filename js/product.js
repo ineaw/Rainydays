@@ -43,13 +43,10 @@ async function fetchProducts() {
       buttonShop.innerHTML = `${button.childElementCount}`;
       button.value += 1;
       cart.innerHTML += `
-  <img src="${product.images[0].src}" alt="${product.name}">
- <p><a href="product.html">1 x Purple Rain</a> <span class="price">${product.price}</span></p>
-  <p>
-   Total <span class="price">NOK ${product.price}</span>
- </p>
+      <img src="${product.images[0].src}" alt="${product.name}">
+      <p><a href="product.html">1 x Purple Rain</a> <span class="price">${product.price}</span></p>
 
-  `;
+`;
     });
   } catch (error) {
     console.log(error);
