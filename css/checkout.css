@@ -14,19 +14,15 @@ h1 {
   text-align: center;
 }
 
-.items-cart {
-  font-size: 1.5em;
-}
-
 .total {
   border-top: 2px solid var(--dirtygreen);
 }
 
-section.contact-form form {
+#checkout-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 label {
@@ -39,7 +35,7 @@ input {
   margin-top: 2px;
   padding: 10px;
   font-size: 12px;
-  outline: none;
+  border: none;
 }
 
 .form-error {
@@ -63,20 +59,18 @@ input {
   padding: 2rem;
   max-width: 400px;
   max-height: 400px;
-  margin-left: 30px;
-  margin-bottom: 20px;
+  margin: 0px 0px 30px 30px;
 }
 .products img {
   max-width: 200px;
   max-height: 200px;
 }
 .payment-info {
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 0rem;
   max-height: 800px;
   max-width: 400px;
   border: 4px solid var(--darkteal);
-  margin-bottom: 30px;
-  margin-left: 30px;
+  margin: 0px 0px 30px 30px;
 }
 
 .payment-info button {
@@ -109,7 +103,4 @@ input {
 /*desktop screen size*/
 
 @media only screen and (min-width: 800px) {
-  .hamburger-label {
-    display: none;
-  }
 }

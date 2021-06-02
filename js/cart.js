@@ -61,13 +61,10 @@ function setItems(product) {
 }
 
 function totalCost(product) {
-  // console.log("The products price is", product.price);
-
   let cartCost = localStorage.getItem("totalCost");
   cartCost = parseInt(cartCost);
 
   console.log("My cart cost is", cartCost);
-  console.log(typeof cartCost);
 
   if (cartCost != null) {
     localStorage.setItem("totalCost", cartCost + product.price);
@@ -117,3 +114,32 @@ function displayCart() {
 
 onloadCartNumbers();
 displayCart();
+
+let openCart = document.querySelectorAll("[data-open]");
+let closeCart = document.querySelectorAll("[data-close]");
+let isVisible = "is-visible";
+
+for (let el of openCart) {
+  el.addEventListener("click", function () {
+    let modalId = this.dataset.open;
+    document.getElementById(modalId).classList.add(isVisible);
+  });
+}
+
+for (let el of closeCart) {
+  el.addEventListener("click", function () {
+    this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+  });
+}
+
+document.addEventListener("click", (e) => {
+  if (e.target === document.querySelector(".cart-modal.is-visible")) {
+    document.querySelector(".cart-modal.is-visible").classList.remove(isVisible);
+  }
+});
+
+document.addEventListener("keyup", (e) => {
+  if (e.key === "Escape" && document.querySelector(".cart-modal.is-visible")) {
+    document.querySelector(".cart-modal.is-visible").classList.remove(isVisible);
+  }
+});

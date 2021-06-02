@@ -68,18 +68,26 @@ h4 {
 
 /*Catgories*/
 .jacket-wrapper {
-  padding: 4rem;
-  margin: 0 auto;
+  margin: 3rem;
 }
+
+.sort {
+  color: var(--dirtygreen);
+}
+
+/* .sort li:first-of-type {
+  cursor: default;
+} */
+
 .new-products {
+  margin: 0em 4em;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .newPurple {
-  margin: 10px;
   background: #ffffff;
   display: flex;
   flex-direction: column;

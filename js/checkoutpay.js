@@ -1,4 +1,4 @@
-const form = document.querySelector("#contactForm");
+const form = document.querySelector("#checkoutForm");
 const cardName = document.querySelector("#cardName");
 const cardNumber = document.querySelector("#cardNumber");
 const exp = document.querySelector("#exp");
@@ -50,7 +50,7 @@ function validateCard(cardNumber) {
   return patternMatches;
 }
 
-contactForm.addEventListener("submit", validateForm);
+checkoutForm.addEventListener("submit", validateForm);
 
 /* open modal*/
 

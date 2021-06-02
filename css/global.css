@@ -121,6 +121,7 @@ nav input,
   width: 250px;
   padding: 4px 8px 3px 8px;
   transition-duration: 0.2s;
+  margin-left: 2rem;
 }
 
 .search input:focus,

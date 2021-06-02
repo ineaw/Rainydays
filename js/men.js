@@ -16,7 +16,7 @@ async function getProducts() {
     createHTML(getResults);
   } catch (error) {
     console.log(error);
-    productContainer.innerHTML = message("An error occurred when when try to load the", error);
+    productContainer.innerHTML = ("An error occurred when when try to load the", error);
   }
 }
 
@@ -52,5 +52,13 @@ function createHTML(products) {
       productContainer.innerHTML = "";
       createHTML(products);
     });
+
+    // sortHigh = document.querySelector(".sort-high");
+
+    // sortHigh.addEventListener("click", () => {
+    //   products.sort((a, b) => (a.prices.price < b.prices.price ? 1 : -1));
+    //   productContainer.innerHTML = "";
+    //   createHTML(products);
+    // });
   });
 }
