@@ -68,7 +68,6 @@ nav {
   position: absolute;
   right: 0px;
   background: var(--white);
-  border-radius: 4px;
 }
 
 nav ul {
@@ -76,12 +75,13 @@ nav ul {
   flex-direction: column;
   display: flex;
   align-items: center;
+  margin-right: 1em;
 }
 
 nav a {
   font-family: "montserrat", Arial, Helvetica, sans-serif;
   display: block;
-  margin: 0.3rem;
+  margin-bottom: 0.3rem;
   transition-duration: 0.2s;
 }
 
