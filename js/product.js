@@ -1,5 +1,4 @@
 const productImage = document.querySelector(".product-image");
-
 const detailContainer = document.querySelector(".product-text");
 
 const queryString = document.location.search;
@@ -29,10 +28,10 @@ async function fetchProducts() {
     <h2>Biodegradeable</h2>
     <p>${product.short_description}</p>
     <h2>NOK ${product.price}</h2>
-`;
+    `;
     breadcrumbs.innerHTML += `   
-<li><p>${product.name}</p></li>
-`;
+    <li><p>${product.name}</p></li>
+    `;
     const button = document.querySelector("button.add-me");
     const buttonShop = document.querySelector("button.shop");
     const cart = document.querySelector(".product-added");
@@ -45,8 +44,7 @@ async function fetchProducts() {
       cart.innerHTML += `
       <img src="${product.images[0].src}" alt="${product.name}">
       <p><a href="product.html">1 x Purple Rain</a> <span class="price">${product.price}</span></p>
-
-`;
+    `;
     });
   } catch (error) {
     console.log(error);

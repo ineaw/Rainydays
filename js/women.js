@@ -15,7 +15,7 @@ async function getProducts() {
     createHTML(getResults);
   } catch (error) {
     console.log(error);
-    productContainer.innerHTML = message("An error occurred when when try to load the", error);
+    productContainer.innerHTML = ("An error occurred when when try to load the", error);
   }
 }
 
@@ -26,25 +26,28 @@ function createHTML(products) {
 
   products.forEach(function (product) {
     productContainer.innerHTML += `
-    <div class="newPurple">
+    <div class="jacket">
     <div class="heart">
     <i class="fa fa-heart-o"></i>
   </div>
     <a href="product.html?id=${product.id}">
-    <img src="${product.images[0].src}" alt="Image of product${product.name}">
+    <img src="${product.images.src}" alt="Image of product${product.name}">
     </a>
     <h3>${product.name}</h3>
     <h3>NOK ${product.prices.price}</h3>
       <a href="product.html?id=${product.id}" class="item buy-now">See more</a> 
    </div> `;
+
     sortLow = document.querySelector(".sort-low");
-    sortLow.addEventListener("click", function () {
+
+    sortLow.addEventListener("click", () => {
       products.sort((a, b) => (a.prices.price > b.prices.price ? 1 : -1));
       productContainer.innerHTML = "";
       createHTML(products);
     });
     sortHigh = document.querySelector(".sort-high");
-    sortHigh.addEventListener("click", function () {
+
+    sortHigh.addEventListener("click", () => {
       products.sort((a, b) => (a.prices.price < b.prices.price ? 1 : -1));
       productContainer.innerHTML = "";
       createHTML(products);

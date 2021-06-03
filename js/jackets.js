@@ -24,7 +24,7 @@ getProducts();
 function createHTML(products) {
   products.forEach(function (product) {
     productContainer.innerHTML += `
-    <div class="newPurple">
+    <div class="jacket">
     <div class="heart">
     <i class="fa fa-heart-o"></i>
   </div>

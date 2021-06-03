@@ -27,7 +27,7 @@ function createHTML(products) {
 
   products.forEach(function (product) {
     productContainer.innerHTML += `
-    <div class="newPurple">
+    <div class="jacket">
     <div class="heart">
     <i class="fa fa-heart-o"></i>
   </div>
@@ -38,6 +38,7 @@ function createHTML(products) {
     <h3>NOK ${product.prices.price}</h3>
       <a href="product.html?id=${product.id}" class="item buy-now">See more</a> 
    </div> `;
+
     sortLow = document.querySelector(".sort-low");
 
     sortLow.addEventListener("click", () => {
@@ -45,6 +46,7 @@ function createHTML(products) {
       productContainer.innerHTML = "";
       createHTML(products);
     });
+
     sortHigh = document.querySelector(".sort-high");
 
     sortHigh.addEventListener("click", () => {
