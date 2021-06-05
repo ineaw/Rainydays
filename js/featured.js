@@ -1,4 +1,4 @@
-const api = "https://ineaw.no/rainydays/wp-json/wc/store/products?category=19";
+const api = "https://ineaw.no/rainydays/wp-json/wc/store/products?category=24";
 
 const key = "consumer_key=ck_805849d86188f7b6115b02b0f46312c46a13276f";
 const secret = "consumer_secret=cs_9d27e84f1790c49225ddd52f201a93dc7b59cc63";
@@ -6,7 +6,6 @@ const secret = "consumer_secret=cs_9d27e84f1790c49225ddd52f201a93dc7b59cc63";
 const url = `${api}?${key}&${secret}`;
 
 const productContainer = document.querySelector(".new-products");
-const breadcrumbs = document.querySelector(".breadcrumbs");
 
 async function getProducts() {
   try {
@@ -16,15 +15,13 @@ async function getProducts() {
     createHTML(getResults);
   } catch (error) {
     console.log(error);
-    productContainer.innerHTML = ("An error occurred when when try to load the", error);
+    productContainer.innerHTML = message("An error occurred when when try to load the", error);
   }
 }
 
 getProducts();
 
 function createHTML(products) {
-  console.log(products);
-
   products.forEach(function (product) {
     productContainer.innerHTML += `
     <div class="jacket">
@@ -38,18 +35,16 @@ function createHTML(products) {
     <h3>NOK ${product.prices.price}</h3>
       <a href="product.html?id=${product.id}" class="item buy-now">See more</a> 
    </div> `;
-
     sortLow = document.querySelector(".sort-low");
 
-    sortLow.addEventListener("click", () => {
+    sortLow.addEventListener("keyup", function () {
       products.sort((a, b) => (a.prices.price > b.prices.price ? 1 : -1));
       productContainer.innerHTML = "";
       createHTML(products);
     });
-
     sortHigh = document.querySelector(".sort-high");
 
-    sortHigh.addEventListener("click", () => {
+    sortHigh.addEventListener("keyup", function () {
       products.sort((a, b) => (a.prices.price < b.prices.price ? 1 : -1));
       productContainer.innerHTML = "";
       createHTML(products);

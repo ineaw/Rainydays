@@ -29,14 +29,14 @@ function createHTML(products) {
     <div class="jacket">
     <div class="heart">
     <i class="fa fa-heart-o"></i>
-  </div>
+    </div>
     <a href="product.html?id=${product.id}">
-    <img src="${product.images.src}" alt="Image of product${product.name}">
+    <img src="${product.images[0].src}" alt="Image of product${product.name}">
     </a>
     <h3>${product.name}</h3>
     <h3>NOK ${product.prices.price}</h3>
       <a href="product.html?id=${product.id}" class="item buy-now">See more</a> 
-   </div> `;
+    </div> `;
 
     sortLow = document.querySelector(".sort-low");
 

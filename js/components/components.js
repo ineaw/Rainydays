@@ -32,3 +32,16 @@ document.addEventListener("keyup", (e) => {
 });
 
 /* Add to Favourites*/
+
+// const favorite = document.querySelector(".heart");
+// const active = document.querySelector(".active");
+
+// favorite.className = ".active";
+
+// favorite.addEventListener("click", () => {
+//  if (favorite.classList.contains())
+// });
+
+// favorite.onclick = function () {
+//   favorite.classList.toggle(".active");
+// };

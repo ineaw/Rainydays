@@ -88,9 +88,11 @@ nav a {
 .fa-chevron-right {
   color: transparent;
 }
+
 nav a:hover > .fa-chevron-right {
   color: var(--dirtygreen);
 }
+
 .hamburger-icon {
   position: absolute;
   right: 20px;
@@ -158,14 +160,22 @@ nav input:focus,
 .fa-shopping-bag {
   margin-bottom: 15px;
   margin-left: 10px;
+  margin-right: 10px;
 }
+
 .fa-user-o {
   margin-left: 10px;
   margin-right: 30px;
 }
-.fa-heart {
-  font-size: 1rem;
+
+.heart .fa {
+  font-size: 1.5rem;
   cursor: pointer;
+}
+
+.active .fa {
+  color: rgb(125, 26, 26);
+  display: none;
 }
 
 .fa-search {
@@ -189,6 +199,7 @@ nav input:focus,
   flex-direction: row;
   align-items: center;
 }
+
 .search input[type="text"] {
   padding: 1rem 1rem;
   border: 2px solid var(--darkteal);
@@ -275,16 +286,33 @@ nav input:focus,
   align-items: center;
 }
 
-.sort button {
+.sort {
+  margin-right: 40px;
+  align-items: center;
+  font-family: "roboto";
+}
+
+.sort-low,
+.sort-high {
   display: inline-block;
   padding: 0.5em;
   font-size: 0.8rem;
   color: var(--dirtygreen);
-  border: none;
+  border: 2px solid var(--dirtygreen);
   background-color: transparent;
   cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  height: 30px;
+  font-family: "montserrat", sans-serif;
+  transition: 0.3s all ease-in-out;
 }
 
+.sort-low:hover,
+.sort-high:hover {
+  background-color: var(--dirtygreen);
+  color: var(--white);
+}
 /* cart modal */
 
 .modal-button {
@@ -370,6 +398,7 @@ nav input:focus,
   color: #f2f2f2;
   border: 2px solid var(--darkteal);
 }
+
 .product-added {
   display: flex;
   justify-content: center;
@@ -451,6 +480,7 @@ nav input:focus,
   height: 80px;
   margin: 50px 100px 50px 100px;
 }
+
 .loader:after {
   content: " ";
   display: block;
@@ -462,6 +492,7 @@ nav input:focus,
   border-color: var(--dirtygreen) transparent var(--dirtygreen) transparent;
   animation: loader 1.8s linear infinite;
 }
+
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -473,6 +504,7 @@ nav input:focus,
 .sort {
   margin-left: 3rem;
 }
+
 /*fonts*/
 
 .select {
@@ -545,6 +577,7 @@ h4 {
 
 .footernav {
   color: #f2f2f2;
+  transition: 0.2s all ease-in-out;
 }
 
 .footernav:hover {
@@ -634,7 +667,7 @@ h4 {
   }
 
   nav a {
-    box-shadow: none;
+    margin-right: 1em;
   }
 
   nav ul {
