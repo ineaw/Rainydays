@@ -38,6 +38,7 @@ async function fetchProducts() {
 
     button.addEventListener("click", () => {
       const newItem = document.createElement("shop");
+      localStorage.setItem;
       button.appendChild(newItem);
       buttonShop.innerHTML = `${button.childElementCount}`;
       button.value += 1;
@@ -45,6 +46,7 @@ async function fetchProducts() {
       <img src="${product.images[0].src}" alt="${product.name}">
       <p><a href="product.html">1 x Purple Rain</a> <span class="price">${product.price}</span></p>
     `;
+      localStorage.setItem(".product-added", JSON.stringify(cart));
     });
   } catch (error) {
     console.log(error);

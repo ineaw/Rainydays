@@ -51,14 +51,3 @@ function createHTML(products) {
     });
   });
 }
-
-// filterProducts.onclick = function viewFilter() {
-//   filterOver.classList.toggle("hidden");
-// };
-
-// let page = 1;
-
-// const loadMore = async () => {
-//   page++;
-//   await appendFilteredPosts();
-// };

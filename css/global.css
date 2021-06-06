@@ -44,19 +44,22 @@ body {
   justify-content: space-around;
 }
 
+.marker {
+  text-decoration: 3px solid var(--peach) underline;
+  text-underline-position: under;
+}
+
 .nav-container {
   height: 70px;
   display: flex;
   position: relative;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
 }
 
 .logo {
   height: 80px;
-  transition-duration: 0.5s;
-  left: 0px;
 }
 
 nav,
@@ -604,6 +607,7 @@ h4 {
   .cart-modal {
     padding: 0;
   }
+
   .footer ul {
     grid-auto-flow: row;
   }
